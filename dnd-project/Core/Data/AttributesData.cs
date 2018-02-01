@@ -1,8 +1,8 @@
 ﻿using System;
 
-static public class AbilitiesData
+static public class AttributesData
 {
-    static readonly String[][] abilities = new String[][] //Attribute, Default Value, Description
+    static readonly String[][] attributes = new String[][] //Attribute, Default Value, Description
     {
         new String[]
         {

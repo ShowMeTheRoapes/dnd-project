@@ -47,7 +47,7 @@
   <ItemGroup>
     <Compile Include="Core\BusinessModels\Skill.cs" />
     <Compile Include="Core\BusinessModels\SkillsList.cs" />
-    <Compile Include="Core\Data\AbilitiesData.cs" />
+    <Compile Include="Core\Data\AttributesData.cs" />
     <Compile Include="Core\Data\ClassData.cs" />
     <Compile Include="Core\Data\DataTemplate.cs" />
     <Compile Include="Core\Data\FeatsData.cs" />

@@ -2,12 +2,6 @@
 
 public class Skill
 {
-    private string name;
-    private string description;
-    private string attribute;
-    private int rank;
-    private bool isProficient;
-
     public string Name { get; set; }
     public string Description { get; set; }
     public string Attribute { get; set; }
