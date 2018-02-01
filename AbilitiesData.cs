@@ -2,7 +2,7 @@
 
 static public class AbilitiesData
 {
-    static String[][] abilities = new String[][] //Attribute, Default Value, Description
+    static readonly String[][] abilities = new String[][] //Attribute, Default Value, Description
     {
         new String[]
         {
