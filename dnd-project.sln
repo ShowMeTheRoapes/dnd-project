@@ -10,6 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8CA33803-669F-4BEA-ACB4-A6A7E49D9EED}"
 	ProjectSection(SolutionItems) = preProject
 		AbilitiesData.cs = AbilitiesData.cs
+		ClassData.cs = ClassData.cs
+		DataTemplate.cs = DataTemplate.cs
+		FeatsData.cs = FeatsData.cs
+		RaceData.cs = RaceData.cs
 		SkillsData.cs = SkillsData.cs
 	EndProjectSection
 EndProject
