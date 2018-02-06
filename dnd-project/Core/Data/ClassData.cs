@@ -49,7 +49,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Fighter",
             "A master of martial combat, skilled with a variety of weapons and armor.",
             "d10",
-            "Strength;Dexterity",
+            "Strength/Dexterity",
             "Strength;Constitution",
             "All Armor;Shields;Simple Weapons;Martial Weapons",
             "Fighting Style; Second Wind"
@@ -59,7 +59,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Monk",
             "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.",
             "d8",
-            "Dexterity;Wisdom",
+            "Dexterity/Wisdom",
             "Strength;Constitution",
             "Simple Weapons;Shortswords",
             "Unarmored Defense;Martial Arts"
@@ -69,7 +69,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Paladin",
             "A holy warrior bound to a sacred oath.",
             "d10",
-            "Strength;Charisma",
+            "Strength/Charisma",
             "Wisdom;Chraisma",
             "All Armor;Shields;Simple Weapons;Martial Weapons",
             "Divine Sense;Lay on Hands"
@@ -79,7 +79,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Ranger",
             "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.",
             "d10",
-            "Dexterity;Wisdom",
+            "Dexterity/Wisdom",
             "Strength;Dexterity",
             "Light Armor;Medium Armor;Shields;Simple Weapons;Martial Weapons",
             "Favored Enemy;Natural Explorer"
