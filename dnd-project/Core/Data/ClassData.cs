@@ -12,7 +12,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Strength",
             "Strength;Constitution",
             "Light Armor;Medium Armor;Shields;Simple Weapons;Martial Weapons",
-            ""
+            "Rage;Unarmored Defense"
         },
         new string[]
         {
@@ -22,7 +22,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Charisma",
             "Dexterity;Charisma",
             "Light Armor;Simple Weapons;Hand Crossbows;Longswords;Rapiers;Shortswords",
-            ""
+            "Spellcasting;Bardic Inspiration"
         },
         new string[]
         {
@@ -32,7 +32,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Wisdom",
             "Wisdom;Charisma",
             "Light Armor;Medium Armor;Shields;Simple Weapons",
-            ""
+            "Spellcasting;Divine Domain"
         },
         new string[]
         {
@@ -42,7 +42,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Wisdom",
             "Intelligence;Wisdom",
             "Light Armor;Medium Armor;Shields;Clubs;Daggers;Darts;Javelins;Maces;Quarterstaffs;Scimitars;Sickles;Slings;Spears",
-            ""
+            "Druidic;Spellcasting"
         },
         new string[]
         {
@@ -52,7 +52,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Strength;Dexterity",
             "Strength;Constitution",
             "All Armor;Shields;Simple Weapons;Martial Weapons",
-            ""
+            "Fighting Style; Second Wind"
         },
         new string[]
         {
@@ -62,7 +62,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Dexterity;Wisdom",
             "Strength;Constitution",
             "Simple Weapons;Shortswords",
-            ""
+            "Unarmored Defense;Martial Arts"
         },
         new string[]
         {
@@ -72,7 +72,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Strength;Charisma",
             "Wisdom;Chraisma",
             "All Armor;Shields;Simple Weapons;Martial Weapons",
-            ""
+            "Divine Sense;Lay on Hands"
         },
         new string[]
         {
@@ -82,7 +82,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Dexterity;Wisdom",
             "Strength;Dexterity",
             "Light Armor;Medium Armor;Shields;Simple Weapons;Martial Weapons",
-            ""
+            "Favored Enemy;Natural Explorer"
         },
         new string[]
         {
@@ -92,7 +92,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Dexterity",
             "Dexterity;Intelligence",
             "Light Armor;Simple Weapons;Hand Crossbows;Longswords;Rapiers;Shortswords",
-            ""
+            "Expertise;Sneak Attack;Thieves' Cant"
         },
         new string[]
         {
@@ -102,7 +102,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Charisma",
             "Constitution;Charisma",
             "Daggers;Darts;Slings;Quarterstaffs;Light Crossbow",
-            ""
+            "Spellcasting;Sorcerous Origin"
         },
         new string[]
         {
@@ -112,7 +112,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Charisma",
             "Wisdom;Charisma",
             "Light Armor;Simple Weapons",
-            ""
+            "Otherworldly Patron;Pact Magic"
         },
         new string[]
         {
@@ -122,7 +122,7 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
             "Intelligence",
             "Intelligence;Wisdom",
             "Daggers;Darts;Slings;Quarterstaffs;Light Crossbows",
-            ""
+            "Spellcasting;Arcane Recovery"
         }
     };
 }
