@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Skill
+public class SkillModel
 {
     public string Name { get; set; }
     public string Description { get; set; }
@@ -8,7 +8,7 @@ public class Skill
     public int Rank { get; set; }
     public bool IsProficient { get; set; }
 
-	public Skill()
+	public SkillModel()
 	{
         Name = "";
         Description = "";
@@ -17,7 +17,7 @@ public class Skill
         IsProficient = false;
 	}
 
-    public Skill(string name, string attribute, string description, int rank, bool isProficient)
+    public SkillModel(string name, string attribute, string description, int rank, bool isProficient)
     {
         Name = name;
         Description = description;
