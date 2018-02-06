@@ -45,8 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\BusinessModels\Attribute.cs" />
-    <Compile Include="Core\BusinessModels\AttributesList.cs" />
+    <Compile Include="Core\BusinessModels\AttributeModel.cs" />
+    <Compile Include="Core\BusinessModels\AttributesListModel.cs" />
+    <Compile Include="Core\BusinessModels\ClassModel.cs" />
+    <Compile Include="Core\BusinessModels\RaceModel.cs" />
     <Compile Include="Core\BusinessModels\Skill.cs" />
     <Compile Include="Core\BusinessModels\SkillsList.cs" />
     <Compile Include="Core\Data\AttributesData.cs" />

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Attribute
+public class AttributeModel
 {
     private const int MAX_MOD_LEVEL = 20;
     private const int MIN_MOD_LEVEL = 2;
@@ -14,7 +14,7 @@ public class Attribute
     public int Value{ get { return value; } set { this.value = value; Modifier = calculateModifier(); } }
     public int Modifier { get; set; }
 
-    public Attribute()
+    public AttributeModel()
     {
         Name = "";
         Description = "";
@@ -22,7 +22,7 @@ public class Attribute
         Modifier = 0;
     }
 
-    public Attribute(string name, string description, int value)
+    public AttributeModel(string name, string description, int value)
     {
         Name = name;
         Description = description;
