@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 
 public static class FeatsData
 {
-    public static readonly String[][] feats = new String[][] 
+    public static readonly Dictionary<string, string[]> feats = new Dictionary<string, string[]> 
     {
-        new String[]
-        {
+        {"temp", new string[]
+            {
 
+            }
         }
+
     };
 }
