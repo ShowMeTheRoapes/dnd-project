@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public static class RaceData
+public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability Scores(Bonus), Feats, Proficiencies
 {
-    //Name, Age Range, Size, Alignment, Speed, Ability Scores(Bonus), Feats, Proficiencies
     public static readonly Dictionary<string, string[]> races = new Dictionary<string, string[]>
     {
         {
@@ -63,7 +62,7 @@ public static class RaceData
             }
         },
         {
-            "Dark Elf (Drow)",
+            "Dark Elf",
             new String[]
             {
                 "Dark Elf (Drow)",

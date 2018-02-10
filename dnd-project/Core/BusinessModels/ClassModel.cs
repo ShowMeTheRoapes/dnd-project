@@ -15,7 +15,7 @@ public class ClassModel
 
     public ClassModel(string className)
     {
-        String[] classInfo = getClassInformation(className);
+        string[] classInfo = getClassInformation(className);
 
         Name = classInfo[0];
         Description = classInfo[1];
