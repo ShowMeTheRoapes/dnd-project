@@ -18,7 +18,8 @@ namespace dnd_project
             //Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
 
-
+            ClassModel barb = new ClassModel("Barbarian");
+            Console.Write(barb);
         }
     }
 }

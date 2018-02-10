@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 public class ClassModel
 {
@@ -7,37 +8,63 @@ public class ClassModel
     public string Name { get; set; }
     public string Description { get; set; }
     public string HitDie { get; set; }
-    public string PrimaryAttributes { get; set; }
+    public string[] PrimaryAttributes { get; set; }
     public string[] SavingThrows { get; set; }
     public string[] Proficiencies { get; set; }
     public string[] Feats { get; set; }
 
     public ClassModel(string className)
     {
-        String[] theClass = getClassInformation(className);
+        String[] classInfo = getClassInformation(className);
 
-        Name = theClass[0];
-        Description = theClass[1];
-        HitDie = theClass[2];
-        PrimaryAttributes = theClass[3];
-        SavingThrows = theClass[4].Split(';');
-        Proficiencies = theClass[5].Split(';');
-        Feats = theClass[6].Split(';');
+        Name = classInfo[0];
+        Description = classInfo[1];
+        HitDie = classInfo[2];
+        PrimaryAttributes = classInfo[3].Split(';');
+        SavingThrows = classInfo[4].Split(';');
+        Proficiencies = classInfo[5].Split(';');
+        Feats = classInfo[6].Split(';');
 
     }
 
     private string[] getClassInformation(string className)
     {
-        string[] theClass = { };
-        for (int i = 0; i < ClassData.classes.Length; i++)
+       return ClassData.classes[className];
+    }
+
+    public override string ToString()
+    {
+        StringBuilder classString = new StringBuilder();
+
+        classString.Append(Name + "\n");
+        classString.Append(Description + "\n");
+        classString.Append(HitDie + "\n");
+
+        classString.Append("Primary Attributes: \n");
+        foreach (string att in PrimaryAttributes)
         {
-            if (ClassData.classes[i][0] == className)
-            {
-               theClass = ClassData.classes[i];
-            }
+            classString.Append("\t" + att + "\n");
         }
 
-        return theClass;
+        classString.Append("Saving Throws: \n");
+        foreach (string save in SavingThrows)
+        {
+            classString.Append("\t" + save + "\n");
+        }
+
+        classString.Append("Weapon Proficiencies: \n");
+        foreach (string prof in Proficiencies)
+        {
+            classString.Append("\t" + prof + "\n");
+        }
+
+        classString.Append("Feats: \n");
+        foreach (string feat in Feats)
+        {
+            classString.Append("\t" + feat + "\n");
+        }
+
+        return classString.ToString();
     }
 }
 
