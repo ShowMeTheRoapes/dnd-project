@@ -34,7 +34,7 @@ public class ClassModel
 
     public override string ToString()
     {
-        StringBuilder classString = new StringBuilder();
+        StringBuilder classString = new StringBuilder("----------CLASS---------- \n");
 
         classString.Append(Name + "\n");
         classString.Append(Description + "\n");
