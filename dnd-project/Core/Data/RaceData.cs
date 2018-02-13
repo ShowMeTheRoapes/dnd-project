@@ -15,8 +15,8 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "Lawful",
                 "25 feet",
                 "Constitution 2;Wisdom 1",
-                "Darkvision;Dwarven Resilience;Dwarven Combat Training;Stonecunning;Dwarven Toughness",
-                "Common Language;Dwarvish Language;Smith's Tools~Brewer's Supplies~Mason's Tools"
+                "Darkvision;Dwarven Resilience;Stonecunning;Dwarven Toughness",
+                "Common Language;Dwarvish Language;Battleaxe;Handaxe;Throwing Hammer;Warhammer;Smith's Tools~Brewer's Supplies~Mason's Tools"
             }
         },
         {
@@ -29,8 +29,8 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "Lawful",
                 "25 feet",
                 "Constitution 2;Strength 2",
-                "Darkvision;Dwarven Resilience;Dwarven Combat Training;Stonecunning",
-                "Common Language;Dwarvish Language;Light Armor;Medium Armor;Smith's Tools~Brewer's Supplies~Mason's Tools"
+                "Darkvision;Dwarven Resilience;Stonecunning",
+                "Common Language;Dwarvish Language;Battleaxe;Handaxe;Throwing Hammer;Warhammer;Light Armor;Medium Armor;Smith's Tools~Brewer's Supplies~Mason's Tools"
             }
         },
         {
