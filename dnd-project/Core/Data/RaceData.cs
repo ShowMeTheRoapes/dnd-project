@@ -43,8 +43,8 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "Chaotic Good",
                 "30 feet",
                 "Dexterity 2;Intelligence 1",
-                "Darkvision;Keen Senses;Fey Ancestry;Trance;Cantrip;Extra Language",
-                "Common Language;Elvish Language;Longsword;Shortsword;Shortbow;Longbow"
+                "Darkvision;Fey Ancestry;Trance;Cantrip;Extra Language",
+                "Common Language;Elvish Language;Longsword;Shortsword;Shortbow;Longbow;Perception"
             }
         },
         {
@@ -57,8 +57,8 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "Chaotic Good",
                 "35 feet",
                 "Dexterity 2;Wisdom 1",
-                "Darkvision;Keen Senses;Fey Ancestry;Trance;Mask of the Wild",
-                "Common Language;Elvish Language;Longsword;Shortsword;Shortbow;Longbow"
+                "Darkvision;Fey Ancestry;Trance;Mask of the Wild",
+                "Common Language;Elvish Language;Longsword;Shortsword;Shortbow;Longbow;Perception"
             }
         },
         {
@@ -71,8 +71,8 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "Chaotic Evil",
                 "30 feet",
                 "Dexterity 2;Charisma 1",
-                "Superior Darkvision;Keen Senses;Fey Ancestry;Trance;Sunlight Sensitivity;Drow Magic",
-                "Common Language;Elvish Language;Rapier;Shortsword;Hand Crossbow",
+                "Superior Darkvision;Fey Ancestry;Trance;Sunlight Sensitivity;Drow Magic",
+                "Common Language;Elvish Language;Rapier;Shortsword;Hand Crossbow;Perception",
             }
         },
         {
@@ -156,7 +156,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "25 feet",
                 "Intelligence 2;Constitution 1",
                 "Darkvision;Gnome Cunning;Artificer's Lore;Tinker",
-                "Common Language;Gnomish Language"
+                "Common Language;Gnomish Language;Artisan's Tools (Tinker's Tools)"
             }
         },
         {
