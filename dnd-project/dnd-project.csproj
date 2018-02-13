@@ -54,7 +54,7 @@
     <Compile Include="Core\Data\AttributesData.cs" />
     <Compile Include="Core\Data\ClassData.cs" />
     <Compile Include="Core\Data\DataTemplate.cs" />
-    <Compile Include="Core\Data\FeatsData.cs" />
+    <Compile Include="Core\Data\FeatData.cs" />
     <Compile Include="Core\Data\RaceData.cs" />
     <Compile Include="Core\Data\SkillsData.cs" />
     <Compile Include="Form1.cs">
