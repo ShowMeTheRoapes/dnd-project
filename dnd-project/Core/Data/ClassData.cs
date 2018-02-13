@@ -4,8 +4,10 @@ using System.Collections.Generic;
 public static class ClassData //name, description, hitdie, primary attribute, saving throws, weapon proficiencies, starting feats
 {
     public static readonly Dictionary<string, string[]> classes = new Dictionary<string, string[]>()
+    {
         {
-        {"Barbarian", new string[]
+            "Barbarian",
+            new string[]
             {
                 "Barbarian",
                 "A fierce warrior of primitive background who can enter a battle rage.",
@@ -16,7 +18,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Rage;Unarmored Defense"
             }
         },
-        {"Bard", new string[]
+        {
+            "Bard",
+            new string[]
             {
                 "Bard",
                 "An inspiring magician whose power echoes the music of creation.",
@@ -27,7 +31,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Spellcasting;Bardic Inspiration"
             }
         },
-        {"Cleric", new string[]
+        {
+            "Cleric",
+            new string[]
             {
                 "Cleric",
                 "A priestly champion who wields divine magic in service of a higher power.",
@@ -38,7 +44,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Spellcasting;Divine Domain"
             }
         },
-        {"Druid", new string[]
+        {
+            "Druid",
+            new string[]
             {
                 "Druid",
                 "A priest of the Old Faith, wielding the powers of nature— moonlight and plant growth, fire and lightning— and adopting animal forms.",
@@ -49,7 +57,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Druidic;Spellcasting"
             }
         },
-        {"Fighter", new string[]
+        {
+            "Fighter",
+            new string[]
             {
                 "Fighter",
                 "A master of martial combat, skilled with a variety of weapons and armor.",
@@ -60,7 +70,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Fighting Style; Second Wind"
             }
         },
-        {"Monk", new string[]
+        {
+            "Monk",
+            new string[]
             {
                 "Monk",
                 "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.",
@@ -71,7 +83,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Unarmored Defense;Martial Arts"
             }
         },
-        {"Paladin", new string[]
+        {
+            "Paladin",
+            new string[]
             {
                 "Paladin",
                 "A holy warrior bound to a sacred oath.",
@@ -82,7 +96,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Divine Sense;Lay on Hands"
             }
         },
-        {"Ranger", new string[]
+        {
+            "Ranger",
+            new string[]
             {
                 "Ranger",
                 "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.",
@@ -93,7 +109,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Favored Enemy;Natural Explorer"
             }
         },
-        {"Rogue", new string[]
+        {
+            "Rogue",
+            new string[]
             {
                 "Rogue",
                 "A soundrel who uses stealth and trickery to overcome obstacles and enemies.",
@@ -104,7 +122,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Expertise;Sneak Attack;Thieves' Cant"
             }
         },
-        {"Sorcerer", new string[]
+        {
+            "Sorcerer",
+            new string[]
             {
                 "Sorcerer",
                 "A spellcaster who draws on inherent magic from a gift or bloodline.",
@@ -115,7 +135,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Spellcasting;Sorcerous Origin"
             }
         },
-        {"Warlock", new string[]
+        {
+            "Warlock",
+            new string[]
             {
                 "Warlock",
                 "A wielder of magic that is derived from a bargain with an extraplanar entity.",
@@ -126,7 +148,9 @@ public static class ClassData //name, description, hitdie, primary attribute, sa
                 "Otherworldly Patron;Pact Magic"
             }
         },
-        {"Wizard", new string[]
+        {
+            "Wizard",
+            new string[]
             {
                 "Wizard",
                 "A scholarly magic-user capable of manipulating the structures of reality.",
