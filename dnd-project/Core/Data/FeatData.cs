@@ -10,7 +10,7 @@ public static class FeatData
             new string[]
             {
                 "Arcane Recovery",
-                "You have learned to regain some of your magical energ by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none o f the slots can be 6th level or higher. For example, if you’re a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots."
+                "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none o f the slots can be 6th level or higher. For example, if you’re a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots."
             }
         },
         {
@@ -26,9 +26,9 @@ public static class FeatData
             new string[]
             {
                 "Bardic Inspiration",
-                @"You can inspire others through stirring w ords or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. 
-                Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.
-                You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d 10 at 10th level, and a d12 at 15th level."
+                @"You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.\n" + 
+                "Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.\n" +
+                "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d 10 at 10th level, and a d12 at 15th level."
             }
         },
         {
@@ -191,7 +191,7 @@ public static class FeatData
             new string[]
             {
                 "Gnome Cunning",
-                "definition"
+                "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
             }
         },
         {
@@ -199,7 +199,7 @@ public static class FeatData
             new string[]
             {
                 "Halfling Nimbleness",
-                "definition"
+                "You can move through the space of any creature that is of a size larger than yours."
             }
         },
         {
@@ -207,7 +207,7 @@ public static class FeatData
             new string[]
             {
                 "Hellish Resistance",
-                "definition"
+                "You have resistance to fire damage."
             }
         },
         {
@@ -215,7 +215,7 @@ public static class FeatData
             new string[]
             {
                 "Infernal Legacy",
-                "definition"
+                "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the darkness spell once per day. Charisma is your spellcasting ability for these spells."
             }
         },
         {
@@ -223,7 +223,11 @@ public static class FeatData
             new string[]
             {
                 "Lay on Hands",
-                "definition"
+                @"Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.
+                As an action, you can touch a creature and draw power from the pool to restore a number of hit points
+                to that creature, up to the maximum amount remaining in your pool.
+                Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.
+                This feature has no effect on undead and constructs."
             }
         },
         {
@@ -231,7 +235,7 @@ public static class FeatData
             new string[]
             {
                 "Lucky",
-                "definition"
+                "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
             }
         },
         {
@@ -239,7 +243,12 @@ public static class FeatData
             new string[]
             {
                 "Martial Arts",
-                "definition"
+                @"Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple
+                melee weapons that don’t have the two-handed or heavy property. You gain the following benefits while you are unarmed or wielding only monk weapons and you aren’t wearing armor or wielding a shield:
+                You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.
+                You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.
+                When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.
+                Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon in chapter 5."
             }
         },
         {
@@ -247,7 +256,7 @@ public static class FeatData
             new string[]
             {
                 "Mask of the Wild",
-                "definition"
+                "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
             }
         },
         {
@@ -255,7 +264,15 @@ public static class FeatData
             new string[]
             {
                 "Natural Explorer",
-                "definition"
+                @"You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.
+                While traveling for an hour or more in your favored, you gain the following benefits:
+                Difficult terrain doesn’t slow your group’s travel.
+                Your group can’t become lost except by magical means.
+                Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
+                If you are traveling alone, you can move stealthily at a normal pace.
+                When you forage, you find twice as much food as you normally would.
+                While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
+                You choose additional favored terrain types at 6th and 10th level."
             }
         },
         {
@@ -263,7 +280,7 @@ public static class FeatData
             new string[]
             {
                 "Natural Illusionist",
-                "definition"
+                "You know the minor illusion cantrip. Intelligence is your spellcasting ability for it."
             }
         },
         {
@@ -271,7 +288,7 @@ public static class FeatData
             new string[]
             {
                 "Naturally Stealthy",
-                "definition"
+                "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
             }
         },
         {
@@ -279,7 +296,8 @@ public static class FeatData
             new string[]
             {
                 "Other Worldly Patron",
-                "definition"
+                @"You have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed
+                at the end of the class description on page 108. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
             }
         },
         {
@@ -287,7 +305,7 @@ public static class FeatData
             new string[]
             {
                 "Pact Magic",
-                "definition"
+                "Your arcane research and the magic bestowed on you by your patron have given you facility with spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the warlock spell list."
             }
         },
         {
@@ -295,7 +313,12 @@ public static class FeatData
             new string[]
             {
                 "Rage",
-                "definition"
+                @"In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren’t wearing heavy armor:
+                You have advantage on Strength checks and Strength saving throws.
+                When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
+                You have resistance to bludgeoning, piercing, and slashing damage.
+                If you are able to cast spells, you can’t cast them or concentrate on them while raging. Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.
+                Once you have raged the number o f times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again."
             }
         },
         {
@@ -303,7 +326,7 @@ public static class FeatData
             new string[]
             {
                 "Relentless Endurance",
-                "definition"
+                "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest."
             }
         },
         {
@@ -311,7 +334,7 @@ public static class FeatData
             new string[]
             {
                 "Savage Attacks",
-                "definition"
+                "When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit."
             }
         },
         {
@@ -319,7 +342,7 @@ public static class FeatData
             new string[]
             {
                 "Second Wind",
-                "definition"
+                "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d 10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again."
             }
         },
         {
@@ -327,7 +350,7 @@ public static class FeatData
             new string[]
             {
                 "Skill Versatility",
-                "definition"
+                "You gain proficiency in two skills of your choice."
             }
         },
         {
@@ -335,7 +358,9 @@ public static class FeatData
             new string[]
             {
                 "Sneak Attack",
-                "definition"
+                @"You know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged w eapon.
+                You don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.
+                The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
             }
         },
         {
@@ -343,7 +368,8 @@ public static class FeatData
             new string[]
             {
                 "Sorcerous Origin",
-                "definition"
+                @"Choose a sorcerous origin, which describes the source of your innate magical power: Draconic Bloodline or Wild Magic, both detailed at the end of the
+                class description on page 101 of the player handbook . Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
             }
         },
         {
@@ -351,7 +377,7 @@ public static class FeatData
             new string[]
             {
                 "Speak with Small Beasts",
-                "definition"
+                "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
             }
         },
         {
@@ -359,7 +385,7 @@ public static class FeatData
             new string[]
             {
                 "Spellcasting",
-                "definition"
+                "You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations. See chapter 10 for the general rules of spellcasting and chapter 11 for the bard spell list."
             }
         },
         {
@@ -367,7 +393,7 @@ public static class FeatData
             new string[]
             {
                 "Stonecunning",
-                "definition"
+                "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
             }
         },
         {
@@ -375,7 +401,7 @@ public static class FeatData
             new string[]
             {
                 "Stout Resilience",
-                "definition"
+                "You have advantage on saving throws against poison, and you have resistance against poison damage."
             }
         },
         {
@@ -383,7 +409,7 @@ public static class FeatData
             new string[]
             {
                 "Sunlight Sensitivity",
-                "definition"
+                "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
             }
         },
         {
@@ -391,7 +417,7 @@ public static class FeatData
             new string[]
             {
                 "Superior Darkvision",
-                "definition"
+                "Your darkvision has a radius of 120 feet."
             }
         },
         {
@@ -399,7 +425,8 @@ public static class FeatData
             new string[]
             {
                 "Thieves' Cant",
-                "definition"
+                @"During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.
+                In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
             }
         },
         {
@@ -407,7 +434,13 @@ public static class FeatData
             new string[]
             {
                 "Tinker",
-                "definition"
+                @"Using tinker's tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:
+
+                Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.
+
+                Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+
+                Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song’s end or when it is closed."
             }
         },
         {
@@ -415,7 +448,7 @@ public static class FeatData
             new string[]
             {
                 "Trance",
-                "definition"
+                "Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
             }
         },
         {
@@ -423,7 +456,8 @@ public static class FeatData
             new string[]
             {
                 "Unarmored Defense",
-                "definition"
+                @"(Barbarian)While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+                (Monk) While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
             }
         }
     };
