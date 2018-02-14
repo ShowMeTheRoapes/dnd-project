@@ -26,7 +26,7 @@ public static class FeatData
             new string[]
             {
                 "Bardic Inspiration",
-                @"You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.\n" + 
+                "You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.\n" + 
                 "Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.\n" +
                 "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d 10 at 10th level, and a d12 at 15th level."
             }
@@ -44,7 +44,7 @@ public static class FeatData
             new string[]
             {
                 "Breath Weapon",
-                @"You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest."
+                "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest."
             }
         },
         {
@@ -76,8 +76,8 @@ public static class FeatData
             new string[]
             {
                 "Divine Domain",
-                @"Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Each domain is detailed at the end o f the class description, and each one provides examples o f gods associated with it. Your choice grants you domain  pells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.
-                Each domain has a list of spells — its domain spells — that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number o f spells you can prepare each day. If you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
+                "Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Each domain is detailed at the end o f the class description, and each one provides examples o f gods associated with it. Your choice grants you domain  pells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.\n" +
+                "Each domain has a list of spells — its domain spells — that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number o f spells you can prepare each day. If you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
             }
         },
         {
@@ -149,13 +149,10 @@ public static class FeatData
             new string[]
             {
                 "Favored Enemy",
-                @"You have significant experience studying, tracking, hunting, and even talking to a certain type of enemy. 
-                Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey,
-                fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid
-                (such as gnolls and orcs) as favored enemies.
-                You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.
-                When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.
-                You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
+                "You have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.\n" +
+                "Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.\n" +
+                "You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.\n" +
+                "When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all. You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
             }
         },
         {
@@ -171,19 +168,13 @@ public static class FeatData
             new string[]
             {
                 "Fighting Style",
-                @"You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again. 
-
-                Archery (Fighter And Ranger) - You gain a +2 bonus to attack rolls you make with ranged weapons.
-
-                Defense (All) - While you are wearing armor, you gain a +1 bonus to AC.
-
-                Dueling (All) - When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
-
-                Great Weapon Fighting (Fighter And Paladin) - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.
-
-                Protection (Fighter And Paladin) - When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
-
-                Two-Weapon Fighting (Fighter And Ranger) - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
+                "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n" + 
+                "Archery (Fighter And Ranger) - You gain a +2 bonus to attack rolls you make with ranged weapons.\n\n" +
+                "Defense (All) - While you are wearing armor, you gain a +1 bonus to AC.\n\n" + 
+                "Dueling (All) - When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n" + 
+                "Great Weapon Fighting (Fighter And Paladin) - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.\n\n" +
+                "Protection (Fighter And Paladin) - When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.\n\n" +
+                "Two-Weapon Fighting (Fighter And Ranger) - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
             }
         },
         {
@@ -223,11 +214,9 @@ public static class FeatData
             new string[]
             {
                 "Lay on Hands",
-                @"Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.
-                As an action, you can touch a creature and draw power from the pool to restore a number of hit points
-                to that creature, up to the maximum amount remaining in your pool.
-                Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.
-                This feature has no effect on undead and constructs."
+                "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.\n" +
+                "As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.\n" + 
+                "Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one. This feature has no effect on undead and constructs."
             }
         },
         {
@@ -243,12 +232,10 @@ public static class FeatData
             new string[]
             {
                 "Martial Arts",
-                @"Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple
-                melee weapons that don’t have the two-handed or heavy property. You gain the following benefits while you are unarmed or wielding only monk weapons and you aren’t wearing armor or wielding a shield:
-                You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.
-                You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.
-                When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.
-                Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon in chapter 5."
+                "Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don’t have the two-handed or heavy property. You gain the following benefits while you are unarmed or wielding only monk weapons and you aren’t wearing armor or wielding a shield:\n" +
+                "You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons. You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.\n" +
+                "When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.\n" + 
+                "Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon in chapter 5."
             }
         },
         {
@@ -264,15 +251,15 @@ public static class FeatData
             new string[]
             {
                 "Natural Explorer",
-                @"You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.
-                While traveling for an hour or more in your favored, you gain the following benefits:
-                Difficult terrain doesn’t slow your group’s travel.
-                Your group can’t become lost except by magical means.
-                Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
-                If you are traveling alone, you can move stealthily at a normal pace.
-                When you forage, you find twice as much food as you normally would.
-                While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
-                You choose additional favored terrain types at 6th and 10th level."
+                "You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.\n" +
+                "While traveling for an hour or more in your favored, you gain the following benefits:\n" + 
+                "Difficult terrain doesn’t slow your group’s travel.\n" +
+                "Your group can’t become lost except by magical means.\n" +
+                "Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.\n" +
+                "If you are traveling alone, you can move stealthily at a normal pace.\n" +
+                "When you forage, you find twice as much food as you normally would.\n" +
+                "While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.\n" +
+                "You choose additional favored terrain types at 6th and 10th level."
             }
         },
         {
@@ -296,8 +283,7 @@ public static class FeatData
             new string[]
             {
                 "Other Worldly Patron",
-                @"You have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed
-                at the end of the class description on page 108. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
+                "You have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description on page 108. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
             }
         },
         {
@@ -313,12 +299,12 @@ public static class FeatData
             new string[]
             {
                 "Rage",
-                @"In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren’t wearing heavy armor:
-                You have advantage on Strength checks and Strength saving throws.
-                When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
-                You have resistance to bludgeoning, piercing, and slashing damage.
-                If you are able to cast spells, you can’t cast them or concentrate on them while raging. Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.
-                Once you have raged the number o f times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again."
+                "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren’t wearing heavy armor:\n" +
+                "You have advantage on Strength checks and Strength saving throws.\n" +
+                "When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.\n" +
+                "You have resistance to bludgeoning, piercing, and slashing damage.\n" +
+                "If you are able to cast spells, you can’t cast them or concentrate on them while raging. Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.\n" +
+                "Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again."
             }
         },
         {
@@ -358,9 +344,9 @@ public static class FeatData
             new string[]
             {
                 "Sneak Attack",
-                @"You know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged w eapon.
-                You don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.
-                The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+                "You know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n" +
+                "You don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n" +
+                "The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
             }
         },
         {
@@ -368,8 +354,7 @@ public static class FeatData
             new string[]
             {
                 "Sorcerous Origin",
-                @"Choose a sorcerous origin, which describes the source of your innate magical power: Draconic Bloodline or Wild Magic, both detailed at the end of the
-                class description on page 101 of the player handbook . Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
+                "Choose a sorcerous origin, which describes the source of your innate magical power: Draconic Bloodline or Wild Magic, both detailed at the end of the class description on page 101 of the player handbook . Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
             }
         },
         {
@@ -425,8 +410,8 @@ public static class FeatData
             new string[]
             {
                 "Thieves' Cant",
-                @"During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.
-                In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
+                "During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.\n" +
+                "In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
             }
         },
         {
@@ -434,13 +419,10 @@ public static class FeatData
             new string[]
             {
                 "Tinker",
-                @"Using tinker's tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:
-
-                Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.
-
-                Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
-
-                Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song’s end or when it is closed."
+                "Using tinker's tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:\n\n" +
+                "Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.\n\n" +
+                "Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.\n\n" +
+                "Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song’s end or when it is closed."
             }
         },
         {
@@ -456,8 +438,8 @@ public static class FeatData
             new string[]
             {
                 "Unarmored Defense",
-                @"(Barbarian)While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
-                (Monk) While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
+                "(Barbarian)While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.\n" +
+                "(Monk) While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
             }
         }
     };
