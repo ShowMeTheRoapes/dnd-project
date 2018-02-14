@@ -48,6 +48,7 @@
     <Compile Include="Core\BusinessModels\AttributeModel.cs" />
     <Compile Include="Core\BusinessModels\AttributesListModel.cs" />
     <Compile Include="Core\BusinessModels\ClassModel.cs" />
+    <Compile Include="Core\BusinessModels\FeatModel.cs" />
     <Compile Include="Core\BusinessModels\RaceModel.cs" />
     <Compile Include="Core\BusinessModels\SkillModel.cs" />
     <Compile Include="Core\BusinessModels\SkillsListModel.cs" />
