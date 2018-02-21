@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-public static class ClassData //name, description, hitdie, primary attribute, saving throws, weapon proficiencies, starting feats
+public static class ClassData //Class Name : {Name, Description, Hit Die, Primary Attribute, Saving Throws, Proficiencies, Starting Feats}
 {
     public static readonly Dictionary<string, string[]> classes = new Dictionary<string, string[]>()
     {

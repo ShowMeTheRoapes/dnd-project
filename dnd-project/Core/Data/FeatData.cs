@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-public static class FeatData
+public static class FeatData //Feat Name: {Feat Name, Feat Description}
 {
     public static readonly Dictionary<string, string[]> feats = new Dictionary<string, string[]> 
     {

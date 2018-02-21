@@ -1,12 +1,25 @@
-﻿using System;
-//A quick template that can be used when creating new ...Data.cs objects
+﻿//A quick template that can be used when creating new ...Data.cs objects
+
+using System.Collections.Generic;
+
 public class DataTemplate
 {
-    public static readonly String[][] ENTER_NAME_HERE = new String[][]
+    public static readonly string[][] ENTER_NAME_HERE = new string[][]
     {
-        new String[]
+        new string[]
         {
 
+        }
+    };
+
+    public static readonly Dictionary<string, string[]> ENTER_NAME_HERE2 = new Dictionary<string, string[]>()
+    {
+        {
+            "Key",
+            new string[]
+            {
+                
+            }
         }
     };
 }

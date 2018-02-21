@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 public class SkillModel
 {
     public string Name { get; set; }

@@ -1,4 +1,5 @@
-﻿public class AttributeModel
+﻿
+public class AttributeModel
 {
     private const int MAX_MOD_LEVEL = 20;
     private const int MIN_MOD_LEVEL = 2;

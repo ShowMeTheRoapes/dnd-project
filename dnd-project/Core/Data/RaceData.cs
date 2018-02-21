@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability Scores(Bonus), Feats, Proficiencies
 {
@@ -7,7 +6,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
     {
         {
             "Hill Dwarf",
-            new String[]
+            new string[]
             {
                 "Hill Dwarf",
                 "50-350 years",
@@ -21,7 +20,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Mountain Dwarf",
-            new String[]
+            new string[]
             {
                 "Mountain Dwarf",
                 "50-350 years",
@@ -35,7 +34,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "High Elf",
-            new String[]
+            new string[]
             {
                 "High Elf",
                 "100-750 years",
@@ -49,7 +48,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Wood Elf",
-            new String[]
+            new string[]
             {
                 "Wood Elf",
                 "100-750 years",
@@ -63,7 +62,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Dark Elf",
-            new String[]
+            new string[]
             {
                 "Dark Elf (Drow)",
                 "100-750 years",
@@ -77,7 +76,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Lightfoot Halfling",
-            new String[]
+            new string[]
             {
                 "Lightfoot Halfling",
                 "20-150 years",
@@ -91,7 +90,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Stout Halfling",
-            new String[]
+            new string[]
             {
                 "Stout Halfling",
                 "20-150 years",
@@ -105,7 +104,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Human",
-            new String[]
+            new string[]
             {
                 "Human",
                 "18-100 years",
@@ -119,7 +118,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Dragonborn",
-            new String[]
+            new string[]
             {
                 "Dragonborn",
                 "15-80 years",
@@ -133,7 +132,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Forest Gnome",
-            new String[]
+            new string[]
             {
                 "Forest Gnome",
                 "40-500 years",
@@ -147,7 +146,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Rock Gnome",
-            new String[]
+            new string[]
             {
                 "Rock Gnome",
                 "40-500 years",
@@ -161,7 +160,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Half-Elf",
-            new String[]
+            new string[]
             {
                 "Half-Elf",
                 "18-180 years",
@@ -175,7 +174,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Half-Orc",
-            new String[]
+            new string[]
             {
                 "Half-Orc",
                 "14-75 years",
@@ -189,7 +188,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
         },
         {
             "Tiefling",
-            new String[]
+            new string[]
             {
                 "Tiefling",
                 "18-110 years",
