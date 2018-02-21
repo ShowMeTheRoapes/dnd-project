@@ -25,6 +25,7 @@ public class FeatModel
         output.AppendLine("Name: " + Name);
         output.AppendLine("Description: ");
         output.Append(Description + "\n");
+        output.AppendLine();
 
         return output.ToString();
     }

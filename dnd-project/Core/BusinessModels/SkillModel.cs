@@ -25,4 +25,9 @@ public class SkillModel
         Rank = rank;
         IsProficient = isProficient;
     }
+
+    public override string ToString()
+    {
+        return Name + ": " + Rank + "\n";
+    }
 }

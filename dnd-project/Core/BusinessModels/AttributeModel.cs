@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-public class AttributeModel
+﻿public class AttributeModel
 {
     private const int MAX_MOD_LEVEL = 20;
     private const int MIN_MOD_LEVEL = 2;
@@ -44,5 +41,10 @@ public class AttributeModel
             return (Value - 10) / 2;
         }
 
+    }
+
+    public override string ToString()
+    {
+        return Name + ": " + Value + " (" + Modifier + ")\n";
     }
 }

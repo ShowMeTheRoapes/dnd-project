@@ -18,6 +18,12 @@ namespace dnd_project
             //Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
 
+            Character character = new Character();
+            character.Name = "Byrd";
+            character.setCharacterClass("Ranger");
+            character.setCharacterRace("Wood Elf");
+
+            Console.Write(character);
             
         }
     }

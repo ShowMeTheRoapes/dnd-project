@@ -34,7 +34,7 @@ public class ClassModel
 
     public override string ToString()
     {
-        StringBuilder classString = new StringBuilder("----------CLASS---------- \n");
+        StringBuilder classString = new StringBuilder("\n----------CLASS----------\n");
 
         classString.Append(Name + "\n");
         classString.Append(Description + "\n");
@@ -50,18 +50,6 @@ public class ClassModel
         foreach (string save in SavingThrows)
         {
             classString.Append("\t" + save + "\n");
-        }
-
-        classString.Append("Weapon Proficiencies: \n");
-        foreach (string prof in Proficiencies)
-        {
-            classString.Append("\t" + prof + "\n");
-        }
-
-        classString.Append("Feats: \n");
-        foreach (string feat in Feats)
-        {
-            classString.Append("\t" + feat + "\n");
         }
 
         return classString.ToString();

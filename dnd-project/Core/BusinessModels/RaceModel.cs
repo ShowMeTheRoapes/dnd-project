@@ -34,7 +34,7 @@ public class RaceModel
     public override string ToString()
     {
         StringBuilder raceString = new StringBuilder();
-        raceString.Append("\nRACE\n");
+        raceString.Append("\n------RACE------\n");
         
         raceString.Append(Name + "\n");
         raceString.Append("Typically aged between " + Age + " old\n");
@@ -46,18 +46,6 @@ public class RaceModel
         foreach (string mod in AbilityMods)
         {
             raceString.Append("\t" + mod + "\n");
-        }
-
-        raceString.Append("Feats:\n");
-        foreach  (string feat in Feats)
-        {
-            raceString.Append("\t" + feat + "\n");
-        }
-
-        raceString.Append("Proficiencies:\n");
-        foreach  (string prof in Proficiencies)
-        {
-            raceString.Append("\t" + prof + "\n");
         }
 
         return raceString.ToString();

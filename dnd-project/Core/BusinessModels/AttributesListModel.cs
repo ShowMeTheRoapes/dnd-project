@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Text;
 
 public class AttributesListModel
 {
@@ -15,5 +15,18 @@ public class AttributesListModel
         {
             Attributes.Add(new AttributeModel(attr[0], attr[1], DEF_VALUE));
         }
+    }
+
+    public override string ToString()
+    {
+        StringBuilder output = new StringBuilder();
+
+        output.Append("\n-----ATTRIBUTES-----\n");
+        foreach (AttributeModel attr in Attributes)
+        {
+            output.Append(attr.ToString());
+        }
+
+        return output.ToString();
     }
 }
