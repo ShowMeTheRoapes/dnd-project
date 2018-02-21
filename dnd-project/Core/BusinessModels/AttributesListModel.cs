@@ -3,10 +3,13 @@ using System.Text;
 
 public class AttributesListModel
 {
+    #region Instance Variables and Properties
     private const int DEF_VALUE = 10;
 
     public List<AttributeModel> Attributes { get; set; }
+    #endregion
 
+    #region Constructor(s)
     public AttributesListModel()
     {
         Attributes = new List<AttributeModel>();
@@ -16,7 +19,9 @@ public class AttributesListModel
             Attributes.Add(new AttributeModel(attr[0], attr[1], DEF_VALUE));
         }
     }
+    #endregion
 
+    #region Class Methods
     public override string ToString()
     {
         StringBuilder output = new StringBuilder();
@@ -29,4 +34,5 @@ public class AttributesListModel
 
         return output.ToString();
     }
+    #endregion
 }

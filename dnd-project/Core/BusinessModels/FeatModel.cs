@@ -2,16 +2,21 @@
 
 public class FeatModel
 {
+    #region Instance Variables and Properties
     const int DESCRIPTION_ELEMENT = 1;
     public string Name { get; set; }
     public string Description { get; set; }
+    #endregion
 
+    #region Constructor(s)
     public FeatModel(string name)
     {
         Name = name;
         Description = getFeatDescription(name);
     }
+    #endregion
 
+    #region Class Methods
     private string getFeatDescription(string name)
     {
         return FeatData.feats[name][DESCRIPTION_ELEMENT];
@@ -27,4 +32,5 @@ public class FeatModel
 
         return output.ToString();
     }
+    #endregion
 }

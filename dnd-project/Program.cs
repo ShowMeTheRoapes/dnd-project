@@ -22,9 +22,16 @@ namespace dnd_project
             character.Name = "Byrd";
             character.setCharacterClass("Ranger");
             character.setCharacterRace("Wood Elf");
-
+            Console.WriteLine("\n*********FIRST WRITE********\n\n");
             Console.Write(character);
-            
+
+            character.setCharacterClass("Monk");
+            Console.WriteLine("\n*********SECOND WRITE********\n\n");
+            Console.Write(character);
+
+            character.setCharacterRace("Dragonborn");
+            Console.WriteLine("\n*********THIRD WRITE********\n\n");
+            Console.Write(character);
         }
     }
 }

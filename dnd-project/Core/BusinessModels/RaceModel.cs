@@ -2,6 +2,7 @@
 
 public class RaceModel
 {
+    #region Instance Variables and Properties
     public string Name { get; set; }
     public string Age { get; set; }
     public string Size { get; set; }
@@ -10,7 +11,9 @@ public class RaceModel
     public string[] AbilityMods { get; set; }
     public string[] Feats { get; set; }
     public string[] Proficiencies { get; set; }
+    #endregion
 
+    #region Constructor(s)
     public RaceModel(string raceName)
     {
         string[] raceInfo = getRaceInformation(raceName);
@@ -24,7 +27,14 @@ public class RaceModel
         Feats = raceInfo[6].Split(';');
         Proficiencies = raceInfo[7].Split(';');
     }
+    #endregion
 
+    #region Class Methods
+    /// <summary>
+    /// Pulls the corresponding information from RaceData that is tied to the race name given.
+    /// </summary>
+    /// <param name="raceName">The name of the race to pull info for</param>
+    /// <returns></returns>
     private string[] getRaceInformation(string raceName)
     {
         return RaceData.races[raceName];
@@ -49,4 +59,5 @@ public class RaceModel
 
         return raceString.ToString();
     }
+    #endregion
 }

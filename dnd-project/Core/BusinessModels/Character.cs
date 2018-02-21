@@ -3,7 +3,7 @@ using System.Text;
 
 class Character
 {
-    #region Variable Declarations
+    #region Instance Variables and Properties
     private ClassModel characterClass;
     private RaceModel characterRace;
     private AttributesListModel attributesList;
@@ -34,7 +34,7 @@ class Character
     public int CurrentHitPoints { get; set; }
     #endregion
 
-    #region Constructor
+    #region Constructor(s)
     public Character()
     {
         attributesList = new AttributesListModel();
@@ -66,7 +66,7 @@ class Character
     }
     #endregion
 
-    #region Methods
+    #region Class Methods
     /// <summary>
     /// Method to set the character's class info based on a provided name.
     /// </summary>

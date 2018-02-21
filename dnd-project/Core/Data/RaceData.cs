@@ -15,7 +15,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "25 feet",
                 "Constitution 2;Wisdom 1",
                 "Darkvision;Dwarven Resilience;Stonecunning;Dwarven Toughness",
-                "Common Language;Dwarvish Language;Battleaxe;Handaxe;Throwing Hammer;Warhammer;Smith's Tools~Brewer's Supplies~Mason's Tools"
+                "Common Language;Dwarvish Language;Battleaxes;Handaxes;Throwing Hammers;Warhammers;Smith's Tools~Brewer's Supplies~Mason's Tools"
             }
         },
         {
@@ -29,7 +29,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "25 feet",
                 "Constitution 2;Strength 2",
                 "Darkvision;Dwarven Resilience;Stonecunning",
-                "Common Language;Dwarvish Language;Battleaxe;Handaxe;Throwing Hammer;Warhammer;Light Armor;Medium Armor;Smith's Tools~Brewer's Supplies~Mason's Tools"
+                "Common Language;Dwarvish Language;Battleaxes;Handaxes;Throwing Hammers;Warhammers;Light Armor;Medium Armor;Smith's Tools~Brewer's Supplies~Mason's Tools"
             }
         },
         {
@@ -43,7 +43,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "30 feet",
                 "Dexterity 2;Intelligence 1",
                 "Darkvision;Fey Ancestry;Trance;Cantrip;Extra Language",
-                "Common Language;Elvish Language;Longsword;Shortsword;Shortbow;Longbow;Perception"
+                "Common Language;Elvish Language;Longswords;Shortswords;Shortbows;Longbows;Perception"
             }
         },
         {
@@ -57,7 +57,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "35 feet",
                 "Dexterity 2;Wisdom 1",
                 "Darkvision;Fey Ancestry;Trance;Mask of the Wild",
-                "Common Language;Elvish Language;Longsword;Shortsword;Shortbow;Longbow;Perception"
+                "Common Language;Elvish Language;Longswords;Shortswords;Shortbows;Longbows;Perception"
             }
         },
         {
@@ -71,7 +71,7 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "30 feet",
                 "Dexterity 2;Charisma 1",
                 "Superior Darkvision;Fey Ancestry;Trance;Sunlight Sensitivity;Drow Magic",
-                "Common Language;Elvish Language;Rapier;Shortsword;Hand Crossbow;Perception",
+                "Common Language;Elvish Language;Rapiers;Shortswords;Hand Crossbows;Perception",
             }
         },
         {

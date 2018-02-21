@@ -1,13 +1,15 @@
-﻿
-public class SkillModel
+﻿public class SkillModel
 {
+    #region Instance Variables and Properties
     public string Name { get; set; }
     public string Description { get; set; }
     public string Attribute { get; set; }
     public int Rank { get; set; }
     public bool IsProficient { get; set; }
+    #endregion
 
-	public SkillModel()
+    #region Constructor(s)
+    public SkillModel()
 	{
         Name = "";
         Description = "";
@@ -24,9 +26,12 @@ public class SkillModel
         Rank = rank;
         IsProficient = isProficient;
     }
+    #endregion
 
+    #region Class Methods
     public override string ToString()
     {
         return Name + ": " + Rank + "\n";
     }
+    #endregion
 }

@@ -2,6 +2,7 @@
 
 public class ClassModel
 {
+    #region Instance Variables and Properties
     private const int DEF_LEVEL = 1;
 
     public string Name { get; set; }
@@ -11,7 +12,9 @@ public class ClassModel
     public string[] SavingThrows { get; set; }
     public string[] Proficiencies { get; set; }
     public string[] Feats { get; set; }
+    #endregion
 
+    #region Constructor(s)
     public ClassModel(string className)
     {
         string[] classInfo = getClassInformation(className);
@@ -25,7 +28,14 @@ public class ClassModel
         Feats = classInfo[6].Split(';');
 
     }
+    #endregion
 
+    #region Class Methods
+    /// <summary>
+    /// Pulls the corresponding information from ClassData that is tied to the class name given.
+    /// </summary>
+    /// <param name="className">The name of the class to pull info for</param>
+    /// <returns></returns>
     private string[] getClassInformation(string className)
     {
        return ClassData.classes[className];
@@ -53,5 +63,6 @@ public class ClassModel
 
         return classString.ToString();
     }
+    #endregion
 }
 
