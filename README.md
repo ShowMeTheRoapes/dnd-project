@@ -5,7 +5,7 @@ This application is currently being built to be an executable desktop applicatio
 Goals For This Project
 ----------------------
 
-One of the most confusing processes of *Dungeons and Dragons*, for veteran players and newcomers alike, is the chracter creation process. There are so many different aspects of a character to consider, and when it is all presented at once it can be quite overwhelming.
+One of the most confusing processes of *Dungeons and Dragons*, for veteran players and newcomers alike, is the character creation process. There are so many different aspects of a character to consider, and when it is all presented at once it can be quite overwhelming.
 
 With this application, we are hoping to subvert some of this complexity by giving the user a step-by-step, easy to follow method of creating a character for the first time.
 
