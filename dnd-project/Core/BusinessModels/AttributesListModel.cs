@@ -5,18 +5,20 @@ public class AttributesListModel
 {
     #region Instance Variables and Properties
     private const int DEF_VALUE = 10;
+    private const int NAME_POS = 0;
+    private const int DESC_POS = 1;
 
-    public List<AttributeModel> Attributes { get; set; }
+    public Dictionary<string, AttributeModel> Attributes { get; set; }
     #endregion
 
     #region Constructor(s)
     public AttributesListModel()
     {
-        Attributes = new List<AttributeModel>();
+        Attributes = new Dictionary<string, AttributeModel>();
 
         foreach (string[] attr in AttributesData.attributes)
         {
-            Attributes.Add(new AttributeModel(attr[0], attr[1], DEF_VALUE));
+            Attributes[attr[NAME_POS]] = new AttributeModel(attr[NAME_POS], attr[DESC_POS], DEF_VALUE);
         }
     }
     #endregion
@@ -27,9 +29,9 @@ public class AttributesListModel
         StringBuilder output = new StringBuilder();
 
         output.Append("\n-----ATTRIBUTES-----\n");
-        foreach (AttributeModel attr in Attributes)
+        foreach (string attr_name in Attributes.Keys)
         {
-            output.Append(attr.ToString());
+            output.Append(Attributes[attr_name].ToString());
         }
 
         return output.ToString();

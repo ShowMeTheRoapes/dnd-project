@@ -101,13 +101,14 @@ class Character
         featsList.Clear();
         proficienciesList.Clear();
 
+        //Pull the proficiency information
         foreach (string featName in characterClass.Feats)
             featsList.Add(new FeatModel(featName));
 
         foreach (string prof in characterClass.Proficiencies)
             proficienciesList.Add(prof);
         
-
+        //Pull the feat information
         foreach (string featName in characterRace.Feats)
             featsList.Add(new FeatModel(featName));
 
