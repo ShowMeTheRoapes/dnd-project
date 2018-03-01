@@ -16,7 +16,7 @@ public class RaceModel
     #region Constructor(s)
     public RaceModel(string raceName)
     {
-        string[] raceInfo = getRaceInformation(raceName);
+        string[] raceInfo = GetRaceInformation(raceName);
 
         Name = raceInfo[0];
         Age = raceInfo[1];
@@ -35,7 +35,7 @@ public class RaceModel
     /// </summary>
     /// <param name="raceName">The name of the race to pull info for</param>
     /// <returns></returns>
-    private string[] getRaceInformation(string raceName)
+    private string[] GetRaceInformation(string raceName)
     {
         return RaceData.races[raceName];
     }

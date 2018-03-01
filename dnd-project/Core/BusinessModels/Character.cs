@@ -71,32 +71,32 @@ class Character
     /// Method to set the character's class info based on a provided name.
     /// </summary>
     /// <param name="className">The name of the class</param>
-    public void setCharacterClass(string className)
+    public void SetCharacterClass(string className)
     {
         characterClass = new ClassModel(className);
 
         //Only aggregate feats when both class and race are initialized
         if (characterRace != null)
-            aggregateData();
+            AggregateData();
     }
 
     /// <summary>
     /// Method to get the character's race info based on a provided name.
     /// </summary>
     /// <param name="raceName">The name of the race</param>
-    public void setCharacterRace(string raceName)
+    public void SetCharacterRace(string raceName)
     {
         characterRace = new RaceModel(raceName);
 
         //Only aggregate feats when both class and race are initialized
         if (characterClass != null)
-            aggregateData();
+            AggregateData();
     }
 
     /// <summary>
     /// Method to pull the feat information from the character's class and race information.
     /// </summary>
-    private void aggregateData()
+    private void AggregateData()
     {
         featsList.Clear();
         proficienciesList.Clear();

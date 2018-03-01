@@ -17,7 +17,7 @@ public class ClassModel
     #region Constructor(s)
     public ClassModel(string className)
     {
-        string[] classInfo = getClassInformation(className);
+        string[] classInfo = GetClassInformation(className);
 
         Name = classInfo[0];
         Description = classInfo[1];
@@ -36,7 +36,7 @@ public class ClassModel
     /// </summary>
     /// <param name="className">The name of the class to pull info for</param>
     /// <returns></returns>
-    private string[] getClassInformation(string className)
+    private string[] GetClassInformation(string className)
     {
        return ClassData.classes[className];
     }

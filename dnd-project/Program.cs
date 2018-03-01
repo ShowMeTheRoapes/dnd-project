@@ -20,16 +20,16 @@ namespace dnd_project
 
             Character character = new Character();
             character.Name = "Byrd";
-            character.setCharacterClass("Ranger");
-            character.setCharacterRace("Wood Elf");
+            character.SetCharacterClass("Ranger");
+            character.SetCharacterRace("Wood Elf");
             Console.WriteLine("\n*********FIRST WRITE********\n\n");
             Console.Write(character);
 
-            character.setCharacterClass("Monk");
+            character.SetCharacterClass("Monk");
             Console.WriteLine("\n*********SECOND WRITE********\n\n");
             Console.Write(character);
 
-            character.setCharacterRace("Dragonborn");
+            character.SetCharacterRace("Dragonborn");
             Console.WriteLine("\n*********THIRD WRITE********\n\n");
             Console.Write(character);
         }

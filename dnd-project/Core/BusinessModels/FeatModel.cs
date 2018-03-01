@@ -12,12 +12,12 @@ public class FeatModel
     public FeatModel(string name)
     {
         Name = name;
-        Description = getFeatDescription(name);
+        Description = GetFeatDescription(name);
     }
     #endregion
 
     #region Class Methods
-    private string getFeatDescription(string name)
+    private string GetFeatDescription(string name)
     {
         return FeatData.feats[name][DESCRIPTION_ELEMENT];
     }

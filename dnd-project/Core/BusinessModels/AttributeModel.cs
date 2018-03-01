@@ -10,7 +10,7 @@ public class AttributeModel
 
     public string Name { get; set; }
     public string Description { get; set; }
-    public int Value{ get { return value; } set { this.value = value; Modifier = calculateModifier(); } }
+    public int Value{ get { return value; } set { this.value = value; Modifier = CalculateModifier(); } }
     public int Modifier { get; set; }
     #endregion
 
@@ -36,7 +36,7 @@ public class AttributeModel
     /// Calculates the modifier based on the current value of the attribute.
     /// </summary>
     /// <returns></returns>
-    private int calculateModifier()
+    private int CalculateModifier()
     {
        if (Value > MAX_MOD_LEVEL)
             return MAX_MOD;
