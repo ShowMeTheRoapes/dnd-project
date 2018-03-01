@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-public static class ClassData //Class Name : {Name, Description, Hit Die, Primary Attribute, Saving Throws, Proficiencies, Starting Feats}
+public static class ClassData //Class Name : {Name, Description, Hit Die, Primary Attribute, Saving Throws, Proficiencies, Starting Feats, Skill Choices}
 {
     public static readonly Dictionary<string, string[]> classes = new Dictionary<string, string[]>()
     {
@@ -14,7 +14,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Strength",
                 "Strength;Constitution",
                 "Light Armor;Medium Armor;Shields;Simple Weapons;Martial Weapons",
-                "Rage;Unarmored Defense"
+                "Rage;Unarmored Defense",
+                "2;Animal Handling;Athletics;Intimidation;Nature;Perception;Survival"
             }
         },
         {
@@ -27,7 +28,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Charisma",
                 "Dexterity;Charisma",
                 "Light Armor;Simple Weapons;Hand Crossbows;Longswords;Rapiers;Shortswords",
-                "Spellcasting;Bardic Inspiration"
+                "Spellcasting;Bardic Inspiration",
+                "3;Acrobatics;Animal Handling;Arcana;Athletics;Deception;History;Insight;Intimidation;Investigation;Medicine;Nature;Perception;Performance;Persuasion;Religion;Sleight of Hand;Stealth;Survival"
             }
         },
         {
@@ -40,7 +42,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Wisdom",
                 "Wisdom;Charisma",
                 "Light Armor;Medium Armor;Shields;Simple Weapons",
-                "Spellcasting;Divine Domain"
+                "Spellcasting;Divine Domain",
+                "2;History;Insight;Medicine;Persuasion;Religion"
             }
         },
         {
@@ -53,7 +56,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Wisdom",
                 "Intelligence;Wisdom",
                 "Light Armor;Medium Armor;Shields;Clubs;Daggers;Darts;Javelins;Maces;Quarterstaffs;Scimitars;Sickles;Slings;Spears",
-                "Druidic;Spellcasting"
+                "Druidic;Spellcasting",
+                "2;Arcana;Animal Handling;Insight;Medicine;Nature;Perception;Religion;Survival"
             }
         },
         {
@@ -66,7 +70,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Strength/Dexterity",
                 "Strength;Constitution",
                 "All Armor;Shields;Simple Weapons;Martial Weapons",
-                "Fighting Style; Second Wind"
+                "Fighting Style; Second Wind",
+                "2;Acrobatics;Animal Handling;Athletics;History;Insight;Intimidation;Perception;Survival"
             }
         },
         {
@@ -79,7 +84,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Dexterity/Wisdom",
                 "Strength;Constitution",
                 "Simple Weapons;Shortswords",
-                "Unarmored Defense;Martial Arts"
+                "Unarmored Defense;Martial Arts",
+                "2;Acrobatics;Athletics;History;Insight;Religion;Stealth"
             }
         },
         {
@@ -92,7 +98,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Strength/Charisma",
                 "Wisdom;Chraisma",
                 "All Armor;Shields;Simple Weapons;Martial Weapons",
-                "Divine Sense;Lay on Hands"
+                "Divine Sense;Lay on Hands",
+                "2;Athletics;Insight;Intimidation;Medicine;Persuasion;Religion"
             }
         },
         {
@@ -105,7 +112,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Dexterity/Wisdom",
                 "Strength;Dexterity",
                 "Light Armor;Medium Armor;Shields;Simple Weapons;Martial Weapons",
-                "Favored Enemy;Natural Explorer"
+                "Favored Enemy;Natural Explorer",
+                "3;Animal Handling;Athletics;Insight;Investigation;Nature;Perception;Stealth;Survival"
             }
         },
         {
@@ -118,7 +126,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Dexterity",
                 "Dexterity;Intelligence",
                 "Light Armor;Simple Weapons;Hand Crossbows;Longswords;Rapiers;Shortswords",
-                "Expertise;Sneak Attack;Thieves' Cant"
+                "Expertise;Sneak Attack;Thieves' Cant",
+                "4;Acrobatics;Athletics;Deception;Insight;Intimidation;Investigation;Perception;Performance;Persuasion;Slight of Hand;Stealth"
             }
         },
         {
@@ -131,7 +140,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Charisma",
                 "Constitution;Charisma",
                 "Daggers;Darts;Slings;Quarterstaffs;Light Crossbow",
-                "Spellcasting;Sorcerous Origin"
+                "Spellcasting;Sorcerous Origin",
+                "2;Arcana;Deception;Insight;Intimidation;Persuasion;Religion"
             }
         },
         {
@@ -144,7 +154,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Charisma",
                 "Wisdom;Charisma",
                 "Light Armor;Simple Weapons",
-                "Otherworldly Patron;Pact Magic"
+                "Otherworldly Patron;Pact Magic",
+                "2;Arcana;Deception;History;Intimidation;Investigation;Nature;Religion"
             }
         },
         {
@@ -157,7 +168,8 @@ public static class ClassData //Class Name : {Name, Description, Hit Die, Primar
                 "Intelligence",
                 "Intelligence;Wisdom",
                 "Daggers;Darts;Slings;Quarterstaffs;Light Crossbows",
-                "Spellcasting;Arcane Recovery"
+                "Spellcasting;Arcane Recovery",
+                "2;Arcana;History;Insight;Investigation;Medicine;Religion"
             }
         }
     };

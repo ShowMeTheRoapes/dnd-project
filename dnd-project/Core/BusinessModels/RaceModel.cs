@@ -8,7 +8,7 @@ public class RaceModel
     public string Size { get; set; }
     public string Alignment { get; set; }
     public string Speed { get; set; }
-    public string[] AbilityMods { get; set; }
+    public string[] AttributeMods { get; set; }
     public string[] Feats { get; set; }
     public string[] Proficiencies { get; set; }
     #endregion
@@ -23,7 +23,7 @@ public class RaceModel
         Size = raceInfo[2];
         Alignment = raceInfo[3];
         Speed = raceInfo[4];
-        AbilityMods = raceInfo[5].Split(';');
+        AttributeMods = raceInfo[5].Split(';');
         Feats = raceInfo[6].Split(';');
         Proficiencies = raceInfo[7].Split(';');
     }
@@ -52,7 +52,7 @@ public class RaceModel
         raceString.Append("Speed: " + Speed + "\n");
 
         raceString.Append("Ability Modifiers:\n");
-        foreach (string mod in AbilityMods)
+        foreach (string mod in AttributeMods)
         {
             raceString.Append("\t" + mod + "\n");
         }

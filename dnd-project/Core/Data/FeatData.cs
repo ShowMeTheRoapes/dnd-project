@@ -209,6 +209,14 @@ public static class FeatData //Feat Name: {Feat Name, Feat Description}
             }
         },
         {
+            "Keen Senses",
+            new string[]
+            {
+                "Keen Senses",
+                "You gain proficiency in the Perception skill."
+            }
+        },
+        {
             "Lay on Hands",
             new string[]
             {
@@ -243,6 +251,14 @@ public static class FeatData //Feat Name: {Feat Name, Feat Description}
             {
                 "Mask of the Wild",
                 "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+            }
+        },
+        {
+            "Menacing",
+            new string[]
+            {
+                "Menacing",
+                "You gain proficiency in the Intimidation skill."
             }
         },
         {

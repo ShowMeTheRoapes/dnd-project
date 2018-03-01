@@ -42,8 +42,8 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "Chaotic Good",
                 "30 feet",
                 "Dexterity 2;Intelligence 1",
-                "Darkvision;Fey Ancestry;Trance;Cantrip;Extra Language",
-                "Common Language;Elvish Language;Longswords;Shortswords;Shortbows;Longbows;Perception"
+                "Darkvision;Fey Ancestry;Trance;Cantrip;Extra Language;Keen Senses",
+                "Common Language;Elvish Language;Longswords;Shortswords;Shortbows;Longbows"
             }
         },
         {
@@ -56,8 +56,8 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "Chaotic Good",
                 "35 feet",
                 "Dexterity 2;Wisdom 1",
-                "Darkvision;Fey Ancestry;Trance;Mask of the Wild",
-                "Common Language;Elvish Language;Longswords;Shortswords;Shortbows;Longbows;Perception"
+                "Darkvision;Fey Ancestry;Trance;Mask of the Wild;Keen Senses",
+                "Common Language;Elvish Language;Longswords;Shortswords;Shortbows;Longbows"
             }
         },
         {
@@ -70,8 +70,8 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "Chaotic Evil",
                 "30 feet",
                 "Dexterity 2;Charisma 1",
-                "Superior Darkvision;Fey Ancestry;Trance;Sunlight Sensitivity;Drow Magic",
-                "Common Language;Elvish Language;Rapiers;Shortswords;Hand Crossbows;Perception",
+                "Superior Darkvision;Fey Ancestry;Trance;Sunlight Sensitivity;Drow Magic;Keen Senses",
+                "Common Language;Elvish Language;Rapiers;Shortswords;Hand Crossbows",
             }
         },
         {
@@ -182,8 +182,8 @@ public static class RaceData //Name, Age Range, Size, Alignment, Speed, Ability 
                 "Chaotic Neutral",
                 "30 feet",
                 "Strength 2;Constitution 1",
-                "Darkvision;Relentless Endurance;Savage Attacks",
-                "Common Language;Orc Language;Intimidation"
+                "Darkvision;Relentless Endurance;Savage Attacks;Menacing",
+                "Common Language;Orc Language"
             }
         },
         {

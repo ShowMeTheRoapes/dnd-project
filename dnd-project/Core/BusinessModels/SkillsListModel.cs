@@ -26,6 +26,57 @@ public class SkillsListModel
     #endregion
 
     #region Class Methods
+    /// <summary>
+    /// Clears all of the skill proficiency from when a class is changed
+    /// </summary>
+    public void Clear()
+    {
+        foreach (string item in Skills.Keys)
+        {
+            Skills[item].IsProficient = DEF_PROFICIENCY;
+        }
+    }
+
+    /// <summary>
+    /// Adds proficiency to a chosen skill
+    /// </summary>
+    /// <param name="skill">Name of a skill to be changed</param>
+    public void SetProficiency(string skill)
+    {
+        Skills[skill].IsProficient = true;
+    }
+
+    /// <summary>
+    /// Calculates all skill modifiers based on attribute modifier and proficiency bonus
+    /// </summary>
+    /// <param name="mods">a dictionary of Attribute:Modifier pairs</param>
+    /// <param name="proficiencyBonus">the proficiency bonus</param>
+    public void CalculateSkillMods(Dictionary<string, int> mods, int proficiencyBonus)
+    {
+        foreach (string name in Skills.Keys)
+        {
+            if(Skills[name].IsProficient)
+            {
+                Skills[name].Modifier += proficiencyBonus;
+            }
+            foreach (string attr in mods.Keys)
+            {
+                if(Skills[name].Attribute == attr)
+                {
+                    Skills[name].Modifier += mods[attr];
+                }
+            }
+        }
+    }
+
+    public void ClearSkillMods()
+    {
+        foreach (string name in Skills.Keys) 
+        {
+            Skills[name].Modifier = 0;
+        }
+    }
+
     public override string ToString()
     {
         StringBuilder output = new StringBuilder();

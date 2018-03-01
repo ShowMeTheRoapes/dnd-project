@@ -12,6 +12,7 @@ public class ClassModel
     public string[] SavingThrows { get; set; }
     public string[] Proficiencies { get; set; }
     public string[] Feats { get; set; }
+    public string[] SkillChoices { get; set; }
     #endregion
 
     #region Constructor(s)
@@ -26,6 +27,7 @@ public class ClassModel
         SavingThrows = classInfo[4].Split(';');
         Proficiencies = classInfo[5].Split(';');
         Feats = classInfo[6].Split(';');
+        SkillChoices = classInfo[7].Split(';');
 
     }
     #endregion

@@ -4,7 +4,7 @@
     public string Name { get; set; }
     public string Description { get; set; }
     public string Attribute { get; set; }
-    public int Rank { get; set; }
+    public int Modifier { get; set; }
     public bool IsProficient { get; set; }
     #endregion
 
@@ -14,7 +14,7 @@
         Name = "";
         Description = "";
         Attribute = "";
-        Rank = 0;
+        Modifier = 0;
         IsProficient = false;
 	}
 
@@ -23,7 +23,7 @@
         Name = name;
         Description = description;
         Attribute = attribute;
-        Rank = rank;
+        Modifier = rank;
         IsProficient = isProficient;
     }
     #endregion
@@ -31,7 +31,7 @@
     #region Class Methods
     public override string ToString()
     {
-        return Name + ": " + Rank + "\n";
+        return Name + ": " + Modifier + "\n";
     }
     #endregion
 }

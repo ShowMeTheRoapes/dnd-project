@@ -23,6 +23,8 @@ class Character
     public string Eyes { get; set; }
     public string Skin { get; set; }
     public string Hair { get; set; }
+    public string Size { get; set; }
+    public string HitDie { get; set; }
     public int Level { get; set; }
     public int Age { get; set; }
     public int ExperiencePoints { get; set; }
@@ -54,6 +56,8 @@ class Character
         Eyes = "";
         Skin = "";
         Hair = "";
+        Size = "";
+        HitDie = "";
         Level = 0;
         Age = 0;
         ExperiencePoints = 0;
@@ -86,7 +90,21 @@ class Character
     /// <param name="raceName">The name of the race</param>
     public void SetCharacterRace(string raceName)
     {
+        if(characterRace != null)
+        {
+            foreach (string attribute in characterRace.AttributeMods)
+            {
+                attributesList.Clear(attribute);
+            }
+        }
+
         characterRace = new RaceModel(raceName);
+
+        //Updating Ability List Values from RaceModel
+        foreach (string ability in characterRace.AttributeMods)
+        {
+            attributesList.AddValue(ability);
+        }
 
         //Only aggregate feats when both class and race are initialized
         if (characterClass != null)
@@ -100,6 +118,7 @@ class Character
     {
         featsList.Clear();
         proficienciesList.Clear();
+        skillsList.ClearSkillMods();
 
         //Pull the proficiency information
         foreach (string featName in characterClass.Feats)
@@ -114,6 +133,15 @@ class Character
 
         foreach (string prof in characterRace.Proficiencies)
             proficienciesList.Add(prof);
+
+        //Pull Speed, HitDie and Size from Race/Character Models
+        HitDie = characterClass.HitDie;
+        Speed = characterRace.Speed;
+        Size = characterRace.Size;
+
+        //Calculates Skill Modifiers
+        skillsList.CalculateSkillMods(attributesList.GetAttributeMods(), ProficiencyBonus);
+
     }
 
     public override string ToString()
