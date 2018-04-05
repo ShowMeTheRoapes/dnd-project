@@ -79,12 +79,14 @@ namespace dnd_project
 
         private void newCharacter_Click(object sender, EventArgs e)
         {
-
+            new NewCharacter().Show();
+            Close();
         }
 
         private void loadCharacter_Click(object sender, EventArgs e)
         {
-
+            new LoadCharacter().Show();
+            Close();
         }
 
         private void exit_Click(object sender, EventArgs e)

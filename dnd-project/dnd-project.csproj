@@ -59,16 +59,34 @@
     <Compile Include="Core\Data\FeatData.cs" />
     <Compile Include="Core\Data\RaceData.cs" />
     <Compile Include="Core\Data\SkillsData.cs" />
+    <Compile Include="LoadCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadCharacter.Designer.cs">
+      <DependentUpon>LoadCharacter.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCharacter.Designer.cs">
+      <DependentUpon>NewCharacter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LoadCharacter.resx">
+      <DependentUpon>LoadCharacter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCharacter.resx">
+      <DependentUpon>NewCharacter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
