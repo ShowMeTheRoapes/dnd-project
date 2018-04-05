@@ -19,7 +19,7 @@ namespace dnd_project
             //Application.Run(new Form1());
 
             Character character = new Character();
-            character.Name = "Byrd";
+            character.Name = "Bird";
             character.SetCharacterClass("Ranger");
             character.SetCharacterRace("Wood Elf");
             Console.WriteLine("\n*********FIRST WRITE********\n\n");
