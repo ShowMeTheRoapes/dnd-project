@@ -14,24 +14,26 @@ namespace dnd_project
         [STAThread]
         static void Main()
         {
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            new MainMenu().Show();
+            Application.Run();
+            
 
-            Character character = new Character();
-            character.Name = "Bird";
-            character.SetCharacterClass("Ranger");
-            character.SetCharacterRace("Wood Elf");
-            Console.WriteLine("\n*********FIRST WRITE********\n\n");
-            Console.Write(character);
+            //Character character = new Character();
+            //character.Name = "Byrd";
+            //character.SetCharacterClass("Ranger");
+            //character.SetCharacterRace("Wood Elf");
+            //Console.WriteLine("\n*********FIRST WRITE********\n\n");
+            //Console.Write(character);
 
-            character.SetCharacterClass("Monk");
-            Console.WriteLine("\n*********SECOND WRITE********\n\n");
-            Console.Write(character);
+            //character.SetCharacterClass("Monk");
+            //Console.WriteLine("\n*********SECOND WRITE********\n\n");
+            //Console.Write(character);
 
-            character.SetCharacterRace("Dragonborn");
-            Console.WriteLine("\n*********THIRD WRITE********\n\n");
-            Console.Write(character);
+            //character.SetCharacterRace("Dragonborn");
+            //Console.WriteLine("\n*********THIRD WRITE********\n\n");
+            //Console.Write(character);
         }
     }
 }
