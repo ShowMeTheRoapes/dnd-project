@@ -3,11 +3,11 @@ using System.Text;
 
 namespace dnd_project.Core.Data
 {
-    class TestClassData
+    class JsonClassData
     {
-        public Dictionary<string, TestClassInfo> Classes { get; set; }
+        public Dictionary<string, JsonClassInfo> Classes { get; set; }
 
-        public class TestClassInfo
+        public class JsonClassInfo
         {
             public string Description { get; set; }
             public string HitDie { get; set; }

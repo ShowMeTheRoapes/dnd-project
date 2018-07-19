@@ -21,14 +21,15 @@ namespace dnd_project
             //new MainMenu().Show();
             //Application.Run();
 
-            TestClassData classData = JsonConvert.DeserializeObject<TestClassData>(Properties.Resources.ClassData);
+            JsonAttributeData attributeData = JsonConvert.DeserializeObject<JsonAttributeData>(Properties.Resources.AttributeData);
+            JsonClassData classData = JsonConvert.DeserializeObject<JsonClassData>(Properties.Resources.ClassData);
+            JsonFeatData featData = JsonConvert.DeserializeObject<JsonFeatData>(Properties.Resources.FeatData);
+            JsonRaceData raceData = JsonConvert.DeserializeObject<JsonRaceData>(Properties.Resources.RaceData);
+            JsonSkillData skillData = JsonConvert.DeserializeObject<JsonSkillData>(Properties.Resources.SkillsData);
+
 
             Console.WriteLine("================================OUTPUT START====================================");
 
-            Console.WriteLine(classData.Classes.Keys.Count);
-            Console.WriteLine(classData.Classes["Barbarian"].ToString());
-            //Console.WriteLine(classData.Classes["Barbarian"].Description);
-            //Console.WriteLine(classData.Classes["Barbarian"].Proficiencies[0]);
 
 
             //Character character = new Character();

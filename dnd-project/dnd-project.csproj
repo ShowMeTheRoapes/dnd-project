@@ -61,9 +61,13 @@
     <Compile Include="Core\Data\ClassData.cs" />
     <Compile Include="Core\Data\DataTemplate.cs" />
     <Compile Include="Core\Data\FeatData.cs" />
+    <Compile Include="Core\Data\JsonAttributeData.cs" />
+    <Compile Include="Core\Data\JsonFeatData.cs" />
+    <Compile Include="Core\Data\JsonRaceData.cs" />
+    <Compile Include="Core\Data\JsonSkillData.cs" />
     <Compile Include="Core\Data\RaceData.cs" />
     <Compile Include="Core\Data\SkillsData.cs" />
-    <Compile Include="Core\Data\TestClassData.cs" />
+    <Compile Include="Core\Data\JsonClassData.cs" />
     <Compile Include="LoadCharacter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,7 +107,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Core\Data\AttributeData.json" />
     <None Include="Core\Data\ClassData.json" />
+    <None Include="Core\Data\FeatData.json" />
+    <None Include="Core\Data\RaceData.json" />
+    <None Include="Core\Data\SkillsData.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

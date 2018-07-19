@@ -62,32 +62,107 @@ namespace dnd_project.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///  &quot;Barbarian&quot;: {
-        ///    &quot;Description&quot;: &quot;A fierce warrior of primitive background who can enter a battle rage.&quot;,
-        ///    &quot;HitDie&quot;: &quot;d12&quot;,
-        ///    &quot;PrimaryAttribute&quot;: [
-        ///        &quot;Strength&quot;
-        ///    ],
-        ///    &quot;SavingThrows&quot;: [ 
-        ///        &quot;Strength&quot;, 
-        ///        &quot;Constitution&quot; 
-        ///    ],
-        ///    &quot;Proficiencies&quot;: [ 
-        ///        &quot;Light Armor&quot;,
-        ///        &quot;Medium Armor&quot;,
-        ///        &quot;Shields&quot;,
-        ///        &quot;Simple Weapons&quot;,
-        ///        &quot;Martial Weapons&quot; 
-        ///    ],
-        ///    &quot;StartingFeats&quot;: [ 
-        ///        &quot;Rage&quot;,
-        ///        &quot;Unarmored Defense&quot;
-        ///    ],
-        ///    &quot;N [rest of string was truncated]&quot;;.
+        ///   &quot;attributes&quot;:{
+        ///      &quot;Strength&quot;:{
+        ///         &quot;Description&quot;:&quot;Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force. It can model any attempt to lift, push, pull, or break something, to force your body through a space, or to otherwise apply brute force to a situation.&quot;
+        ///      },
+        ///      &quot;Dexterity&quot;:{
+        ///         &quot;Description&quot;:&quot;Dexterity measures agility, reflexes, and balance. It can model any attempt to move nimbly, quickly, or quietly, or to keep from [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AttributeData {
+            get {
+                return ResourceManager.GetString("AttributeData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///   &quot;classes&quot;:{
+        ///      &quot;Barbarian&quot;:{
+        ///         &quot;Description&quot;:&quot;A fierce warrior of primitive background who can enter a battle rage.&quot;,
+        ///         &quot;HitDie&quot;:&quot;d12&quot;,
+        ///         &quot;PrimaryAttributes&quot;:[
+        ///            &quot;Strength&quot;
+        ///         ],
+        ///         &quot;SavingThrows&quot;:[
+        ///            &quot;Strength&quot;,
+        ///            &quot;Constitution&quot;
+        ///         ],
+        ///         &quot;Proficiencies&quot;:[
+        ///            &quot;Light Armor&quot;,
+        ///            &quot;Medium Armor&quot;,
+        ///            &quot;Shields&quot;,
+        ///            &quot;Simple Weapons&quot;,
+        ///            &quot;Martial Weapons&quot;
+        ///         ],
+        ///    [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ClassData {
             get {
                 return ResourceManager.GetString("ClassData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///   &quot;feats&quot;:{
+        ///      &quot;Arcane Recovery&quot;:{
+        ///         &quot;Description&quot;:&quot;You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none o f the slots can be 6th level or higher. For example, if you’re a 4th-level wizard, you can recover up to two levels worth of spell slots. You can reco [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string FeatData {
+            get {
+                return ResourceManager.GetString("FeatData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///   &quot;races&quot;:{
+        ///      &quot;Hill Dwarf&quot;:{
+        ///         &quot;Ages&quot;:[
+        ///            50,
+        ///            350
+        ///         ],
+        ///         &quot;Size&quot;:&quot;Medium&quot;,
+        ///         &quot;CommonAlignment&quot;:&quot;Lawful&quot;,
+        ///         &quot;Movement&quot;:25,
+        ///         &quot;AttributeScores&quot;:[
+        ///            {
+        ///               &quot;Attribute&quot;:&quot;Constitution&quot;,
+        ///               &quot;Change&quot;:2
+        ///            },
+        ///            {
+        ///               &quot;Attribute&quot;:&quot;Wisdom&quot;,
+        ///               &quot;Change&quot;:1
+        ///            }
+        ///         ],
+        ///         &quot;Feats&quot;:[
+        ///            &quot;Darkvision&quot;,
+        ///            &quot;Dwarven Resilienc [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RaceData {
+            get {
+                return ResourceManager.GetString("RaceData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///   &quot;skills&quot;:{
+        ///      &quot;Athletics&quot;:{
+        ///         &quot;ParentAttribute&quot;:&quot;Strength&quot;,
+        ///         &quot;Description&quot;:&quot;Covers difficult situations you encounter while climbing, jumping, or swimming.&quot;
+        ///      },
+        ///      &quot;Acrobatics&quot;:{
+        ///         &quot;ParentAttribute&quot;:&quot;Dexterity&quot;,
+        ///         &quot;Description&quot;:&quot;Covers your attempt to stay on your feet in a tricky situation, such as when you’re trying to run across a sheet of ice, balance on a tightrope, or stay upright on a rocking ship’s deck.&quot;
+        ///      },
+        ///      &quot;Sleight of Hand&quot;:{
+        ///     [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SkillsData {
+            get {
+                return ResourceManager.GetString("SkillsData", resourceCulture);
             }
         }
     }

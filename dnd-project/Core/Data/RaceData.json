@@ -1,495 +1,564 @@
 {
-    "Hill Dwarf": {
-        "Ages": [50,350],
-        "Size": "Medium",
-        "CommonAlignment": "Lawful",
-        "Movement": 25,
-        "AttributeScores":[
+   "races":{
+      "Hill Dwarf":{
+         "Ages":[
+            50,
+            350
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"Lawful",
+         "Movement":25,
+         "AttributeScores":[
             {
-                "Attribute": "Constitution",
-                "Change": 2
+               "Attribute":"Constitution",
+               "Change":2
             },
             {
-                "Attribute": "Wisdom" ,
-                "Change": 1
+               "Attribute":"Wisdom",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Darkvision",
             "Dwarven Resilience",
             "Stonecunning",
             "Dwarven Toughness"
-        ],
-        "Proficiencies": [
+         ],
+         "Proficiencies":[
             "Battleaxes",
             "Handaxes",
             "Throwing Hammers",
             "Warhammers"
-        ],
-        "Languages": [
+         ],
+         "Languages":[
             "Common",
             "Dwarvish"
-        ],
-        "GearChoices": [
+         ],
+         "GearChoices":[
             "Smith's Tools",
             "Brewer's Supplies",
             "Mason's Tools"
-        ]
-    },
-    "Mountain Dwarf": {
-        "Ages": [50,350],
-        "Size": "Medium",
-        "CommonAlignment": "Lawful",
-        "Movement": 25,
-        "AttributeScores":[
+         ]
+      },
+      "Mountain Dwarf":{
+         "Ages":[
+            50,
+            350
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"Lawful",
+         "Movement":25,
+         "AttributeScores":[
             {
-                "Attribute": "Constitution" ,
-                "Change": 2
+               "Attribute":"Constitution",
+               "Change":2
             },
             {
-                "Attribute": "Strength" ,
-                "Change": 2
+               "Attribute":"Strength",
+               "Change":2
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Darkvision",
             "Dwarven Resilience",
             "Stonecunning"
-        ],
-        "Proficiencies": [
+         ],
+         "Proficiencies":[
             "Battleaxes",
             "Handaxes",
             "Throwing Hammers",
             "Warhammers",
             "Light Armor",
             "Medium Armor"
-        ],
-        "Languages": [
+         ],
+         "Languages":[
             "Common",
             "Dwarvish"
-        ],
-        "GearChoices": [
+         ],
+         "GearChoices":[
             "Smith's Tools",
             "Brewer's Supplies",
             "Mason's Tools"
-        ]
-    },
-    "High Elf": {
-        "Ages": [100,750],
-        "Size": "Medium",
-        "CommonAlignment": "Chaotic Good",
-        "Movement": 30,
-        "AttributeScores":[
+         ]
+      },
+      "High Elf":{
+         "Ages":[
+            100,
+            750
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"Chaotic Good",
+         "Movement":30,
+         "AttributeScores":[
             {
-                "Attribute": "Dexterity" ,
-                "Change": 2
+               "Attribute":"Dexterity",
+               "Change":2
             },
             {
-                "Attribute": "Intelligence",
-                "Change": 1
+               "Attribute":"Intelligence",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Darkvision",
             "Fey Ancestry",
             "Trance",
             "Cantrip",
             "Extra Language",
             "Keen Senses"
-        ],
-        "Proficiencies": [
+         ],
+         "Proficiencies":[
             "Longswords",
             "Shortswords",
             "Shortbows",
             "Longbows"
-        ],
-        "Languages": [
+         ],
+         "Languages":[
             "Common",
             "Elvish"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Wood Elf": {
-        "Ages": [100,750],
-        "Size": "Medium",
-        "CommonAlignment": "Chaotic Good",
-        "Movement": 35,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Wood Elf":{
+         "Ages":[
+            100,
+            750
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"Chaotic Good",
+         "Movement":35,
+         "AttributeScores":[
             {
-                "Attribute": "Dexterity",
-                "Change": 2
+               "Attribute":"Dexterity",
+               "Change":2
             },
             {
-                "Attribute": "Wisdom" ,
-                "Change": 1
+               "Attribute":"Wisdom",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Darkvision",
             "Fey Ancestry",
             "Trance",
             "Mask of the Wild",
             "Keen Senses"
-        ],
-        "Proficiencies": [
+         ],
+         "Proficiencies":[
             "Longswords",
             "Shortswords",
             "Shortbows",
             "Longbows"
-        ],
-        "Languages": [
+         ],
+         "Languages":[
             "Common",
             "Elvish"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Dark Elf": {
-        "Ages": [100,750],
-        "Size": "Medium",
-        "CommonAlignment": "Chaotic Evil",
-        "Movement": 30,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Dark Elf":{
+         "Ages":[
+            100,
+            750
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"Chaotic Evil",
+         "Movement":30,
+         "AttributeScores":[
             {
-                "Attribute": "Dexterity",
-                "Change": 2
+               "Attribute":"Dexterity",
+               "Change":2
             },
             {
-                "Attribute": "Charisma" ,
-                "Change": 1
+               "Attribute":"Charisma",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Superior Darkvision",
             "Fey Ancestry",
             "Trance",
             "Sunlight Sensitivity",
             "Drow Magic",
             "Keen Senses"
-        ],
-        "Proficiencies": [
+         ],
+         "Proficiencies":[
             "Rapiers",
             "Shortswords",
             "Hand Crossbows"
-        ],
-        "Languages": [
+         ],
+         "Languages":[
             "Commom",
             "Elvish"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Lightfoot Halfling": {
-        "Ages": [20,150],
-        "Size": "Small",
-        "CommonAlignment": "Lawful Good",
-        "Movement": 25,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Lightfoot Halfling":{
+         "Ages":[
+            20,
+            150
+         ],
+         "Size":"Small",
+         "CommonAlignment":"Lawful Good",
+         "Movement":25,
+         "AttributeScores":[
             {
-                "Attribute": "Dexterity",
-                "Change": 2
+               "Attribute":"Dexterity",
+               "Change":2
             },
             {
-                "Attribute": "Charisma",
-                "Change": 1
+               "Attribute":"Charisma",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Lucky",
             "Brave",
             "Halfling Nimbleness",
             "Naturally Stealthy"
-        ],
-        "Proficiencies": [
-        ],
-        "Languages": [
+         ],
+         "Proficiencies":[
+
+         ],
+         "Languages":[
             "Common",
             "Halfling"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Stout Halfling": {
-        "Ages": [20,150],
-        "Size": "Small",
-        "CommonAlignment": "Lawful Good",
-        "Movement": 25,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Stout Halfling":{
+         "Ages":[
+            20,
+            150
+         ],
+         "Size":"Small",
+         "CommonAlignment":"Lawful Good",
+         "Movement":25,
+         "AttributeScores":[
             {
-                "Attribute": "Dexterity",
-                "Change": 2
+               "Attribute":"Dexterity",
+               "Change":2
             },
             {
-                "Attribute": "Constitution",
-                "Change": 1
+               "Attribute":"Constitution",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Lucky",
             "Brave",
             "Halfling Nimbleness",
             "Naturally Stealthy"
-        ],
-        "Proficiencies": [
-        ],
-        "Languages": [
+         ],
+         "Proficiencies":[
+
+         ],
+         "Languages":[
             "Common",
             "Halfling"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Human": {
-        "Ages": [18,100],
-        "Size": "Medium",
-        "CommonAlignment": "True Neutral",
-        "Movement": 30,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Human":{
+         "Ages":[
+            18,
+            100
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"True Neutral",
+         "Movement":30,
+         "AttributeScores":[
             {
-                "Attribute": "Strength",
-                "Change": 1
+               "Attribute":"Strength",
+               "Change":1
             },
             {
-                "Attribute": "Dexterity",
-                "Change": 1
+               "Attribute":"Dexterity",
+               "Change":1
             },
             {
-                "Attribute": "Charisma",
-                "Change": 1
+               "Attribute":"Charisma",
+               "Change":1
             },
             {
-                "Attribute": "Constitution",
-                "Change": 1
+               "Attribute":"Constitution",
+               "Change":1
             },
             {
-                "Attribute": "Wisdom",
-                "Change": 1
+               "Attribute":"Wisdom",
+               "Change":1
             },
             {
-                "Attribute": "Intelligence",
-                "Change": 1
+               "Attribute":"Intelligence",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Extra Language"
-        ],
-        "Proficiencies": [
-        ],
-        "Languages": [
+         ],
+         "Proficiencies":[
+
+         ],
+         "Languages":[
             "Common"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Human Alternate": {
-        "Ages": [18,100],
-        "Size": "Medium",
-        "CommonAlignment": "True Neutral",
-        "Movement": 30,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Human Alternate":{
+         "Ages":[
+            18,
+            100
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"True Neutral",
+         "Movement":30,
+         "AttributeScores":[
             {
-                "Attribute": "Choose One" ,
-                "Change": 1
+               "Attribute":"Choose One",
+               "Change":1
             },
             {
-                "Attribute": "Choose One" ,
-                "Change": 1
+               "Attribute":"Choose One",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Extra Language",
             "Choose One"
-        ],
-        "Proficiencies": [
-        ],
-        "Languages": [
+         ],
+         "Proficiencies":[
+
+         ],
+         "Languages":[
             "Common"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Dragonborn": {
-        "Ages": [15,80],
-        "Size": "Medium",
-        "CommonAlignment": "Neutral Good",
-        "Movement": 30,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Dragonborn":{
+         "Ages":[
+            15,
+            80
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"Neutral Good",
+         "Movement":30,
+         "AttributeScores":[
             {
-                "Attribute": "Strength" ,
-                "Change": 2
+               "Attribute":"Strength",
+               "Change":2
             },
             {
-                "Attribute": "Charisma" ,
-                "Change": 1
+               "Attribute":"Charisma",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Draconic Ancestry",
             "Breath Weapon",
             "Damage Resistance"
-        ],
-        "Proficiencies": [
-        ],
-        "Languages": [
+         ],
+         "Proficiencies":[
+
+         ],
+         "Languages":[
             "Common",
             "Draconic"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Forest Gnome": {
-        "Ages": [40,500],
-        "Size": "Small",
-        "CommonAlignment": "Neutral Good",
-        "Movement": 25,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Forest Gnome":{
+         "Ages":[
+            40,
+            500
+         ],
+         "Size":"Small",
+         "CommonAlignment":"Neutral Good",
+         "Movement":25,
+         "AttributeScores":[
             {
-                "Attribute": "Intelligence",
-                "Change": 2
+               "Attribute":"Intelligence",
+               "Change":2
             },
             {
-                "Attribute": "Dexterity" ,
-                "Change": 1
+               "Attribute":"Dexterity",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Darkvision",
             "Gnome Cunning",
             "Natural Illusionist",
             "Speak with Small Beasts"
-        ],
-        "Proficiencies": [
-        ],
-        "Languages": [
+         ],
+         "Proficiencies":[
+
+         ],
+         "Languages":[
             "Common",
             "Gnomish"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Rock Gnome": {
-        "Ages": [40,500],
-        "Size": "Small",
-        "CommonAlignment": "Neutral Good",
-        "Movement": 25,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Rock Gnome":{
+         "Ages":[
+            40,
+            500
+         ],
+         "Size":"Small",
+         "CommonAlignment":"Neutral Good",
+         "Movement":25,
+         "AttributeScores":[
             {
-                "Attribute": "Intelligence",
-                "Change": 2
+               "Attribute":"Intelligence",
+               "Change":2
             },
             {
-                "Attribute": "Constitution",
-                "Change": 1
+               "Attribute":"Constitution",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Darkvision",
             "Gnome Cunning",
             "Artificer's Lore",
             "Tinker"
-        ],
-        "Proficiencies": [
-        ],
-        "Languages": [
+         ],
+         "Proficiencies":[
+
+         ],
+         "Languages":[
             "Common",
             "Gnomish"
-        ],
-        "GearChoices": [
+         ],
+         "GearChoices":[
             "Artician's Tools (Tinker Tools)"
-        ]
-    },
-    "Half-Elf": {
-        "Ages": [18,180],
-        "Size": "Medium",
-        "CommonAlignment": "Chaotic Neutral",
-        "Movement": 30,
-        "AttributeScores":[
+         ]
+      },
+      "Half-Elf":{
+         "Ages":[
+            18,
+            180
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"Chaotic Neutral",
+         "Movement":30,
+         "AttributeScores":[
             {
-                "Attribute": "Charisma",
-                "Change": 2
+               "Attribute":"Charisma",
+               "Change":2
             },
             {
-                "Attribute": "Choose One",
-                "Change": 1
+               "Attribute":"Choose One",
+               "Change":1
             },
             {
-                "Attribute": "Choose One",
-                "Change": 1
+               "Attribute":"Choose One",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Darkvision",
             "Fey Ancestry",
             "Skill Versatility",
             "Extra Language"
-        ],
-        "Proficiencies": [
-        ],
-        "Languages": [
+         ],
+         "Proficiencies":[
+
+         ],
+         "Languages":[
             "Common",
             "Elvish"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Half-Orc": {
-        "Ages": [14,75],
-        "Size": "Medium",
-        "CommonAlignment": "Chaotic Neutral",
-        "Movement": 30,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Half-Orc":{
+         "Ages":[
+            14,
+            75
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"Chaotic Neutral",
+         "Movement":30,
+         "AttributeScores":[
             {
-                "Attribute": "Strength",
-                "Change": 2
+               "Attribute":"Strength",
+               "Change":2
             },
             {
-                "Attribute": "Constitution",
-                "Change": 1
+               "Attribute":"Constitution",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Darkvision",
             "Relentless Endurance",
             "Savage Attacks",
             "Menacing"
-        ],
-        "Proficiencies": [
-        ],
-        "Languages": [
+         ],
+         "Proficiencies":[
+
+         ],
+         "Languages":[
             "Common",
             "Orcish"
-        ],
-        "GearChoices": [
-        ]
-    },
-    "Tiefling": {
-        "Ages": [18,110],
-        "Size": "Medium",
-        "CommonAlignment": "Chaotic Neutral",
-        "Movement": 30,
-        "AttributeScores":[
+         ],
+         "GearChoices":[
+
+         ]
+      },
+      "Tiefling":{
+         "Ages":[
+            18,
+            110
+         ],
+         "Size":"Medium",
+         "CommonAlignment":"Chaotic Neutral",
+         "Movement":30,
+         "AttributeScores":[
             {
-                "Attribute": "Charisma",
-                "Change": 2
+               "Attribute":"Charisma",
+               "Change":2
             },
             {
-                "Attribute": "Intelligence",
-                "Change": 1
+               "Attribute":"Intelligence",
+               "Change":1
             }
-        ],
-        "Feats":[
+         ],
+         "Feats":[
             "Darkvision",
             "Hellish Resistance",
             "Infernal Legacy"
-        ],
-        "Proficiencies": [
-        ],
-        "Languages": [
+         ],
+         "Proficiencies":[
+
+         ],
+         "Languages":[
             "Common",
             "Infernal"
-        ],
-        "GearChoices": [
-        ]
-    }    
+         ],
+         "GearChoices":[
+
+         ]
+      }
+   }
 }
