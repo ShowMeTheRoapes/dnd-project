@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dnd_project.Core.Data;
+using Newtonsoft.Json;
 
 namespace dnd_project
 {
@@ -14,11 +16,20 @@ namespace dnd_project
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            new MainMenu().Show();
-            Application.Run();
-            
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //new MainMenu().Show();
+            //Application.Run();
+
+            TestClassData classData = JsonConvert.DeserializeObject<TestClassData>(Properties.Resources.ClassData);
+
+            Console.WriteLine("================================OUTPUT START====================================");
+
+            Console.WriteLine(classData.Classes.Keys.Count);
+            Console.WriteLine(classData.Classes["Barbarian"].ToString());
+            //Console.WriteLine(classData.Classes["Barbarian"].Description);
+            //Console.WriteLine(classData.Classes["Barbarian"].Proficiencies[0]);
+
 
             //Character character = new Character();
             //character.Name = "Byrd";

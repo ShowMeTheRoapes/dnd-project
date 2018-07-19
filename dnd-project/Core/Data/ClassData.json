@@ -1,0 +1,408 @@
+{
+   "classes":{
+      "Barbarian":{
+         "Description":"A fierce warrior of primitive background who can enter a battle rage.",
+         "HitDie":"d12",
+         "PrimaryAttributes":[
+            "Strength"
+         ],
+         "SavingThrows":[
+            "Strength",
+            "Constitution"
+         ],
+         "Proficiencies":[
+            "Light Armor",
+            "Medium Armor",
+            "Shields",
+            "Simple Weapons",
+            "Martial Weapons"
+         ],
+         "StartingFeats":[
+            "Rage",
+            "Unarmored Defense"
+         ],
+         "NumberOfSkills":2,
+         "SkillOptions":[
+            "Animal Handling",
+            "Athletics",
+            "Intimidation",
+            "Nature",
+            "Perception",
+            "Survival"
+         ]
+      },
+      "Bard":{
+         "Description":"An inspiring magician whose power echoes the music of creation.",
+         "HitDie":"d8",
+         "PrimaryAttributes":[
+            "Charisma"
+         ],
+         "SavingThrows":[
+            "Dexterity",
+            "Charisma"
+         ],
+         "Proficiencies":[
+            "Light Armor",
+            "Simple Weapons",
+            "Hand Crossbows",
+            "Longswords",
+            "Rapiers",
+            "Shortswords"
+         ],
+         "StartingFeats":[
+            "Spellcasting",
+            "Bardic Inspiration"
+         ],
+         "NumberOfSkills":3,
+         "SkillOptions":[
+            "Athletics",
+            "Animal Handling",
+            "Arcana",
+            "Athletics",
+            "Deception",
+            "History",
+            "Insight",
+            "Intimidation",
+            "Investigation",
+            "Medicine",
+            "Nature",
+            "Perception",
+            "Performance",
+            "Persuasion",
+            "Religion",
+            "Slight of Hand",
+            "Stealth",
+            "Survival"
+         ]
+      },
+      "Cleric":{
+         "Description":"A priestly champion who wields divine magic in service of a higher power.",
+         "HitDie":"d8",
+         "PrimaryAttributes":[
+            "Wisdom"
+         ],
+         "SavingThrows":[
+            "Wisdom",
+            "Charisma"
+         ],
+         "Proficiencies":[
+            "Light Armor",
+            "Medium Armor",
+            "Shields",
+            "Simple Weapons"
+         ],
+         "StartingFeats":[
+            "Spellcasting",
+            "Divine Domain"
+         ],
+         "NumberOfSkills":2,
+         "SkillOptions":[
+            "History",
+            "Insight",
+            "Medicine",
+            "Persuasion",
+            "Religion"
+         ]
+      },
+      "Druid":{
+         "Description":"A priest of the Old Faith, wielding the powers of nature— moonlight and plant growth, fire and lightning— and adopting animal forms.",
+         "HitDie":"d8",
+         "PrimaryAttributes":[
+            "Wisdom"
+         ],
+         "SavingThrows":[
+            "Intelligence",
+            "Wisdom"
+         ],
+         "Proficiencies":[
+            "Light Armor",
+            "Medium Armor",
+            "Shields",
+            "Clubs",
+            "Daggers",
+            "Darts",
+            "Javelins",
+            "Maces",
+            "Quarterstaffs",
+            "Scimitars",
+            "Sickles",
+            "Slings",
+            "Spears"
+         ],
+         "StartingFeats":[
+            "Druidic",
+            "Spellcasting"
+         ],
+         "NumberOfSkills":2,
+         "SkillOptions":[
+            "Arcana",
+            "Animal Handling",
+            "Insight",
+            "Medicine",
+            "Nature",
+            "Perception",
+            "Religion",
+            "Survival"
+         ]
+      },
+      "Fighter":{
+         "Description":"A master of martial combat, skilled with a variety of weapons and armor.",
+         "HitDie":"d10",
+         "PrimaryAttributes":[
+            "Strength, Dexterity"
+         ],
+         "SavingThrows":[
+            "Strength",
+            "Constitution"
+         ],
+         "Proficiencies":[
+            "Light Armor",
+            "Medium Armor",
+            "Heavy Armor",
+            "Shields",
+            "Simple Weapons",
+            "Martial Weapons"
+         ],
+         "StartingFeats":[
+            "Fighting Style",
+            "Second Wind"
+         ],
+         "NumberOfSkills":2,
+         "SkillOptions":[
+            "Acrobatics",
+            "Animal Handling",
+            "Athletics",
+            "History",
+            "Insight",
+            "Intimidation",
+            "Perception",
+            "Survival"
+         ]
+      },
+      "Monk":{
+         "Description":"A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.",
+         "HitDie":"d8",
+         "PrimaryAttributes":[
+            "Dexterity",
+            "Wisdom"
+         ],
+         "SavingThrows":[
+            "Strength",
+            "Constitution"
+         ],
+         "Proficiencies":[
+            "Simple Weapons",
+            "Shortswords"
+         ],
+         "StartingFeats":[
+            "Unarmored Defense",
+            "Martial Arts"
+         ],
+         "NumberOfSkills":2,
+         "SkillOptions":[
+            "Acrobatics",
+            "Athletics",
+            "History",
+            "Insight",
+            "Religion",
+            "Stealth"
+         ]
+      },
+      "Paladin":{
+         "Description":"A holy warrior bound to a sacred oath.",
+         "HitDie":"d10",
+         "PrimaryAttributes":[
+            "Strength",
+            "Charisma"
+         ],
+         "SavingThrows":[
+            "Wisdom",
+            "Charisma"
+         ],
+         "Proficiencies":[
+            "Light Armor",
+            "Medium Armor",
+            "Heavy Armor",
+            "Shields",
+            "Simple Weapons",
+            "Martial Weapons"
+         ],
+         "StartingFeats":[
+            "Divine Sense",
+            "Lay on Hands"
+         ],
+         "NumberOfSkills":2,
+         "SkillOptions":[
+            "Athletics",
+            "Insight",
+            "Intimidation",
+            "Medicine",
+            "Persuasion",
+            "Religion"
+         ]
+      },
+      "Ranger":{
+         "Description":"A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.",
+         "HitDie":"d10",
+         "PrimaryAttributes":[
+            "Dexterity",
+            "Wisdom"
+         ],
+         "SavingThrows":[
+            "Strength",
+            "Dexterity"
+         ],
+         "Proficiencies":[
+            "Light Armor",
+            "Medium Armor",
+            "Shields",
+            "Simple Weapons",
+            "Martial Weapons"
+         ],
+         "StartingFeats":[
+            "Favored Enemy",
+            "Natural Explorer"
+         ],
+         "NumberOfSkills":3,
+         "SkillOptions":[
+            "Animal Handling",
+            "Athletics",
+            "Insight",
+            "Investigation",
+            "Nature",
+            "Perception",
+            "Stealth",
+            "Survival"
+         ]
+      },
+      "Rogue":{
+         "Description":"A soundrel who uses stealth and trickery to overcome obstacles and enemies.",
+         "HitDie":"d8",
+         "PrimaryAttributes":[
+            "Dexterity"
+         ],
+         "SavingThrows":[
+            "Dexterity",
+            "Intelligence"
+         ],
+         "Proficiencies":[
+            "Light Armor",
+            "Simple Weapons",
+            "Hand Crossbows",
+            "Longswords",
+            "Rapiers",
+            "Shortswords"
+         ],
+         "StartingFeats":[
+            "Expertise",
+            "Sneak Attack",
+            "Thieves' Cant"
+         ],
+         "NumberOfSkills":4,
+         "SkillOptions":[
+            "Acrobatics",
+            "Athletics",
+            "Deception",
+            "Insight",
+            "Intimidation",
+            "Investigation",
+            "Perception",
+            "Performance",
+            "Persuasion",
+            "Slight of Hand",
+            "Stealth"
+         ]
+      },
+      "Sorcerer":{
+         "Description":"A spellcaster who draws on inherent magic from a gift or bloodline.",
+         "HitDie":"d6",
+         "PrimaryAttributes":[
+            "Charisma"
+         ],
+         "SavingThrows":[
+            "Constitution",
+            "Charisma"
+         ],
+         "Proficiencies":[
+            "Daggers",
+            "Darts",
+            "Slings",
+            "Quarterstaffs",
+            "Light Crossbows"
+         ],
+         "StartingFeats":[
+            "Spellcasting",
+            "Sorcerous Origin"
+         ],
+         "NumberOfSkills":2,
+         "SkillOptions":[
+            "Arcana",
+            "Deception",
+            "Insight",
+            "Intimidation",
+            "Persuasion",
+            "Religion"
+         ]
+      },
+      "Warlock":{
+         "Description":"A wielder of magic that is derived from a bargain with an extraplanar entity.",
+         "HitDie":"d8",
+         "PrimaryAttributes":[
+            "Charisma"
+         ],
+         "SavingThrows":[
+            "Charisma",
+            "Wisdom"
+         ],
+         "Proficiencies":[
+            "Light Armor",
+            "Simple Weapons"
+         ],
+         "StartingFeats":[
+            "Otherworldly Patron",
+            "Pact Magic"
+         ],
+         "NumberOfSkills":2,
+         "SkillOptions":[
+            "Arcana",
+            "Deception",
+            "History",
+            "Intimidation",
+            "Investigation",
+            "Nature",
+            "Religion"
+         ]
+      },
+      "Wizard":{
+         "Description":"A scholarly magic-user capable of manipulating the structures of reality.",
+         "HitDie":"d6",
+         "PrimaryAttributes":[
+            "Intelligence"
+         ],
+         "SavingThrows":[
+            "Intelligence",
+            "Wisdom"
+         ],
+         "Proficiencies":[
+            "Daggers",
+            "Darts",
+            "Slings",
+            "Quarterstaffs",
+            "Light Crossbows"
+         ],
+         "StartingFeats":[
+            "Spellcasting",
+            "Arcane Recovery"
+         ],
+         "NumberOfSkills":2,
+         "SkillOptions":[
+            "Arcana",
+            "History",
+            "Insight",
+            "Investigation",
+            "Medicine",
+            "Religion"
+         ]
+      }
+   }
+}
