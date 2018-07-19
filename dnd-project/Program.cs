@@ -27,10 +27,32 @@ namespace dnd_project
             JsonRaceData raceData = JsonConvert.DeserializeObject<JsonRaceData>(Properties.Resources.RaceData);
             JsonSkillData skillData = JsonConvert.DeserializeObject<JsonSkillData>(Properties.Resources.SkillsData);
 
+            string aClass = "Barbarian";
+            string race = "Half-Orc";
 
             Console.WriteLine("================================OUTPUT START====================================");
+            Console.WriteLine("+++Class: " + aClass + "+++");
+            Console.WriteLine(classData.Classes[aClass]);
+            Console.WriteLine("+++Race: " + race + "+++");
+            Console.WriteLine(raceData.Races[race]);
+            Console.WriteLine("+++Feats+++");
+            foreach (string feat in raceData.Races[race].Feats)
+            {
+                Console.WriteLine("\t-" + feat);
+                Console.WriteLine("\t" + featData.Feats[feat]);
+            }
+            foreach (string feat in classData.Classes[aClass].StartingFeats)
+            {
+                Console.WriteLine("\t-" + feat);
+                Console.WriteLine("\t" + featData.Feats[feat]);
+            }
 
-
+            Console.WriteLine("+++Skills+++");
+            foreach (string skill in classData.Classes[aClass].SkillOptions)
+            {
+                Console.WriteLine("\t-" + skill);
+                Console.WriteLine("\t" + skillData.Skills[skill]);
+            }
 
             //Character character = new Character();
             //character.Name = "Byrd";
