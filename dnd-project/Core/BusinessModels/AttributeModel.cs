@@ -15,14 +15,12 @@ public class AttributeModel
     #endregion
 
     #region Constructor(s)
-    public AttributeModel()
-    {
-        Name = "";
-        Description = "";
-        Value = 0;
-        Modifier = 0;
-    }
-
+    /// <summary>
+    /// Default constructor for an AttribureModel object
+    /// </summary>
+    /// <param name="name">string Then name of the attribute</param>
+    /// <param name="description">string A description of the attribute</param>
+    /// <param name="value">int The value of the attribute</param>
     public AttributeModel(string name, string description, int value)
     {
         Name = name;

@@ -1,63 +1,64 @@
 ﻿using System.Text;
+using Newtonsoft.Json;
+using dnd_project.Core.Data;
 
-public class RaceModel
+namespace dnd_project.Core.BusinessModels
 {
-    #region Instance Variables and Properties
-    public string Name { get; set; }
-    public string Age { get; set; }
-    public string Size { get; set; }
-    public string Alignment { get; set; }
-    public string Speed { get; set; }
-    public string[] AttributeMods { get; set; }
-    public string[] Feats { get; set; }
-    public string[] Proficiencies { get; set; }
-    #endregion
-
-    #region Constructor(s)
-    public RaceModel(string raceName)
+    public class RaceModel
     {
-        string[] raceInfo = GetRaceInformation(raceName);
+        #region Instance Variables and Properties
+        public string Name { get; set; }
+        public int[] Age { get; set; }
+        public string Size { get; set; }
+        public string Alignment { get; set; }
+        public int Speed { get; set; }
+        public RaceAttribute[] AttributeMods { get; set; }
+        public string[] Feats { get; set; }
+        public string[] Proficiencies { get; set; }
+        #endregion
 
-        Name = raceInfo[0];
-        Age = raceInfo[1];
-        Size = raceInfo[2];
-        Alignment = raceInfo[3];
-        Speed = raceInfo[4];
-        AttributeMods = raceInfo[5].Split(';');
-        Feats = raceInfo[6].Split(';');
-        Proficiencies = raceInfo[7].Split(';');
-    }
-    #endregion
-
-    #region Class Methods
-    /// <summary>
-    /// Pulls the corresponding information from RaceData that is tied to the race name given.
-    /// </summary>
-    /// <param name="raceName">The name of the race to pull info for</param>
-    /// <returns></returns>
-    private string[] GetRaceInformation(string raceName)
-    {
-        return RaceData.races[raceName];
-    }
-
-    public override string ToString()
-    {
-        StringBuilder raceString = new StringBuilder();
-        raceString.Append("\n------RACE------\n");
-        
-        raceString.Append(Name + "\n");
-        raceString.Append("Typically aged between " + Age + " old\n");
-        raceString.Append("Size: " + Size + "\n");
-        raceString.Append("Alignment: " + Alignment + "\n");
-        raceString.Append("Speed: " + Speed + "\n");
-
-        raceString.Append("Ability Modifiers:\n");
-        foreach (string mod in AttributeMods)
+        #region Constructor(s)
+        public RaceModel(string raceName)
         {
-            raceString.Append("\t" + mod + "\n");
+            JsonRaceData raceData = JsonConvert.DeserializeObject<JsonRaceData>(Properties.Resources.RaceData);
+            if (raceData.Races[raceName] != null)
+            {
+                Name = raceName;
+                Age = raceData.Races[raceName].Ages;
+                Size = raceData.Races[raceName].Size;
+                Alignment = raceData.Races[raceName].CommonAlignment;
+                Speed = raceData.Races[raceName].Movement;
+                AttributeMods = raceData.Races[raceName].AttributeScores;
+                Feats = raceData.Races[raceName].Feats;
+                Proficiencies = raceData.Races[raceName].Proficiencies;
+            }
         }
+        #endregion
 
-        return raceString.ToString();
+        #region Class Methods
+        /// <summary>
+        /// Overriden ToString method to print nicely for debugging
+        /// </summary>
+        /// <returns>string raceString The information pertaining to the race. </returns>
+        public override string ToString()
+        {
+            StringBuilder raceString = new StringBuilder();
+            raceString.Append("\n------RACE------\n");
+
+            raceString.AppendLine(Name);
+            raceString.AppendLine("Typically aged between " + Age[0] + " and " + Age[1] + " years old");
+            raceString.AppendLine("Size: " + Size);
+            raceString.AppendLine("Alignment: " + Alignment);
+            raceString.AppendLine("Speed: " + Speed);
+
+            raceString.Append("Ability Modifiers:\n");
+            foreach (RaceAttribute att in AttributeMods)
+            {
+                raceString.Append("\t" + att.Attribute + ": " + att.Change + "\n");
+            }
+
+            return raceString.ToString();
+        }
+        #endregion
     }
-    #endregion
 }

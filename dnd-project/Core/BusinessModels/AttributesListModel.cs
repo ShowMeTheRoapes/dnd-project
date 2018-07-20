@@ -1,70 +1,76 @@
 ﻿using System.Collections.Generic;
 using System.Text;
+using Newtonsoft.Json;
+using dnd_project.Core.Data;
 
-public class AttributesListModel
+namespace dnd_project.Core.BusinessModels
 {
-    #region Instance Variables and Properties
-    private const int DEF_VALUE = 10;
-    private const int NAME_POS = 0;
-    private const int DESC_POS = 1;
-
-    public Dictionary<string, AttributeModel> Attributes { get; set; }
-    #endregion
-
-    #region Constructor(s)
-    public AttributesListModel()
+    public class AttributesListModel
     {
-        Attributes = new Dictionary<string, AttributeModel>();
+        #region Instance Variables and Properties
+        private const int DEF_VALUE = 10;
+        private const int NAME_POS = 0;
+        private const int DESC_POS = 1;
 
-        foreach (string[] attr in AttributesData.attributes)
+        public Dictionary<string, AttributeModel> Attributes { get; set; }
+        #endregion
+
+        #region Constructor(s)
+        public AttributesListModel()
         {
-            Attributes[attr[NAME_POS]] = new AttributeModel(attr[NAME_POS], attr[DESC_POS], DEF_VALUE);
+            Attributes = new Dictionary<string, AttributeModel>();
+            JsonAttributeData attributeData = JsonConvert.DeserializeObject<JsonAttributeData>(Properties.Resources.AttributeData);
+
+            foreach (string attrName in attributeData.Attributes.Keys)
+            {
+                Attributes[attrName] = new AttributeModel(attrName, attributeData.Attributes[attrName].Description, DEF_VALUE);
+            }
         }
-    }
-    #endregion
+        #endregion
 
-    #region Class Methods
-    /// <summary>
-    /// Clears value added from a RaceModel from the ability
-    /// </summary>
-    /// <param name="attribute"></param>
-    public void Clear(string attribute)
-    {
-        string[] sections = attribute.Split(' ');
-        Attributes[sections[0]].Value -= int.Parse(sections[1]);
-    }
-
-    /// <summary>
-    /// Adds a value from the RaceModel to the ability  
-    /// </summary>
-    /// <param name="attribute"></param>
-    public void AddValue(string attribute)
-    {
-        string[] sections = attribute.Split(' ');
-        Attributes[sections[0]].Value += int.Parse(sections[1]);
-    }
-    public Dictionary<string, int> GetAttributeMods()
-    {
-        Dictionary<string, int> attributeMods = new Dictionary<string, int>();
-
-        foreach (string attr in Attributes.Keys)
+        #region Class Methods
+        /// <summary>
+        /// Clears value added from a RaceModel from the ability
+        /// </summary>
+        /// <param name="attribute">string The name of the value that will be reduced</param>
+        /// <param name="value">int The value of the attribute that will be removed</param>
+        public void Clear(string attribute, int value)
         {
-            attributeMods[attr] = Attributes[attr].Modifier;
+            Attributes[attribute].Value -= value;
         }
 
-        return attributeMods;
-    }
-    public override string ToString()
-    {
-        StringBuilder output = new StringBuilder();
-
-        output.Append("\n-----ATTRIBUTES-----\n");
-        foreach (string attr_name in Attributes.Keys)
+        /// <summary>
+        /// Adds a value from the RaceModel to the ability  
+        /// </summary>
+        /// <param name="attribute"></param>
+        public void AddValue(string attribute, int value)
         {
-            output.Append(Attributes[attr_name].ToString());
+            Attributes[attribute].Value += value;
         }
 
-        return output.ToString();
+        public Dictionary<string, int> GetAttributeMods()
+        {
+            Dictionary<string, int> attributeMods = new Dictionary<string, int>();
+
+            foreach (string attr in Attributes.Keys)
+            {
+                attributeMods[attr] = Attributes[attr].Modifier;
+            }
+
+            return attributeMods;
+        }
+        public override string ToString()
+        {
+            StringBuilder output = new StringBuilder();
+
+            output.Append("\n-----ATTRIBUTES-----\n");
+            foreach (string attr_name in Attributes.Keys)
+            {
+                output.Append(Attributes[attr_name].ToString());
+            }
+
+            return output.ToString();
+        }
+        #endregion
     }
-    #endregion
 }

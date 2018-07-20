@@ -1,92 +1,98 @@
 ﻿using System.Collections.Generic;
 using System.Text;
+using Newtonsoft.Json;
+using dnd_project.Core.Data;
 
-public class SkillsListModel
+namespace dnd_project.Core.BusinessModels
 {
-    #region Instance Variables and Properties
-    private const int DEF_RANK = 0;
-    private const bool DEF_PROFICIENCY = false;
-    private const int NAME_POS = 0;
-    private const int ATTR_POS = 1;
-    private const int DESC_POS = 2;
-    
-    public Dictionary<string, SkillModel> Skills { get; set; }
-    #endregion
-
-    #region Constructor(s)
-    public SkillsListModel()
-	{
-        Skills = new Dictionary<string, SkillModel>();
-
-        foreach (string[] skill in SkillsData.skills)
-        {
-            Skills[skill[NAME_POS]] = new SkillModel(skill[NAME_POS], skill[ATTR_POS], skill[DESC_POS], DEF_RANK, DEF_PROFICIENCY);
-        }
-	}
-    #endregion
-
-    #region Class Methods
-    /// <summary>
-    /// Clears all of the skill proficiency from when a class is changed
-    /// </summary>
-    public void Clear()
+    public class SkillsListModel
     {
-        foreach (string item in Skills.Keys)
-        {
-            Skills[item].IsProficient = DEF_PROFICIENCY;
-        }
-    }
+        #region Instance Variables and Properties
+        private const int DEF_RANK = 0;
+        private const bool DEF_PROFICIENCY = false;
 
-    /// <summary>
-    /// Adds proficiency to a chosen skill
-    /// </summary>
-    /// <param name="skill">Name of a skill to be changed</param>
-    public void SetProficiency(string skill)
-    {
-        Skills[skill].IsProficient = true;
-    }
+        public Dictionary<string, SkillModel> Skills { get; set; }
+        #endregion
 
-    /// <summary>
-    /// Calculates all skill modifiers based on attribute modifier and proficiency bonus
-    /// </summary>
-    /// <param name="mods">a dictionary of Attribute:Modifier pairs</param>
-    /// <param name="proficiencyBonus">the proficiency bonus</param>
-    public void CalculateSkillMods(Dictionary<string, int> mods, int proficiencyBonus)
-    {
-        foreach (string name in Skills.Keys)
+        #region Constructor(s)
+        public SkillsListModel()
         {
-            if(Skills[name].IsProficient)
+            Skills = new Dictionary<string, SkillModel>();
+            JsonSkillData skillsData = JsonConvert.DeserializeObject<JsonSkillData>(Properties.Resources.SkillsData);
+
+            foreach (string skillName in skillsData.Skills.Keys)
             {
-                Skills[name].Modifier += proficiencyBonus;
+                Skills[skillName] = new SkillModel(skillName, skillsData.Skills[skillName].ParentAttribute, skillsData.Skills[skillName].Description, DEF_RANK, DEF_PROFICIENCY);
             }
-            foreach (string attr in mods.Keys)
+        }
+        #endregion
+
+        #region Class Methods
+        /// <summary>
+        /// Clears all of the skill proficiency from when a class is changed
+        /// </summary>
+        public void ClearProficiencies()
+        {
+            foreach (string item in Skills.Keys)
             {
-                if(Skills[name].Attribute == attr)
+                Skills[item].IsProficient = DEF_PROFICIENCY;
+            }
+        }
+
+        /// <summary>
+        /// Adds proficiency to a chosen skill
+        /// </summary>
+        /// <param name="skill">Name of a skill to be changed</param>
+        public void SetProficiency(string skill)
+        {
+            Skills[skill].IsProficient = true;
+        }
+
+        /// <summary>
+        /// Calculates all skill modifiers based on attribute modifier and proficiency bonus
+        /// </summary>
+        /// <param name="mods">a dictionary of Attribute:Rank pairs</param>
+        /// <param name="proficiencyBonus">the proficiency bonus</param>
+        public void CalculateSkillMods(Dictionary<string, int> mods, int proficiencyBonus)
+        {
+            foreach (string name in Skills.Keys)
+            {
+                if (Skills[name].IsProficient)
                 {
-                    Skills[name].Modifier += mods[attr];
+                    Skills[name].Rank += proficiencyBonus;
+                }
+                foreach (string attr in mods.Keys)
+                {
+                    if (Skills[name].Attribute == attr)
+                    {
+                        Skills[name].Rank += mods[attr];
+                    }
                 }
             }
         }
-    }
 
-    public void ClearSkillMods()
-    {
-        foreach (string name in Skills.Keys) 
+        /// <summary>
+        ///
+        /// </summary>
+        public void ClearSkillRanks()
         {
-            Skills[name].Modifier = 0;
-        }
-    }
-
-    public override string ToString()
-    {
-        StringBuilder output = new StringBuilder();
-        output.Append("\n-----SKILLS-----\n");
-        foreach (string skill_name in Skills.Keys)
-        {
-            output.Append(Skills[skill_name].ToString());
+            foreach (string name in Skills.Keys)
+            {
+                Skills[name].Rank = 0;
+            }
         }
 
-        return output.ToString();
+        public override string ToString()
+        {
+            StringBuilder output = new StringBuilder();
+            output.Append("\n-----SKILLS-----\n");
+            foreach (string skill_name in Skills.Keys)
+            {
+                output.Append(Skills[skill_name].ToString());
+            }
+
+            return output.ToString();
+        }
+        #endregion
     }
-    #endregion
 }
