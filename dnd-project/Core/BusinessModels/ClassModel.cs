@@ -44,7 +44,7 @@ namespace dnd_project.Core.BusinessModels
         /// <summary>
         /// Overriden ToString method to print a class
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Information about ClassModel object</returns>
         public override string ToString()
         {
             StringBuilder classString = new StringBuilder("\n----------CLASS----------\n");

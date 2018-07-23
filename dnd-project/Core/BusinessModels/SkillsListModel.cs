@@ -70,9 +70,9 @@ namespace dnd_project.Core.BusinessModels
                 }
             }
         }
-
+        
         /// <summary>
-        ///
+        /// Clears the values of all of the skills in the list of skills
         /// </summary>
         public void ClearSkillRanks()
         {

@@ -40,7 +40,7 @@ namespace dnd_project.Core.BusinessModels
         }
 
         /// <summary>
-        /// Adds a value from the RaceModel to the ability  
+        /// Adds a value to an attribute
         /// </summary>
         /// <param name="attribute"></param>
         public void AddValue(string attribute, int value)
@@ -48,6 +48,10 @@ namespace dnd_project.Core.BusinessModels
             Attributes[attribute].Value += value;
         }
 
+        /// <summary>
+        /// Returns a dictionary of the attribute/value pairs
+        /// </summary>
+        /// <returns></returns>
         public Dictionary<string, int> GetAttributeMods()
         {
             Dictionary<string, int> attributeMods = new Dictionary<string, int>();
@@ -59,6 +63,11 @@ namespace dnd_project.Core.BusinessModels
 
             return attributeMods;
         }
+
+        /// <summary>
+        /// Overriden ToString method to print for debugging purposes
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder output = new StringBuilder();

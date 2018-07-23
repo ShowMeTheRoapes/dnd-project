@@ -33,7 +33,7 @@ public class AttributeModel
     /// <summary>
     /// Calculates the modifier based on the current value of the attribute.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The calculated modifier</returns>
     private int CalculateModifier()
     {
        if (Value > MAX_MOD_LEVEL)
@@ -44,6 +44,10 @@ public class AttributeModel
             return (Value - 10) / 2;
     }
 
+    /// <summary>
+    /// Overriden ToString method for debugging
+    /// </summary>
+    /// <returns>ToString</returns>
     public override string ToString()
     {
         return Name + ": " + Value + " (" + Modifier + ")\n";

@@ -146,7 +146,10 @@ namespace dnd_project.Core.BusinessModels
             skillsList.CalculateSkillMods(attributesList.GetAttributeMods(), ProficiencyBonus);
 
         }
-
+        /// <summary>
+        /// Overridden ToString for debugging
+        /// </summary>
+        /// <returns>Returns information about a Character</returns>
         public override string ToString()
         {
             StringBuilder output = new StringBuilder();
@@ -170,4 +173,3 @@ namespace dnd_project.Core.BusinessModels
         #endregion
     }
 }
-

@@ -26,7 +26,10 @@ namespace dnd_project.Core.BusinessModels
         #endregion
 
         #region Class Methods
-
+        /// <summary>
+        /// Overridden ToString for debugging
+        /// </summary>
+        /// <returns>Information about a FeatModel object</returns>
         public override string ToString()
         {
             StringBuilder output = new StringBuilder("");

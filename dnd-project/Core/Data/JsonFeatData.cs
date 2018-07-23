@@ -10,11 +10,6 @@ namespace dnd_project.Core.Data
         public class JsonFeatInfo
         {
             public string Description { get; set; }
-
-            public override string ToString()
-            {
-                return "\t--Description: " + Description;
-            }
         }
     }
 }

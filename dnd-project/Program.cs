@@ -37,9 +37,6 @@ namespace dnd_project
             //foreach (string feat in barb.StartingFeats)
             //    Console.WriteLine(feat.ToString());
 
-
-
-
             Character character = new Character();
             character.Name = "Byrd";
             character.SetCharacterClass("Ranger");
