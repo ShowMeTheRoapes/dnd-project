@@ -48,6 +48,10 @@ namespace dnd_project.Core.BusinessModels
             Attributes[attribute].Value += value;
         }
 
+        public void SetValue(string attribute, int value)
+        {
+            Attributes[attribute].Value = value;
+        }
         /// <summary>
         /// Returns a dictionary of the attribute/value pairs
         /// </summary>

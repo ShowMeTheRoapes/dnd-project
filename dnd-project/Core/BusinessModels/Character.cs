@@ -75,6 +75,23 @@ namespace dnd_project.Core.BusinessModels
 
         #region Class Methods
         /// <summary>
+        /// Recalculates attributes with updated base attribute values and class modifiers
+        /// </summary>
+        /// <param name="attributes">List and order of the attributes to be set</param>
+        /// <param name="values">List and order of the values to be set</param>
+        public void SetBaseAttributes(string[] attributes, int[] values)
+        {
+            for (int i = 0; i < attributes.Length; i++)
+            {
+                attributesList.SetValue(attributes[i], values[i]);
+            }
+
+            foreach (var item in characterRace.AttributeMods)
+            {
+                attributesList.AddValue(item.Attribute, item.Change);
+            }
+        }
+        /// <summary>
         /// Method to set the character's class info based on a provided name.
         /// </summary>
         /// <param name="className">The name of the class</param>

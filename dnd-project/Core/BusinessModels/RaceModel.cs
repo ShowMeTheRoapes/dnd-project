@@ -45,8 +45,8 @@ namespace dnd_project.Core.BusinessModels
             StringBuilder raceString = new StringBuilder();
             raceString.Append("\n------RACE------\n");
 
-            raceString.AppendLine(Name);
-            raceString.AppendLine("Typically aged between " + Age[0] + " and " + Age[1] + " years old");
+            raceString.AppendLine("Race: " + Name);
+            raceString.AppendLine("Age: Typically aged between " + Age[0] + " and " + Age[1] + " years old");
             raceString.AppendLine("Size: " + Size);
             raceString.AppendLine("Alignment: " + Alignment);
             raceString.AppendLine("Speed: " + Speed);

@@ -40,7 +40,6 @@ namespace dnd_project.Core.BusinessModels
         #endregion
 
         #region Class Methods
-
         /// <summary>
         /// Overriden ToString method to print a class
         /// </summary>
@@ -49,9 +48,9 @@ namespace dnd_project.Core.BusinessModels
         {
             StringBuilder classString = new StringBuilder("\n----------CLASS----------\n");
 
-            classString.Append(Name + "\n");
-            classString.Append(Description + "\n");
-            classString.Append(HitDie + "\n");
+            classString.Append("Class: " + Name + "\n");
+            classString.Append("Description: " + Description + "\n");
+            classString.Append("Hit Die: " + HitDie + "\n");
 
             classString.Append("Primary Attributes: \n");
             foreach (string att in PrimaryAttributes)
@@ -70,4 +69,3 @@ namespace dnd_project.Core.BusinessModels
         #endregion
     }
 }
-
