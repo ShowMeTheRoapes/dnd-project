@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewCharacter));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainButton = new System.Windows.Forms.Button();
             this.summaryBox = new System.Windows.Forms.GroupBox();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.raceLabel = new System.Windows.Forms.Label();
-            this.classLabel = new System.Windows.Forms.Label();
-            this.attributesLabel = new System.Windows.Forms.Label();
-            this.strengthLabel = new System.Windows.Forms.Label();
-            this.dexterityLabel = new System.Windows.Forms.Label();
-            this.constitutionLabel = new System.Windows.Forms.Label();
-            this.intelligenceLabel = new System.Windows.Forms.Label();
-            this.wisdomLabel = new System.Windows.Forms.Label();
             this.charismaLabel = new System.Windows.Forms.Label();
+            this.wisdomLabel = new System.Windows.Forms.Label();
+            this.intelligenceLabel = new System.Windows.Forms.Label();
+            this.constitutionLabel = new System.Windows.Forms.Label();
+            this.dexterityLabel = new System.Windows.Forms.Label();
+            this.strengthLabel = new System.Windows.Forms.Label();
+            this.attributesLabel = new System.Windows.Forms.Label();
+            this.classLabel = new System.Windows.Forms.Label();
+            this.raceLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.namePage = new System.Windows.Forms.TabPage();
             this.racePage = new System.Windows.Forms.TabPage();
@@ -115,77 +116,14 @@
             this.summaryBox.Text = "Character Summary";
             this.summaryBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // nameLabel
+            // charismaLabel
             // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(6, 36);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(110, 13);
-            this.nameLabel.TabIndex = 0;
-            this.nameLabel.Text = "Character Name Here";
-            // 
-            // raceLabel
-            // 
-            this.raceLabel.AutoSize = true;
-            this.raceLabel.Location = new System.Drawing.Point(6, 81);
-            this.raceLabel.Name = "raceLabel";
-            this.raceLabel.Size = new System.Drawing.Size(39, 13);
-            this.raceLabel.TabIndex = 1;
-            this.raceLabel.Text = "Race: ";
-            // 
-            // classLabel
-            // 
-            this.classLabel.AutoSize = true;
-            this.classLabel.Location = new System.Drawing.Point(7, 128);
-            this.classLabel.Name = "classLabel";
-            this.classLabel.Size = new System.Drawing.Size(35, 13);
-            this.classLabel.TabIndex = 2;
-            this.classLabel.Text = "Class:";
-            // 
-            // attributesLabel
-            // 
-            this.attributesLabel.AutoSize = true;
-            this.attributesLabel.Location = new System.Drawing.Point(7, 171);
-            this.attributesLabel.Name = "attributesLabel";
-            this.attributesLabel.Size = new System.Drawing.Size(54, 13);
-            this.attributesLabel.TabIndex = 3;
-            this.attributesLabel.Text = "Attributes:";
-            // 
-            // strengthLabel
-            // 
-            this.strengthLabel.AutoSize = true;
-            this.strengthLabel.Location = new System.Drawing.Point(26, 202);
-            this.strengthLabel.Name = "strengthLabel";
-            this.strengthLabel.Size = new System.Drawing.Size(50, 13);
-            this.strengthLabel.TabIndex = 4;
-            this.strengthLabel.Text = "Strength:";
-            // 
-            // dexterityLabel
-            // 
-            this.dexterityLabel.AutoSize = true;
-            this.dexterityLabel.Location = new System.Drawing.Point(26, 225);
-            this.dexterityLabel.Name = "dexterityLabel";
-            this.dexterityLabel.Size = new System.Drawing.Size(51, 13);
-            this.dexterityLabel.TabIndex = 5;
-            this.dexterityLabel.Text = "Dexterity:";
-            // 
-            // constitutionLabel
-            // 
-            this.constitutionLabel.AutoSize = true;
-            this.constitutionLabel.Location = new System.Drawing.Point(26, 248);
-            this.constitutionLabel.Name = "constitutionLabel";
-            this.constitutionLabel.Size = new System.Drawing.Size(65, 13);
-            this.constitutionLabel.TabIndex = 6;
-            this.constitutionLabel.Text = "Constitution:";
-            // 
-            // intelligenceLabel
-            // 
-            this.intelligenceLabel.AutoSize = true;
-            this.intelligenceLabel.Location = new System.Drawing.Point(26, 271);
-            this.intelligenceLabel.Name = "intelligenceLabel";
-            this.intelligenceLabel.Size = new System.Drawing.Size(64, 13);
-            this.intelligenceLabel.TabIndex = 7;
-            this.intelligenceLabel.Text = "Intelligence:";
+            this.charismaLabel.AutoSize = true;
+            this.charismaLabel.Location = new System.Drawing.Point(26, 317);
+            this.charismaLabel.Name = "charismaLabel";
+            this.charismaLabel.Size = new System.Drawing.Size(53, 13);
+            this.charismaLabel.TabIndex = 9;
+            this.charismaLabel.Text = "Charisma:";
             // 
             // wisdomLabel
             // 
@@ -196,14 +134,77 @@
             this.wisdomLabel.TabIndex = 8;
             this.wisdomLabel.Text = "Wisdom:";
             // 
-            // charismaLabel
+            // intelligenceLabel
             // 
-            this.charismaLabel.AutoSize = true;
-            this.charismaLabel.Location = new System.Drawing.Point(26, 317);
-            this.charismaLabel.Name = "charismaLabel";
-            this.charismaLabel.Size = new System.Drawing.Size(53, 13);
-            this.charismaLabel.TabIndex = 9;
-            this.charismaLabel.Text = "Charisma:";
+            this.intelligenceLabel.AutoSize = true;
+            this.intelligenceLabel.Location = new System.Drawing.Point(26, 271);
+            this.intelligenceLabel.Name = "intelligenceLabel";
+            this.intelligenceLabel.Size = new System.Drawing.Size(64, 13);
+            this.intelligenceLabel.TabIndex = 7;
+            this.intelligenceLabel.Text = "Intelligence:";
+            // 
+            // constitutionLabel
+            // 
+            this.constitutionLabel.AutoSize = true;
+            this.constitutionLabel.Location = new System.Drawing.Point(26, 248);
+            this.constitutionLabel.Name = "constitutionLabel";
+            this.constitutionLabel.Size = new System.Drawing.Size(65, 13);
+            this.constitutionLabel.TabIndex = 6;
+            this.constitutionLabel.Text = "Constitution:";
+            // 
+            // dexterityLabel
+            // 
+            this.dexterityLabel.AutoSize = true;
+            this.dexterityLabel.Location = new System.Drawing.Point(26, 225);
+            this.dexterityLabel.Name = "dexterityLabel";
+            this.dexterityLabel.Size = new System.Drawing.Size(51, 13);
+            this.dexterityLabel.TabIndex = 5;
+            this.dexterityLabel.Text = "Dexterity:";
+            // 
+            // strengthLabel
+            // 
+            this.strengthLabel.AutoSize = true;
+            this.strengthLabel.Location = new System.Drawing.Point(26, 202);
+            this.strengthLabel.Name = "strengthLabel";
+            this.strengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.strengthLabel.TabIndex = 4;
+            this.strengthLabel.Text = "Strength:";
+            // 
+            // attributesLabel
+            // 
+            this.attributesLabel.AutoSize = true;
+            this.attributesLabel.Location = new System.Drawing.Point(7, 171);
+            this.attributesLabel.Name = "attributesLabel";
+            this.attributesLabel.Size = new System.Drawing.Size(54, 13);
+            this.attributesLabel.TabIndex = 3;
+            this.attributesLabel.Text = "Attributes:";
+            // 
+            // classLabel
+            // 
+            this.classLabel.AutoSize = true;
+            this.classLabel.Location = new System.Drawing.Point(7, 128);
+            this.classLabel.Name = "classLabel";
+            this.classLabel.Size = new System.Drawing.Size(35, 13);
+            this.classLabel.TabIndex = 2;
+            this.classLabel.Text = "Class:";
+            // 
+            // raceLabel
+            // 
+            this.raceLabel.AutoSize = true;
+            this.raceLabel.Location = new System.Drawing.Point(6, 81);
+            this.raceLabel.Name = "raceLabel";
+            this.raceLabel.Size = new System.Drawing.Size(39, 13);
+            this.raceLabel.TabIndex = 1;
+            this.raceLabel.Text = "Race: ";
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(6, 36);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(110, 13);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Text = "Character Name Here";
             // 
             // tabControl
             // 
@@ -245,6 +246,7 @@
             this.Controls.Add(this.summaryBox);
             this.Controls.Add(this.mainButton);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MinimizeBox = false;
             this.Name = "NewCharacter";

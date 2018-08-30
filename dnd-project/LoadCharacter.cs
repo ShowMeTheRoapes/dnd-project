@@ -19,6 +19,7 @@ namespace dnd_project
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadCharacter));
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -36,7 +37,9 @@ namespace dnd_project
             // 
             this.ClientSize = new System.Drawing.Size(451, 377);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoadCharacter";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

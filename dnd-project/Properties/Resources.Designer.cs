@@ -104,6 +104,16 @@ namespace dnd_project.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon d20 {
+            get {
+                object obj = ResourceManager.GetObject("d20", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {
         ///   &quot;feats&quot;:{
         ///      &quot;Arcane Recovery&quot;:{

@@ -15,6 +15,8 @@ namespace dnd_project
         private Button NewCharacter;
         private Button LoadCharacter;
         private Button Exit;
+        private bool mouseDown;
+        private Point lastLocation;
 
         public MainMenu()
         {
@@ -69,10 +71,15 @@ namespace dnd_project
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.LoadCharacter);
             this.Controls.Add(this.NewCharacter);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dungeons & Dragons Character Builder";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mainMenu_MouseUp);
             this.ResumeLayout(false);
 
         }
@@ -92,6 +99,28 @@ namespace dnd_project
         private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void mainMenu_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void mainMenu_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void mainMenu_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
         }
 
         protected override void OnClosed(EventArgs e)

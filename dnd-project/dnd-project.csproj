@@ -125,5 +125,11 @@
     <Folder Include="Core\ViewModels\" />
     <Folder Include="Core\Views\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d20.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
