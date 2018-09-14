@@ -108,6 +108,7 @@
     <None Include="Core\Data\RaceData.json" />
     <None Include="Core\Data\SkillsData.json" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\dnd_project.Core.Data.JsonRaceData.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

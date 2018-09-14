@@ -26,6 +26,10 @@ namespace dnd_project.Core.Data
         public string Attribute { get; set; }
         public int Change { get; set; }
 
+        public override string ToString()
+        {
+            return Attribute + " " + Change.ToString();
+        }
     }
 
 }
