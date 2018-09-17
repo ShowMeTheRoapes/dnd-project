@@ -158,5 +158,38 @@ namespace dnd_project
                 raceProficienciesBox.SelectedIndex = -1;
             }
         }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void eyesTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void eyesTextBox_Click(object sender, EventArgs e)
+        {
+            descriptionEyeColorPicker.ShowDialog();
+            descriptionEyesTextBox.Text = descriptionEyeColorPicker.Color.Name;
+        }
+
+        private void skinTextBox_Click(object sender, EventArgs e)
+        {
+            descriptionSkinColorPicker.ShowDialog();
+            descriptionSkinTextBox.Text = descriptionSkinColorPicker.Color.Name;
+        }
+
+        private void hairTextBox_Click(object sender, EventArgs e)
+        {
+            descriptionHairColorPicker.ShowDialog();
+            descriptionHairTextBox.Text = descriptionHairColorPicker.Color.Name;
+        }
     }
 }

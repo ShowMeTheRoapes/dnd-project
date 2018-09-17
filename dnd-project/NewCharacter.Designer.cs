@@ -110,6 +110,27 @@
             this.backgroundTableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.backgroundFlawsTextBox = new System.Windows.Forms.RichTextBox();
             this.backgroundFlawsLabel = new System.Windows.Forms.Label();
+            this.descriptionPage = new System.Windows.Forms.TabPage();
+            this.descriptionLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.descriptionLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.descriptionAlignmentLabel = new System.Windows.Forms.Label();
+            this.descriptionAgeLabel = new System.Windows.Forms.Label();
+            this.descriptionHeightLabel = new System.Windows.Forms.Label();
+            this.descriptionWeightLabel = new System.Windows.Forms.Label();
+            this.descriptionAlignmentComboBox = new System.Windows.Forms.ComboBox();
+            this.descriptionAgeNumericSelector = new System.Windows.Forms.NumericUpDown();
+            this.descriptionHeightTextBox = new System.Windows.Forms.TextBox();
+            this.descriptionWeightNumericBox = new System.Windows.Forms.NumericUpDown();
+            this.descriptionLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.descriptionEyesLabel = new System.Windows.Forms.Label();
+            this.descriptionSkinLabel = new System.Windows.Forms.Label();
+            this.descriptionHairLabel = new System.Windows.Forms.Label();
+            this.descriptionEyesTextBox = new System.Windows.Forms.TextBox();
+            this.descriptionSkinTextBox = new System.Windows.Forms.TextBox();
+            this.descriptionHairTextBox = new System.Windows.Forms.TextBox();
+            this.descriptionEyeColorPicker = new System.Windows.Forms.ColorDialog();
+            this.descriptionSkinColorPicker = new System.Windows.Forms.ColorDialog();
+            this.descriptionHairColorPicker = new System.Windows.Forms.ColorDialog();
             this.menuStrip1.SuspendLayout();
             this.characterSummaryBox.SuspendLayout();
             this.racePage.SuspendLayout();
@@ -140,6 +161,12 @@
             this.backgroundTableLayoutPanel6.SuspendLayout();
             this.backgroundFlawsGroupBox.SuspendLayout();
             this.backgroundTableLayoutPanel7.SuspendLayout();
+            this.descriptionPage.SuspendLayout();
+            this.descriptionLayoutPanel1.SuspendLayout();
+            this.descriptionLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.descriptionAgeNumericSelector)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.descriptionWeightNumericBox)).BeginInit();
+            this.descriptionLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -353,7 +380,7 @@
             this.raceTable1.ColumnCount = 3;
             this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.51852F));
             this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.48148F));
-            this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 205F));
+            this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 206F));
             this.raceTable1.Controls.Add(this.raceDescriptionPanel, 2, 0);
             this.raceTable1.Controls.Add(this.raceDataItems, 0, 0);
             this.raceTable1.Controls.Add(this.raceTableLayoutPanel5, 1, 0);
@@ -372,13 +399,13 @@
             this.raceDescriptionPanel.Controls.Add(this.raceDescriptionLabel, 0, 0);
             this.raceDescriptionPanel.Controls.Add(this.raceDescriptionBox, 0, 1);
             this.raceDescriptionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.raceDescriptionPanel.Location = new System.Drawing.Point(561, 3);
+            this.raceDescriptionPanel.Location = new System.Drawing.Point(560, 3);
             this.raceDescriptionPanel.Name = "raceDescriptionPanel";
             this.raceDescriptionPanel.RowCount = 2;
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.845238F));
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.15476F));
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.raceDescriptionPanel.Size = new System.Drawing.Size(200, 336);
+            this.raceDescriptionPanel.Size = new System.Drawing.Size(201, 336);
             this.raceDescriptionPanel.TabIndex = 2;
             this.raceDescriptionPanel.Visible = false;
             // 
@@ -389,7 +416,7 @@
             this.raceDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.raceDescriptionLabel.Location = new System.Drawing.Point(3, 3);
             this.raceDescriptionLabel.Name = "raceDescriptionLabel";
-            this.raceDescriptionLabel.Size = new System.Drawing.Size(194, 17);
+            this.raceDescriptionLabel.Size = new System.Drawing.Size(195, 17);
             this.raceDescriptionLabel.TabIndex = 2;
             this.raceDescriptionLabel.Text = "Description";
             this.raceDescriptionLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -420,7 +447,7 @@
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 187F));
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 152F));
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.raceDataItems.Size = new System.Drawing.Size(349, 336);
+            this.raceDataItems.Size = new System.Drawing.Size(348, 336);
             this.raceDataItems.TabIndex = 3;
             // 
             // raceTableLayoutPanel3
@@ -656,7 +683,7 @@
             this.raceTableLayoutPanel5.Controls.Add(this.raceFeatsLabel, 0, 0);
             this.raceTableLayoutPanel5.Controls.Add(this.raceFeatsBox, 0, 1);
             this.raceTableLayoutPanel5.Controls.Add(this.raceProficienciesBox, 0, 3);
-            this.raceTableLayoutPanel5.Location = new System.Drawing.Point(358, 3);
+            this.raceTableLayoutPanel5.Location = new System.Drawing.Point(357, 3);
             this.raceTableLayoutPanel5.Name = "raceTableLayoutPanel5";
             this.raceTableLayoutPanel5.RowCount = 5;
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -718,7 +745,7 @@
             this.raceTableLayoutPanel1.ColumnCount = 3;
             this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.65688F));
             this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.34312F));
-            this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
+            this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
             this.raceTableLayoutPanel1.Controls.Add(this.raceDescription, 1, 0);
             this.raceTableLayoutPanel1.Location = new System.Drawing.Point(3, 36);
             this.raceTableLayoutPanel1.Name = "raceTableLayoutPanel1";
@@ -789,6 +816,7 @@
             this.tabControl.Controls.Add(this.namesPage);
             this.tabControl.Controls.Add(this.racePage);
             this.tabControl.Controls.Add(this.backgroundPage);
+            this.tabControl.Controls.Add(this.descriptionPage);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl.Location = new System.Drawing.Point(153, 24);
@@ -1180,6 +1208,266 @@
             this.backgroundFlawsLabel.TabIndex = 6;
             this.backgroundFlawsLabel.Text = resources.GetString("backgroundFlawsLabel.Text");
             // 
+            // descriptionPage
+            // 
+            this.descriptionPage.Controls.Add(this.descriptionLayoutPanel1);
+            this.descriptionPage.Location = new System.Drawing.Point(4, 25);
+            this.descriptionPage.Name = "descriptionPage";
+            this.descriptionPage.Padding = new System.Windows.Forms.Padding(3);
+            this.descriptionPage.Size = new System.Drawing.Size(1003, 455);
+            this.descriptionPage.TabIndex = 2;
+            this.descriptionPage.Text = "Description";
+            this.descriptionPage.UseVisualStyleBackColor = true;
+            // 
+            // descriptionLayoutPanel1
+            // 
+            this.descriptionLayoutPanel1.ColumnCount = 3;
+            this.descriptionLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 495F));
+            this.descriptionLayoutPanel1.Controls.Add(this.descriptionLayoutPanel2, 0, 0);
+            this.descriptionLayoutPanel1.Controls.Add(this.descriptionLayoutPanel3, 1, 0);
+            this.descriptionLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.descriptionLayoutPanel1.Name = "descriptionLayoutPanel1";
+            this.descriptionLayoutPanel1.RowCount = 1;
+            this.descriptionLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel1.Size = new System.Drawing.Size(987, 462);
+            this.descriptionLayoutPanel1.TabIndex = 0;
+            // 
+            // descriptionLayoutPanel2
+            // 
+            this.descriptionLayoutPanel2.ColumnCount = 2;
+            this.descriptionLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel2.Controls.Add(this.descriptionAlignmentLabel, 0, 0);
+            this.descriptionLayoutPanel2.Controls.Add(this.descriptionAgeLabel, 0, 1);
+            this.descriptionLayoutPanel2.Controls.Add(this.descriptionHeightLabel, 0, 2);
+            this.descriptionLayoutPanel2.Controls.Add(this.descriptionWeightLabel, 0, 3);
+            this.descriptionLayoutPanel2.Controls.Add(this.descriptionAlignmentComboBox, 1, 0);
+            this.descriptionLayoutPanel2.Controls.Add(this.descriptionAgeNumericSelector, 1, 1);
+            this.descriptionLayoutPanel2.Controls.Add(this.descriptionHeightTextBox, 1, 2);
+            this.descriptionLayoutPanel2.Controls.Add(this.descriptionWeightNumericBox, 1, 3);
+            this.descriptionLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.descriptionLayoutPanel2.Name = "descriptionLayoutPanel2";
+            this.descriptionLayoutPanel2.RowCount = 5;
+            this.descriptionLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.descriptionLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.descriptionLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 345F));
+            this.descriptionLayoutPanel2.Size = new System.Drawing.Size(240, 456);
+            this.descriptionLayoutPanel2.TabIndex = 0;
+            this.descriptionLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
+            // 
+            // descriptionAlignmentLabel
+            // 
+            this.descriptionAlignmentLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.descriptionAlignmentLabel.AutoSize = true;
+            this.descriptionAlignmentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionAlignmentLabel.Location = new System.Drawing.Point(47, 6);
+            this.descriptionAlignmentLabel.Name = "descriptionAlignmentLabel";
+            this.descriptionAlignmentLabel.Size = new System.Drawing.Size(70, 16);
+            this.descriptionAlignmentLabel.TabIndex = 0;
+            this.descriptionAlignmentLabel.Text = "Alignment:";
+            // 
+            // descriptionAgeLabel
+            // 
+            this.descriptionAgeLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.descriptionAgeLabel.AutoSize = true;
+            this.descriptionAgeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionAgeLabel.Location = new System.Drawing.Point(81, 35);
+            this.descriptionAgeLabel.Name = "descriptionAgeLabel";
+            this.descriptionAgeLabel.Size = new System.Drawing.Size(36, 16);
+            this.descriptionAgeLabel.TabIndex = 1;
+            this.descriptionAgeLabel.Text = "Age:";
+            // 
+            // descriptionHeightLabel
+            // 
+            this.descriptionHeightLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.descriptionHeightLabel.AutoSize = true;
+            this.descriptionHeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionHeightLabel.Location = new System.Drawing.Point(67, 63);
+            this.descriptionHeightLabel.Name = "descriptionHeightLabel";
+            this.descriptionHeightLabel.Size = new System.Drawing.Size(50, 16);
+            this.descriptionHeightLabel.TabIndex = 2;
+            this.descriptionHeightLabel.Text = "Height:";
+            // 
+            // descriptionWeightLabel
+            // 
+            this.descriptionWeightLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.descriptionWeightLabel.AutoSize = true;
+            this.descriptionWeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionWeightLabel.Location = new System.Drawing.Point(64, 89);
+            this.descriptionWeightLabel.Name = "descriptionWeightLabel";
+            this.descriptionWeightLabel.Size = new System.Drawing.Size(53, 16);
+            this.descriptionWeightLabel.TabIndex = 3;
+            this.descriptionWeightLabel.Text = "Weight:";
+            // 
+            // descriptionAlignmentComboBox
+            // 
+            this.descriptionAlignmentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.descriptionAlignmentComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionAlignmentComboBox.FormattingEnabled = true;
+            this.descriptionAlignmentComboBox.Items.AddRange(new object[] {
+            "Lawful Good",
+            "Neutral Good",
+            "Chaotic Good",
+            "Lawful Neutral",
+            "True Neutral",
+            "Chaotic Neutral",
+            "Lawful Evil",
+            "Neutral Evil",
+            "Chaotic Evil"});
+            this.descriptionAlignmentComboBox.Location = new System.Drawing.Point(123, 3);
+            this.descriptionAlignmentComboBox.Name = "descriptionAlignmentComboBox";
+            this.descriptionAlignmentComboBox.Size = new System.Drawing.Size(114, 23);
+            this.descriptionAlignmentComboBox.TabIndex = 4;
+            // 
+            // descriptionAgeNumericSelector
+            // 
+            this.descriptionAgeNumericSelector.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.descriptionAgeNumericSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionAgeNumericSelector.Location = new System.Drawing.Point(123, 33);
+            this.descriptionAgeNumericSelector.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.descriptionAgeNumericSelector.Minimum = new decimal(new int[] {
+            16,
+            0,
+            0,
+            0});
+            this.descriptionAgeNumericSelector.Name = "descriptionAgeNumericSelector";
+            this.descriptionAgeNumericSelector.Size = new System.Drawing.Size(114, 21);
+            this.descriptionAgeNumericSelector.TabIndex = 5;
+            this.descriptionAgeNumericSelector.Value = new decimal(new int[] {
+            16,
+            0,
+            0,
+            0});
+            // 
+            // descriptionHeightTextBox
+            // 
+            this.descriptionHeightTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.descriptionHeightTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionHeightTextBox.Location = new System.Drawing.Point(123, 61);
+            this.descriptionHeightTextBox.MaxLength = 8;
+            this.descriptionHeightTextBox.Name = "descriptionHeightTextBox";
+            this.descriptionHeightTextBox.Size = new System.Drawing.Size(114, 21);
+            this.descriptionHeightTextBox.TabIndex = 6;
+            this.descriptionHeightTextBox.Text = "5\'0\"";
+            this.descriptionHeightTextBox.WordWrap = false;
+            // 
+            // descriptionWeightNumericBox
+            // 
+            this.descriptionWeightNumericBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.descriptionWeightNumericBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionWeightNumericBox.Location = new System.Drawing.Point(123, 87);
+            this.descriptionWeightNumericBox.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.descriptionWeightNumericBox.Minimum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.descriptionWeightNumericBox.Name = "descriptionWeightNumericBox";
+            this.descriptionWeightNumericBox.Size = new System.Drawing.Size(114, 21);
+            this.descriptionWeightNumericBox.TabIndex = 7;
+            this.descriptionWeightNumericBox.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            // 
+            // descriptionLayoutPanel3
+            // 
+            this.descriptionLayoutPanel3.ColumnCount = 2;
+            this.descriptionLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel3.Controls.Add(this.descriptionEyesLabel, 0, 0);
+            this.descriptionLayoutPanel3.Controls.Add(this.descriptionSkinLabel, 0, 1);
+            this.descriptionLayoutPanel3.Controls.Add(this.descriptionHairLabel, 0, 2);
+            this.descriptionLayoutPanel3.Controls.Add(this.descriptionEyesTextBox, 1, 0);
+            this.descriptionLayoutPanel3.Controls.Add(this.descriptionSkinTextBox, 1, 1);
+            this.descriptionLayoutPanel3.Controls.Add(this.descriptionHairTextBox, 1, 2);
+            this.descriptionLayoutPanel3.Location = new System.Drawing.Point(249, 3);
+            this.descriptionLayoutPanel3.Name = "descriptionLayoutPanel3";
+            this.descriptionLayoutPanel3.RowCount = 4;
+            this.descriptionLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.descriptionLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.descriptionLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 371F));
+            this.descriptionLayoutPanel3.Size = new System.Drawing.Size(240, 456);
+            this.descriptionLayoutPanel3.TabIndex = 1;
+            // 
+            // descriptionEyesLabel
+            // 
+            this.descriptionEyesLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.descriptionEyesLabel.AutoSize = true;
+            this.descriptionEyesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionEyesLabel.Location = new System.Drawing.Point(75, 6);
+            this.descriptionEyesLabel.Name = "descriptionEyesLabel";
+            this.descriptionEyesLabel.Size = new System.Drawing.Size(42, 16);
+            this.descriptionEyesLabel.TabIndex = 0;
+            this.descriptionEyesLabel.Text = "Eyes:";
+            // 
+            // descriptionSkinLabel
+            // 
+            this.descriptionSkinLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.descriptionSkinLabel.AutoSize = true;
+            this.descriptionSkinLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionSkinLabel.Location = new System.Drawing.Point(80, 35);
+            this.descriptionSkinLabel.Name = "descriptionSkinLabel";
+            this.descriptionSkinLabel.Size = new System.Drawing.Size(37, 16);
+            this.descriptionSkinLabel.TabIndex = 1;
+            this.descriptionSkinLabel.Text = "Skin:";
+            // 
+            // descriptionHairLabel
+            // 
+            this.descriptionHairLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.descriptionHairLabel.AutoSize = true;
+            this.descriptionHairLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionHairLabel.Location = new System.Drawing.Point(81, 63);
+            this.descriptionHairLabel.Name = "descriptionHairLabel";
+            this.descriptionHairLabel.Size = new System.Drawing.Size(36, 16);
+            this.descriptionHairLabel.TabIndex = 2;
+            this.descriptionHairLabel.Text = "Hair:";
+            // 
+            // descriptionEyesTextBox
+            // 
+            this.descriptionEyesTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.descriptionEyesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionEyesTextBox.Location = new System.Drawing.Point(123, 4);
+            this.descriptionEyesTextBox.Name = "descriptionEyesTextBox";
+            this.descriptionEyesTextBox.Size = new System.Drawing.Size(114, 21);
+            this.descriptionEyesTextBox.TabIndex = 3;
+            this.descriptionEyesTextBox.Click += new System.EventHandler(this.eyesTextBox_Click);
+            this.descriptionEyesTextBox.TextChanged += new System.EventHandler(this.eyesTextBox_TextChanged);
+            // 
+            // descriptionSkinTextBox
+            // 
+            this.descriptionSkinTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.descriptionSkinTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionSkinTextBox.Location = new System.Drawing.Point(123, 33);
+            this.descriptionSkinTextBox.Name = "descriptionSkinTextBox";
+            this.descriptionSkinTextBox.Size = new System.Drawing.Size(114, 21);
+            this.descriptionSkinTextBox.TabIndex = 4;
+            this.descriptionSkinTextBox.Click += new System.EventHandler(this.skinTextBox_Click);
+            // 
+            // descriptionHairTextBox
+            // 
+            this.descriptionHairTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.descriptionHairTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionHairTextBox.Location = new System.Drawing.Point(123, 61);
+            this.descriptionHairTextBox.Name = "descriptionHairTextBox";
+            this.descriptionHairTextBox.Size = new System.Drawing.Size(114, 21);
+            this.descriptionHairTextBox.TabIndex = 5;
+            this.descriptionHairTextBox.Click += new System.EventHandler(this.hairTextBox_Click);
+            // 
             // NewCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1243,6 +1531,14 @@
             this.backgroundFlawsGroupBox.ResumeLayout(false);
             this.backgroundTableLayoutPanel7.ResumeLayout(false);
             this.backgroundTableLayoutPanel7.PerformLayout();
+            this.descriptionPage.ResumeLayout(false);
+            this.descriptionLayoutPanel1.ResumeLayout(false);
+            this.descriptionLayoutPanel2.ResumeLayout(false);
+            this.descriptionLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.descriptionAgeNumericSelector)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.descriptionWeightNumericBox)).EndInit();
+            this.descriptionLayoutPanel3.ResumeLayout(false);
+            this.descriptionLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1331,5 +1627,27 @@
         private System.Windows.Forms.TableLayoutPanel backgroundTableLayoutPanel7;
         private System.Windows.Forms.RichTextBox backgroundFlawsTextBox;
         private System.Windows.Forms.Label backgroundFlawsLabel;
+        private System.Windows.Forms.TabPage namePage;
+        private System.Windows.Forms.TabPage descriptionPage;
+        private System.Windows.Forms.TableLayoutPanel descriptionLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel descriptionLayoutPanel2;
+        private System.Windows.Forms.Label descriptionAlignmentLabel;
+        private System.Windows.Forms.TableLayoutPanel descriptionLayoutPanel3;
+        private System.Windows.Forms.Label descriptionAgeLabel;
+        private System.Windows.Forms.Label descriptionHeightLabel;
+        private System.Windows.Forms.Label descriptionWeightLabel;
+        private System.Windows.Forms.Label descriptionEyesLabel;
+        private System.Windows.Forms.Label descriptionSkinLabel;
+        private System.Windows.Forms.Label descriptionHairLabel;
+        private System.Windows.Forms.ComboBox descriptionAlignmentComboBox;
+        private System.Windows.Forms.NumericUpDown descriptionAgeNumericSelector;
+        private System.Windows.Forms.TextBox descriptionHeightTextBox;
+        private System.Windows.Forms.NumericUpDown descriptionWeightNumericBox;
+        private System.Windows.Forms.TextBox descriptionEyesTextBox;
+        private System.Windows.Forms.ColorDialog descriptionEyeColorPicker;
+        private System.Windows.Forms.TextBox descriptionSkinTextBox;
+        private System.Windows.Forms.ColorDialog descriptionSkinColorPicker;
+        private System.Windows.Forms.TextBox descriptionHairTextBox;
+        private System.Windows.Forms.ColorDialog descriptionHairColorPicker;
     }
 }
