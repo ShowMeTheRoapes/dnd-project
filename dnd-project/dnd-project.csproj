@@ -63,6 +63,12 @@
     <Compile Include="Core\Data\JsonRaceData.cs" />
     <Compile Include="Core\Data\JsonSkillData.cs" />
     <Compile Include="Core\Data\JsonClassData.cs" />
+    <Compile Include="DieRoller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DieRoller.Designer.cs">
+      <DependentUpon>DieRoller.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoadCharacter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DieRoller.resx">
+      <DependentUpon>DieRoller.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoadCharacter.resx">
       <DependentUpon>LoadCharacter.cs</DependentUpon>
     </EmbeddedResource>

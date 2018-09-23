@@ -69,10 +69,9 @@ namespace dnd_project
             {
                 raceProficienciesBox.Items.Add(prof);
             }
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void main_button_Click(object sender, EventArgs e)
         {
             new MainMenu().Show();
             Close();
@@ -87,7 +86,7 @@ namespace dnd_project
             }
         }
 
-        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void raceList_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             string selectedItem = raceList.GetItemText(raceList.SelectedItem);
             raceHeader.Text = selectedItem;
@@ -114,7 +113,6 @@ namespace dnd_project
                 raceDescriptionPanel.Visible = false;
                 raceDescriptionLabel.Text = "";
             }
-            
         }
 
         private void raceAttrBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -159,21 +157,6 @@ namespace dnd_project
             }
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void eyesTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void eyesTextBox_Click(object sender, EventArgs e)
         {
             descriptionEyeColorPicker.ShowDialog();
@@ -190,6 +173,11 @@ namespace dnd_project
         {
             descriptionHairColorPicker.ShowDialog();
             descriptionHairTextBox.Text = descriptionHairColorPicker.Color.Name;
+        }
+
+        private void dieRollerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new DieRoller().Show();
         }
     }
 }

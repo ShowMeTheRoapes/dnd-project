@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using dnd_project.Core.Data;
-using dnd_project.Core.BusinessModels;
-using dnd_project.Core.BusinessModels.Dice;
 
 namespace dnd_project
 {
@@ -20,6 +17,7 @@ namespace dnd_project
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             new MainMenu().Show();
+            //new DieRoller().Show();
             Application.Run();
 
             //Character character = new Character();
