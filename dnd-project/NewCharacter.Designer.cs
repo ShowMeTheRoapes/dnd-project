@@ -84,6 +84,32 @@
             this.raceList = new System.Windows.Forms.ListBox();
             this.namesPage = new System.Windows.Forms.TabPage();
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.backgroundPage = new System.Windows.Forms.TabPage();
+            this.backgroundTableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.backgroundBackgroundGroupBox = new System.Windows.Forms.GroupBox();
+            this.backgroundTableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.backgroundBackgroundLabel = new System.Windows.Forms.Label();
+            this.backgroundBackgroundComboBox = new System.Windows.Forms.ComboBox();
+            this.backgroundFactionGroupBox = new System.Windows.Forms.GroupBox();
+            this.backgroundTableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.backgroundFactionLabel = new System.Windows.Forms.Label();
+            this.backgroundFactionComboBox = new System.Windows.Forms.ComboBox();
+            this.backgroundPersonalityGroupBox = new System.Windows.Forms.GroupBox();
+            this.backgroundTableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.backgroundPersonalityLabel = new System.Windows.Forms.Label();
+            this.backgroundPersonalityTextBox = new System.Windows.Forms.RichTextBox();
+            this.backgroundIdealsGroupBox = new System.Windows.Forms.GroupBox();
+            this.backgroundTableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.backgroundIdealsTextBox = new System.Windows.Forms.RichTextBox();
+            this.backgroundIdealsLabel = new System.Windows.Forms.Label();
+            this.backgroundBondsGroupBox = new System.Windows.Forms.GroupBox();
+            this.backgroundTableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.backgroundBondsTextBox = new System.Windows.Forms.RichTextBox();
+            this.backgroundBondsLabel = new System.Windows.Forms.Label();
+            this.backgroundFlawsGroupBox = new System.Windows.Forms.GroupBox();
+            this.backgroundTableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.backgroundFlawsTextBox = new System.Windows.Forms.RichTextBox();
+            this.backgroundFlawsLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.characterSummaryBox.SuspendLayout();
             this.racePage.SuspendLayout();
@@ -100,6 +126,20 @@
             this.raceTableLayoutPanel1.SuspendLayout();
             this.racePanel1.SuspendLayout();
             this.tabControl.SuspendLayout();
+            this.backgroundPage.SuspendLayout();
+            this.backgroundTableLayoutPanel1.SuspendLayout();
+            this.backgroundBackgroundGroupBox.SuspendLayout();
+            this.backgroundTableLayoutPanel2.SuspendLayout();
+            this.backgroundFactionGroupBox.SuspendLayout();
+            this.backgroundTableLayoutPanel3.SuspendLayout();
+            this.backgroundPersonalityGroupBox.SuspendLayout();
+            this.backgroundTableLayoutPanel4.SuspendLayout();
+            this.backgroundIdealsGroupBox.SuspendLayout();
+            this.backgroundTableLayoutPanel5.SuspendLayout();
+            this.backgroundBondsGroupBox.SuspendLayout();
+            this.backgroundTableLayoutPanel6.SuspendLayout();
+            this.backgroundFlawsGroupBox.SuspendLayout();
+            this.backgroundTableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -124,7 +164,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // editToolStripMenuItem
@@ -313,7 +353,7 @@
             this.raceTable1.ColumnCount = 3;
             this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.51852F));
             this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.48148F));
-            this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 204F));
+            this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 205F));
             this.raceTable1.Controls.Add(this.raceDescriptionPanel, 2, 0);
             this.raceTable1.Controls.Add(this.raceDataItems, 0, 0);
             this.raceTable1.Controls.Add(this.raceTableLayoutPanel5, 1, 0);
@@ -332,13 +372,13 @@
             this.raceDescriptionPanel.Controls.Add(this.raceDescriptionLabel, 0, 0);
             this.raceDescriptionPanel.Controls.Add(this.raceDescriptionBox, 0, 1);
             this.raceDescriptionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.raceDescriptionPanel.Location = new System.Drawing.Point(562, 3);
+            this.raceDescriptionPanel.Location = new System.Drawing.Point(561, 3);
             this.raceDescriptionPanel.Name = "raceDescriptionPanel";
             this.raceDescriptionPanel.RowCount = 2;
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.845238F));
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.15476F));
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.raceDescriptionPanel.Size = new System.Drawing.Size(199, 336);
+            this.raceDescriptionPanel.Size = new System.Drawing.Size(200, 336);
             this.raceDescriptionPanel.TabIndex = 2;
             this.raceDescriptionPanel.Visible = false;
             // 
@@ -349,7 +389,7 @@
             this.raceDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.raceDescriptionLabel.Location = new System.Drawing.Point(3, 3);
             this.raceDescriptionLabel.Name = "raceDescriptionLabel";
-            this.raceDescriptionLabel.Size = new System.Drawing.Size(193, 17);
+            this.raceDescriptionLabel.Size = new System.Drawing.Size(194, 17);
             this.raceDescriptionLabel.TabIndex = 2;
             this.raceDescriptionLabel.Text = "Description";
             this.raceDescriptionLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -624,7 +664,7 @@
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 124F));
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.raceTableLayoutPanel5.Size = new System.Drawing.Size(198, 336);
+            this.raceTableLayoutPanel5.Size = new System.Drawing.Size(197, 336);
             this.raceTableLayoutPanel5.TabIndex = 4;
             // 
             // raceProficienciesLabel
@@ -658,7 +698,7 @@
             this.raceFeatsBox.ItemHeight = 16;
             this.raceFeatsBox.Location = new System.Drawing.Point(3, 28);
             this.raceFeatsBox.Name = "raceFeatsBox";
-            this.raceFeatsBox.Size = new System.Drawing.Size(192, 98);
+            this.raceFeatsBox.Size = new System.Drawing.Size(191, 98);
             this.raceFeatsBox.TabIndex = 3;
             this.raceFeatsBox.SelectedIndexChanged += new System.EventHandler(this.raceFeatsBox_SelectedIndexChanged);
             // 
@@ -669,7 +709,7 @@
             this.raceProficienciesBox.ItemHeight = 16;
             this.raceProficienciesBox.Location = new System.Drawing.Point(3, 157);
             this.raceProficienciesBox.Name = "raceProficienciesBox";
-            this.raceProficienciesBox.Size = new System.Drawing.Size(192, 118);
+            this.raceProficienciesBox.Size = new System.Drawing.Size(191, 118);
             this.raceProficienciesBox.TabIndex = 6;
             this.raceProficienciesBox.SelectedIndexChanged += new System.EventHandler(this.raceProficienciesBox_SelectedIndexChanged);
             // 
@@ -678,7 +718,7 @@
             this.raceTableLayoutPanel1.ColumnCount = 3;
             this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.65688F));
             this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.34312F));
-            this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
+            this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
             this.raceTableLayoutPanel1.Controls.Add(this.raceDescription, 1, 0);
             this.raceTableLayoutPanel1.Location = new System.Drawing.Point(3, 36);
             this.raceTableLayoutPanel1.Name = "raceTableLayoutPanel1";
@@ -691,7 +731,7 @@
             // 
             this.raceDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.raceDescription.AutoSize = true;
-            this.raceDescription.Location = new System.Drawing.Point(304, 11);
+            this.raceDescription.Location = new System.Drawing.Point(303, 11);
             this.raceDescription.Name = "raceDescription";
             this.raceDescription.Size = new System.Drawing.Size(145, 16);
             this.raceDescription.TabIndex = 4;
@@ -748,6 +788,7 @@
             // 
             this.tabControl.Controls.Add(this.namesPage);
             this.tabControl.Controls.Add(this.racePage);
+            this.tabControl.Controls.Add(this.backgroundPage);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl.Location = new System.Drawing.Point(153, 24);
@@ -756,6 +797,388 @@
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(1011, 484);
             this.tabControl.TabIndex = 3;
+            // 
+            // backgroundPage
+            // 
+            this.backgroundPage.Controls.Add(this.backgroundTableLayoutPanel1);
+            this.backgroundPage.Location = new System.Drawing.Point(4, 25);
+            this.backgroundPage.Name = "backgroundPage";
+            this.backgroundPage.Padding = new System.Windows.Forms.Padding(3);
+            this.backgroundPage.Size = new System.Drawing.Size(1003, 455);
+            this.backgroundPage.TabIndex = 2;
+            this.backgroundPage.Text = "Background";
+            this.backgroundPage.UseVisualStyleBackColor = true;
+            // 
+            // backgroundTableLayoutPanel1
+            // 
+            this.backgroundTableLayoutPanel1.ColumnCount = 2;
+            this.backgroundTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.25329F));
+            this.backgroundTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.74671F));
+            this.backgroundTableLayoutPanel1.Controls.Add(this.backgroundBackgroundGroupBox, 0, 0);
+            this.backgroundTableLayoutPanel1.Controls.Add(this.backgroundFactionGroupBox, 1, 0);
+            this.backgroundTableLayoutPanel1.Controls.Add(this.backgroundPersonalityGroupBox, 0, 1);
+            this.backgroundTableLayoutPanel1.Controls.Add(this.backgroundIdealsGroupBox, 1, 1);
+            this.backgroundTableLayoutPanel1.Controls.Add(this.backgroundBondsGroupBox, 0, 2);
+            this.backgroundTableLayoutPanel1.Controls.Add(this.backgroundFlawsGroupBox, 1, 2);
+            this.backgroundTableLayoutPanel1.Location = new System.Drawing.Point(0, 3);
+            this.backgroundTableLayoutPanel1.Name = "backgroundTableLayoutPanel1";
+            this.backgroundTableLayoutPanel1.RowCount = 3;
+            this.backgroundTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.68944F));
+            this.backgroundTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.31056F));
+            this.backgroundTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 153F));
+            this.backgroundTableLayoutPanel1.Size = new System.Drawing.Size(987, 459);
+            this.backgroundTableLayoutPanel1.TabIndex = 0;
+            // 
+            // backgroundBackgroundGroupBox
+            // 
+            this.backgroundBackgroundGroupBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundBackgroundGroupBox.Controls.Add(this.backgroundTableLayoutPanel2);
+            this.backgroundBackgroundGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundBackgroundGroupBox.Location = new System.Drawing.Point(3, 3);
+            this.backgroundBackgroundGroupBox.Name = "backgroundBackgroundGroupBox";
+            this.backgroundBackgroundGroupBox.Size = new System.Drawing.Size(489, 146);
+            this.backgroundBackgroundGroupBox.TabIndex = 0;
+            this.backgroundBackgroundGroupBox.TabStop = false;
+            this.backgroundBackgroundGroupBox.Text = "Background";
+            // 
+            // backgroundTableLayoutPanel2
+            // 
+            this.backgroundTableLayoutPanel2.ColumnCount = 1;
+            this.backgroundTableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.backgroundTableLayoutPanel2.Controls.Add(this.backgroundBackgroundLabel, 0, 0);
+            this.backgroundTableLayoutPanel2.Controls.Add(this.backgroundBackgroundComboBox, 0, 1);
+            this.backgroundTableLayoutPanel2.Location = new System.Drawing.Point(-1, 8);
+            this.backgroundTableLayoutPanel2.Name = "backgroundTableLayoutPanel2";
+            this.backgroundTableLayoutPanel2.RowCount = 2;
+            this.backgroundTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.69291F));
+            this.backgroundTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.30709F));
+            this.backgroundTableLayoutPanel2.Size = new System.Drawing.Size(490, 138);
+            this.backgroundTableLayoutPanel2.TabIndex = 0;
+            // 
+            // backgroundBackgroundLabel
+            // 
+            this.backgroundBackgroundLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundBackgroundLabel.AutoSize = true;
+            this.backgroundBackgroundLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundBackgroundLabel.Location = new System.Drawing.Point(4, 16);
+            this.backgroundBackgroundLabel.Name = "backgroundBackgroundLabel";
+            this.backgroundBackgroundLabel.Size = new System.Drawing.Size(482, 45);
+            this.backgroundBackgroundLabel.TabIndex = 1;
+            this.backgroundBackgroundLabel.Text = resources.GetString("backgroundBackgroundLabel.Text");
+            // 
+            // backgroundBackgroundComboBox
+            // 
+            this.backgroundBackgroundComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundBackgroundComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.backgroundBackgroundComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundBackgroundComboBox.FormattingEnabled = true;
+            this.backgroundBackgroundComboBox.Items.AddRange(new object[] {
+            "Acolyte",
+            "Anthropologist",
+            "Archaeologist",
+            "Black Fist Double Agent",
+            "Caravan Specialist",
+            "Charlatan",
+            "City Watch",
+            "Clan Crafter",
+            "Cloistered Scholar",
+            "Cormanthor Refugee",
+            "Courtier",
+            "Criminal",
+            "Dissenter",
+            "Dragon Casualty",
+            "Earthspur Miner",
+            "Entertainer",
+            "Faction Agent",
+            "Far Traveler",
+            "Folk Hero",
+            "Gate Urchin",
+            "Gladiator",
+            "Guild Artisan",
+            "Guild Merchant",
+            "Harborfolk",
+            "Haunted One",
+            "Hermit",
+            "Hillsfar Merchant",
+            "Hillsfar Smuggler",
+            "House Agent",
+            "Inheritor",
+            "Initiate",
+            "Inquisitor",
+            "Investigator",
+            "Iron Route Bandit",
+            "Knight",
+            "Knight of the Order",
+            "Mercenary Veteran",
+            "Mulmaster Aristocrat",
+            "Noble",
+            "Outlander",
+            "Phlan Insurgent",
+            "Phlan Refugee",
+            "Pirate",
+            "Sage",
+            "Sailor",
+            "Secret Identity",
+            "Shade Fanatic",
+            "Soldier",
+            "Spy",
+            "Stojanow Prisoner",
+            "Ticklebelly Nomad",
+            "Trade Sheriff",
+            "Urban Bounty Hunter",
+            "Urchin",
+            "Uthgardt Tribe Member",
+            "Vizier",
+            "Waterdhavian Noble"});
+            this.backgroundBackgroundComboBox.Location = new System.Drawing.Point(123, 96);
+            this.backgroundBackgroundComboBox.Name = "backgroundBackgroundComboBox";
+            this.backgroundBackgroundComboBox.Size = new System.Drawing.Size(243, 24);
+            this.backgroundBackgroundComboBox.TabIndex = 2;
+            // 
+            // backgroundFactionGroupBox
+            // 
+            this.backgroundFactionGroupBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundFactionGroupBox.Controls.Add(this.backgroundTableLayoutPanel3);
+            this.backgroundFactionGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundFactionGroupBox.Location = new System.Drawing.Point(498, 3);
+            this.backgroundFactionGroupBox.Name = "backgroundFactionGroupBox";
+            this.backgroundFactionGroupBox.Size = new System.Drawing.Size(486, 146);
+            this.backgroundFactionGroupBox.TabIndex = 1;
+            this.backgroundFactionGroupBox.TabStop = false;
+            this.backgroundFactionGroupBox.Text = "Faction";
+            // 
+            // backgroundTableLayoutPanel3
+            // 
+            this.backgroundTableLayoutPanel3.ColumnCount = 1;
+            this.backgroundTableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.backgroundTableLayoutPanel3.Controls.Add(this.backgroundFactionLabel, 0, 0);
+            this.backgroundTableLayoutPanel3.Controls.Add(this.backgroundFactionComboBox, 0, 1);
+            this.backgroundTableLayoutPanel3.Location = new System.Drawing.Point(0, 8);
+            this.backgroundTableLayoutPanel3.Name = "backgroundTableLayoutPanel3";
+            this.backgroundTableLayoutPanel3.RowCount = 2;
+            this.backgroundTableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.52174F));
+            this.backgroundTableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.47826F));
+            this.backgroundTableLayoutPanel3.Size = new System.Drawing.Size(486, 138);
+            this.backgroundTableLayoutPanel3.TabIndex = 0;
+            // 
+            // backgroundFactionLabel
+            // 
+            this.backgroundFactionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundFactionLabel.AutoSize = true;
+            this.backgroundFactionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundFactionLabel.Location = new System.Drawing.Point(5, 9);
+            this.backgroundFactionLabel.Name = "backgroundFactionLabel";
+            this.backgroundFactionLabel.Size = new System.Drawing.Size(476, 60);
+            this.backgroundFactionLabel.TabIndex = 4;
+            this.backgroundFactionLabel.Text = resources.GetString("backgroundFactionLabel.Text");
+            // 
+            // backgroundFactionComboBox
+            // 
+            this.backgroundFactionComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundFactionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.backgroundFactionComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundFactionComboBox.FormattingEnabled = true;
+            this.backgroundFactionComboBox.Items.AddRange(new object[] {
+            "The Harpers",
+            "The Order of the Gauntlet",
+            "The Emerald Enclave",
+            "The Lords\' Alliance",
+            "The Zhentarim"});
+            this.backgroundFactionComboBox.Location = new System.Drawing.Point(121, 96);
+            this.backgroundFactionComboBox.Name = "backgroundFactionComboBox";
+            this.backgroundFactionComboBox.Size = new System.Drawing.Size(243, 24);
+            this.backgroundFactionComboBox.TabIndex = 3;
+            // 
+            // backgroundPersonalityGroupBox
+            // 
+            this.backgroundPersonalityGroupBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundPersonalityGroupBox.Controls.Add(this.backgroundTableLayoutPanel4);
+            this.backgroundPersonalityGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundPersonalityGroupBox.Location = new System.Drawing.Point(3, 155);
+            this.backgroundPersonalityGroupBox.Name = "backgroundPersonalityGroupBox";
+            this.backgroundPersonalityGroupBox.Size = new System.Drawing.Size(489, 147);
+            this.backgroundPersonalityGroupBox.TabIndex = 2;
+            this.backgroundPersonalityGroupBox.TabStop = false;
+            this.backgroundPersonalityGroupBox.Text = "Personality Traits";
+            // 
+            // backgroundTableLayoutPanel4
+            // 
+            this.backgroundTableLayoutPanel4.ColumnCount = 1;
+            this.backgroundTableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.backgroundTableLayoutPanel4.Controls.Add(this.backgroundPersonalityLabel, 0, 0);
+            this.backgroundTableLayoutPanel4.Controls.Add(this.backgroundPersonalityTextBox, 0, 1);
+            this.backgroundTableLayoutPanel4.Location = new System.Drawing.Point(3, 9);
+            this.backgroundTableLayoutPanel4.Name = "backgroundTableLayoutPanel4";
+            this.backgroundTableLayoutPanel4.RowCount = 2;
+            this.backgroundTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.27536F));
+            this.backgroundTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.72464F));
+            this.backgroundTableLayoutPanel4.Size = new System.Drawing.Size(486, 138);
+            this.backgroundTableLayoutPanel4.TabIndex = 0;
+            // 
+            // backgroundPersonalityLabel
+            // 
+            this.backgroundPersonalityLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundPersonalityLabel.AutoSize = true;
+            this.backgroundPersonalityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundPersonalityLabel.Location = new System.Drawing.Point(16, 11);
+            this.backgroundPersonalityLabel.Name = "backgroundPersonalityLabel";
+            this.backgroundPersonalityLabel.Size = new System.Drawing.Size(453, 45);
+            this.backgroundPersonalityLabel.TabIndex = 2;
+            this.backgroundPersonalityLabel.Text = "Personality traits are small details that tell about a character\'s behavior. They" +
+    " often describe things such as mannerisms, habits, beliefs, things they enjoy or" +
+    " fear, and accomplishments.";
+            // 
+            // backgroundPersonalityTextBox
+            // 
+            this.backgroundPersonalityTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundPersonalityTextBox.Location = new System.Drawing.Point(3, 70);
+            this.backgroundPersonalityTextBox.Name = "backgroundPersonalityTextBox";
+            this.backgroundPersonalityTextBox.Size = new System.Drawing.Size(480, 64);
+            this.backgroundPersonalityTextBox.TabIndex = 3;
+            this.backgroundPersonalityTextBox.Text = "";
+            // 
+            // backgroundIdealsGroupBox
+            // 
+            this.backgroundIdealsGroupBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundIdealsGroupBox.Controls.Add(this.backgroundTableLayoutPanel5);
+            this.backgroundIdealsGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundIdealsGroupBox.Location = new System.Drawing.Point(498, 155);
+            this.backgroundIdealsGroupBox.Name = "backgroundIdealsGroupBox";
+            this.backgroundIdealsGroupBox.Size = new System.Drawing.Size(486, 147);
+            this.backgroundIdealsGroupBox.TabIndex = 3;
+            this.backgroundIdealsGroupBox.TabStop = false;
+            this.backgroundIdealsGroupBox.Text = "Ideals";
+            // 
+            // backgroundTableLayoutPanel5
+            // 
+            this.backgroundTableLayoutPanel5.ColumnCount = 1;
+            this.backgroundTableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.backgroundTableLayoutPanel5.Controls.Add(this.backgroundIdealsTextBox, 0, 1);
+            this.backgroundTableLayoutPanel5.Controls.Add(this.backgroundIdealsLabel, 0, 0);
+            this.backgroundTableLayoutPanel5.Location = new System.Drawing.Point(0, 9);
+            this.backgroundTableLayoutPanel5.Name = "backgroundTableLayoutPanel5";
+            this.backgroundTableLayoutPanel5.RowCount = 2;
+            this.backgroundTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.55072F));
+            this.backgroundTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.44928F));
+            this.backgroundTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.backgroundTableLayoutPanel5.Size = new System.Drawing.Size(486, 138);
+            this.backgroundTableLayoutPanel5.TabIndex = 0;
+            // 
+            // backgroundIdealsTextBox
+            // 
+            this.backgroundIdealsTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundIdealsTextBox.Location = new System.Drawing.Point(3, 69);
+            this.backgroundIdealsTextBox.Name = "backgroundIdealsTextBox";
+            this.backgroundIdealsTextBox.Size = new System.Drawing.Size(480, 66);
+            this.backgroundIdealsTextBox.TabIndex = 4;
+            this.backgroundIdealsTextBox.Text = "";
+            // 
+            // backgroundIdealsLabel
+            // 
+            this.backgroundIdealsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundIdealsLabel.AutoSize = true;
+            this.backgroundIdealsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.backgroundIdealsLabel.Location = new System.Drawing.Point(7, 18);
+            this.backgroundIdealsLabel.Name = "backgroundIdealsLabel";
+            this.backgroundIdealsLabel.Size = new System.Drawing.Size(471, 30);
+            this.backgroundIdealsLabel.TabIndex = 5;
+            this.backgroundIdealsLabel.Text = "An ideal is an idea that a character strongly believes in. It compels the charact" +
+    "er to act the way that they do. Ideals can range from moral creeds to future amb" +
+    "itions.";
+            // 
+            // backgroundBondsGroupBox
+            // 
+            this.backgroundBondsGroupBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundBondsGroupBox.Controls.Add(this.backgroundTableLayoutPanel6);
+            this.backgroundBondsGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundBondsGroupBox.Location = new System.Drawing.Point(3, 308);
+            this.backgroundBondsGroupBox.Name = "backgroundBondsGroupBox";
+            this.backgroundBondsGroupBox.Size = new System.Drawing.Size(489, 148);
+            this.backgroundBondsGroupBox.TabIndex = 4;
+            this.backgroundBondsGroupBox.TabStop = false;
+            this.backgroundBondsGroupBox.Text = "Bonds";
+            // 
+            // backgroundTableLayoutPanel6
+            // 
+            this.backgroundTableLayoutPanel6.ColumnCount = 1;
+            this.backgroundTableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.backgroundTableLayoutPanel6.Controls.Add(this.backgroundBondsTextBox, 0, 1);
+            this.backgroundTableLayoutPanel6.Controls.Add(this.backgroundBondsLabel, 0, 0);
+            this.backgroundTableLayoutPanel6.Location = new System.Drawing.Point(-3, 9);
+            this.backgroundTableLayoutPanel6.Name = "backgroundTableLayoutPanel6";
+            this.backgroundTableLayoutPanel6.RowCount = 2;
+            this.backgroundTableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.backgroundTableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.backgroundTableLayoutPanel6.Size = new System.Drawing.Size(492, 139);
+            this.backgroundTableLayoutPanel6.TabIndex = 0;
+            // 
+            // backgroundBondsTextBox
+            // 
+            this.backgroundBondsTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundBondsTextBox.Location = new System.Drawing.Point(6, 72);
+            this.backgroundBondsTextBox.Name = "backgroundBondsTextBox";
+            this.backgroundBondsTextBox.Size = new System.Drawing.Size(480, 64);
+            this.backgroundBondsTextBox.TabIndex = 4;
+            this.backgroundBondsTextBox.Text = "";
+            // 
+            // backgroundBondsLabel
+            // 
+            this.backgroundBondsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundBondsLabel.AutoSize = true;
+            this.backgroundBondsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundBondsLabel.Location = new System.Drawing.Point(5, 12);
+            this.backgroundBondsLabel.Name = "backgroundBondsLabel";
+            this.backgroundBondsLabel.Size = new System.Drawing.Size(481, 45);
+            this.backgroundBondsLabel.TabIndex = 3;
+            this.backgroundBondsLabel.Text = "Bonds represent a character\'s connection to the world, be it through people, plac" +
+    "es, or events. They are meant to tie the past to the present, giving something f" +
+    "or a character to care about.";
+            // 
+            // backgroundFlawsGroupBox
+            // 
+            this.backgroundFlawsGroupBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundFlawsGroupBox.Controls.Add(this.backgroundTableLayoutPanel7);
+            this.backgroundFlawsGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundFlawsGroupBox.Location = new System.Drawing.Point(498, 308);
+            this.backgroundFlawsGroupBox.Name = "backgroundFlawsGroupBox";
+            this.backgroundFlawsGroupBox.Size = new System.Drawing.Size(486, 148);
+            this.backgroundFlawsGroupBox.TabIndex = 5;
+            this.backgroundFlawsGroupBox.TabStop = false;
+            this.backgroundFlawsGroupBox.Text = "Flaws";
+            // 
+            // backgroundTableLayoutPanel7
+            // 
+            this.backgroundTableLayoutPanel7.ColumnCount = 1;
+            this.backgroundTableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.backgroundTableLayoutPanel7.Controls.Add(this.backgroundFlawsTextBox, 0, 1);
+            this.backgroundTableLayoutPanel7.Controls.Add(this.backgroundFlawsLabel, 0, 0);
+            this.backgroundTableLayoutPanel7.Location = new System.Drawing.Point(0, 9);
+            this.backgroundTableLayoutPanel7.Name = "backgroundTableLayoutPanel7";
+            this.backgroundTableLayoutPanel7.RowCount = 2;
+            this.backgroundTableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.backgroundTableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.backgroundTableLayoutPanel7.Size = new System.Drawing.Size(486, 139);
+            this.backgroundTableLayoutPanel7.TabIndex = 0;
+            // 
+            // backgroundFlawsTextBox
+            // 
+            this.backgroundFlawsTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundFlawsTextBox.Location = new System.Drawing.Point(3, 72);
+            this.backgroundFlawsTextBox.Name = "backgroundFlawsTextBox";
+            this.backgroundFlawsTextBox.Size = new System.Drawing.Size(480, 64);
+            this.backgroundFlawsTextBox.TabIndex = 7;
+            this.backgroundFlawsTextBox.Text = "";
+            // 
+            // backgroundFlawsLabel
+            // 
+            this.backgroundFlawsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundFlawsLabel.AutoSize = true;
+            this.backgroundFlawsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.backgroundFlawsLabel.Location = new System.Drawing.Point(19, 12);
+            this.backgroundFlawsLabel.Name = "backgroundFlawsLabel";
+            this.backgroundFlawsLabel.Size = new System.Drawing.Size(447, 45);
+            this.backgroundFlawsLabel.TabIndex = 6;
+            this.backgroundFlawsLabel.Text = resources.GetString("backgroundFlawsLabel.Text");
             // 
             // NewCharacter
             // 
@@ -800,6 +1223,26 @@
             this.racePanel1.ResumeLayout(false);
             this.racePanel1.PerformLayout();
             this.tabControl.ResumeLayout(false);
+            this.backgroundPage.ResumeLayout(false);
+            this.backgroundTableLayoutPanel1.ResumeLayout(false);
+            this.backgroundBackgroundGroupBox.ResumeLayout(false);
+            this.backgroundTableLayoutPanel2.ResumeLayout(false);
+            this.backgroundTableLayoutPanel2.PerformLayout();
+            this.backgroundFactionGroupBox.ResumeLayout(false);
+            this.backgroundTableLayoutPanel3.ResumeLayout(false);
+            this.backgroundTableLayoutPanel3.PerformLayout();
+            this.backgroundPersonalityGroupBox.ResumeLayout(false);
+            this.backgroundTableLayoutPanel4.ResumeLayout(false);
+            this.backgroundTableLayoutPanel4.PerformLayout();
+            this.backgroundIdealsGroupBox.ResumeLayout(false);
+            this.backgroundTableLayoutPanel5.ResumeLayout(false);
+            this.backgroundTableLayoutPanel5.PerformLayout();
+            this.backgroundBondsGroupBox.ResumeLayout(false);
+            this.backgroundTableLayoutPanel6.ResumeLayout(false);
+            this.backgroundTableLayoutPanel6.PerformLayout();
+            this.backgroundFlawsGroupBox.ResumeLayout(false);
+            this.backgroundTableLayoutPanel7.ResumeLayout(false);
+            this.backgroundTableLayoutPanel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -862,5 +1305,31 @@
         private System.Windows.Forms.TableLayoutPanel raceInfoTable;
         private System.Windows.Forms.Label raceDescription;
         private System.Windows.Forms.TableLayoutPanel raceTableLayoutPanel1;
+        private System.Windows.Forms.TabPage backgroundPage;
+        private System.Windows.Forms.TableLayoutPanel backgroundTableLayoutPanel1;
+        private System.Windows.Forms.GroupBox backgroundBackgroundGroupBox;
+        private System.Windows.Forms.GroupBox backgroundFactionGroupBox;
+        private System.Windows.Forms.GroupBox backgroundPersonalityGroupBox;
+        private System.Windows.Forms.GroupBox backgroundIdealsGroupBox;
+        private System.Windows.Forms.GroupBox backgroundBondsGroupBox;
+        private System.Windows.Forms.GroupBox backgroundFlawsGroupBox;
+        private System.Windows.Forms.TableLayoutPanel backgroundTableLayoutPanel2;
+        private System.Windows.Forms.Label backgroundBackgroundLabel;
+        private System.Windows.Forms.ComboBox backgroundBackgroundComboBox;
+        private System.Windows.Forms.TableLayoutPanel backgroundTableLayoutPanel3;
+        private System.Windows.Forms.Label backgroundFactionLabel;
+        private System.Windows.Forms.ComboBox backgroundFactionComboBox;
+        private System.Windows.Forms.TableLayoutPanel backgroundTableLayoutPanel4;
+        private System.Windows.Forms.Label backgroundPersonalityLabel;
+        private System.Windows.Forms.RichTextBox backgroundPersonalityTextBox;
+        private System.Windows.Forms.TableLayoutPanel backgroundTableLayoutPanel5;
+        private System.Windows.Forms.RichTextBox backgroundIdealsTextBox;
+        private System.Windows.Forms.Label backgroundIdealsLabel;
+        private System.Windows.Forms.TableLayoutPanel backgroundTableLayoutPanel6;
+        private System.Windows.Forms.RichTextBox backgroundBondsTextBox;
+        private System.Windows.Forms.Label backgroundBondsLabel;
+        private System.Windows.Forms.TableLayoutPanel backgroundTableLayoutPanel7;
+        private System.Windows.Forms.RichTextBox backgroundFlawsTextBox;
+        private System.Windows.Forms.Label backgroundFlawsLabel;
     }
 }

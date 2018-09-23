@@ -120,6 +120,15 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="backgroundBackgroundLabel.Text" xml:space="preserve">
+    <value>Your character’s background reveals where you came from, how you became an adventurer, and your place in the world. You may learn more about each of the available backgrounds at http://dnd5e.wikia.com/wiki/Backgrounds</value>
+  </data>
+  <data name="backgroundFactionLabel.Text" xml:space="preserve">
+    <value>The known player factions are organizations that have risen, been shattered, and risen again several times. Membership to any of them will grant you different allies and enemies. You can learn more about each of the factions at http://dnd.wizards.com/dungeons-and-dragons/story/factions</value>
+  </data>
+  <data name="backgroundFlawsLabel.Text" xml:space="preserve">
+    <value>A flaw is a negative personality trait. Flaws represent vices, fears, compulsions, or weaknesses. They're ideas that could cause a character to go against their best interest, or that others could exploit to try and ruin someone.</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>117</value>
   </metadata>
