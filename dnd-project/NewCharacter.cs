@@ -30,7 +30,7 @@ namespace dnd_project
             List<string> raceNames = raceData.Races.Keys.ToList();
             foreach(string name in raceNames)
             {
-                RaceList.Items.Add(name);
+                raceList.Items.Add(name);
             }
         }
 
@@ -89,7 +89,7 @@ namespace dnd_project
 
         private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            string selectedItem = RaceList.GetItemText(RaceList.SelectedItem);
+            string selectedItem = raceList.GetItemText(raceList.SelectedItem);
             raceHeader.Text = selectedItem;
             UpdateRaceDetails(selectedItem);
 
