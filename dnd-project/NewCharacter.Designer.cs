@@ -398,7 +398,7 @@
             this.raceTable1.ColumnCount = 3;
             this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.51852F));
             this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.48148F));
-            this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 210F));
+            this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 214F));
             this.raceTable1.Controls.Add(this.raceDescriptionPanel, 2, 0);
             this.raceTable1.Controls.Add(this.raceDataItems, 0, 0);
             this.raceTable1.Controls.Add(this.raceTableLayoutPanel5, 1, 0);
@@ -417,34 +417,36 @@
             this.raceDescriptionPanel.Controls.Add(this.raceDescriptionLabel, 0, 0);
             this.raceDescriptionPanel.Controls.Add(this.raceDescriptionBox, 0, 1);
             this.raceDescriptionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.raceDescriptionPanel.Location = new System.Drawing.Point(556, 3);
+            this.raceDescriptionPanel.Location = new System.Drawing.Point(552, 3);
             this.raceDescriptionPanel.Name = "raceDescriptionPanel";
             this.raceDescriptionPanel.RowCount = 2;
-            this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.845238F));
-            this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.15476F));
+            this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.738095F));
+            this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.2619F));
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.raceDescriptionPanel.Size = new System.Drawing.Size(205, 336);
+            this.raceDescriptionPanel.Size = new System.Drawing.Size(209, 336);
             this.raceDescriptionPanel.TabIndex = 2;
             this.raceDescriptionPanel.Visible = false;
             // 
             // raceDescriptionLabel
             // 
+            this.raceDescriptionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.raceDescriptionLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.raceDescriptionLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.raceDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.raceDescriptionLabel.Location = new System.Drawing.Point(3, 3);
             this.raceDescriptionLabel.Name = "raceDescriptionLabel";
-            this.raceDescriptionLabel.Size = new System.Drawing.Size(199, 17);
+            this.raceDescriptionLabel.Size = new System.Drawing.Size(203, 17);
             this.raceDescriptionLabel.TabIndex = 2;
             this.raceDescriptionLabel.Text = "Description";
             this.raceDescriptionLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // raceDescriptionBox
             // 
-            this.raceDescriptionBox.Location = new System.Drawing.Point(3, 26);
+            this.raceDescriptionBox.Location = new System.Drawing.Point(3, 28);
             this.raceDescriptionBox.Name = "raceDescriptionBox";
             this.raceDescriptionBox.ReadOnly = true;
-            this.raceDescriptionBox.Size = new System.Drawing.Size(188, 307);
+            this.raceDescriptionBox.Size = new System.Drawing.Size(188, 304);
             this.raceDescriptionBox.TabIndex = 3;
             this.raceDescriptionBox.Text = "";
             // 
@@ -465,7 +467,7 @@
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 187F));
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 152F));
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.raceDataItems.Size = new System.Drawing.Size(345, 336);
+            this.raceDataItems.Size = new System.Drawing.Size(343, 336);
             this.raceDataItems.TabIndex = 3;
             // 
             // raceTableLayoutPanel3
@@ -508,11 +510,11 @@
             this.raceAgeLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.raceAgeLabel.AutoSize = true;
             this.raceAgeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.raceAgeLabel.Location = new System.Drawing.Point(97, 4);
+            this.raceAgeLabel.Location = new System.Drawing.Point(42, 4);
             this.raceAgeLabel.Name = "raceAgeLabel";
-            this.raceAgeLabel.Size = new System.Drawing.Size(39, 16);
+            this.raceAgeLabel.Size = new System.Drawing.Size(94, 16);
             this.raceAgeLabel.TabIndex = 0;
-            this.raceAgeLabel.Text = "Age :";
+            this.raceAgeLabel.Text = "Typical Ages :";
             this.raceAgeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // raceAlignmentLabel
@@ -569,7 +571,7 @@
             this.raceTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.raceTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.raceTableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.raceTableLayoutPanel4.Size = new System.Drawing.Size(191, 181);
+            this.raceTableLayoutPanel4.Size = new System.Drawing.Size(187, 181);
             this.raceTableLayoutPanel4.TabIndex = 1;
             // 
             // raceAgeBox
@@ -577,7 +579,7 @@
             this.raceAgeBox.Location = new System.Drawing.Point(3, 3);
             this.raceAgeBox.Name = "raceAgeBox";
             this.raceAgeBox.ReadOnly = true;
-            this.raceAgeBox.Size = new System.Drawing.Size(185, 22);
+            this.raceAgeBox.Size = new System.Drawing.Size(181, 22);
             this.raceAgeBox.TabIndex = 0;
             // 
             // raceSizeBox
@@ -585,7 +587,7 @@
             this.raceSizeBox.Location = new System.Drawing.Point(3, 28);
             this.raceSizeBox.Name = "raceSizeBox";
             this.raceSizeBox.ReadOnly = true;
-            this.raceSizeBox.Size = new System.Drawing.Size(185, 22);
+            this.raceSizeBox.Size = new System.Drawing.Size(181, 22);
             this.raceSizeBox.TabIndex = 1;
             // 
             // raceAlignBox
@@ -593,7 +595,7 @@
             this.raceAlignBox.Location = new System.Drawing.Point(3, 53);
             this.raceAlignBox.Name = "raceAlignBox";
             this.raceAlignBox.ReadOnly = true;
-            this.raceAlignBox.Size = new System.Drawing.Size(185, 22);
+            this.raceAlignBox.Size = new System.Drawing.Size(181, 22);
             this.raceAlignBox.TabIndex = 2;
             // 
             // raceMoveBox
@@ -601,7 +603,7 @@
             this.raceMoveBox.Location = new System.Drawing.Point(3, 78);
             this.raceMoveBox.Name = "raceMoveBox";
             this.raceMoveBox.ReadOnly = true;
-            this.raceMoveBox.Size = new System.Drawing.Size(185, 22);
+            this.raceMoveBox.Size = new System.Drawing.Size(181, 22);
             this.raceMoveBox.TabIndex = 3;
             // 
             // raceAttrBox
@@ -611,7 +613,7 @@
             this.raceAttrBox.ItemHeight = 16;
             this.raceAttrBox.Location = new System.Drawing.Point(3, 103);
             this.raceAttrBox.Name = "raceAttrBox";
-            this.raceAttrBox.Size = new System.Drawing.Size(185, 75);
+            this.raceAttrBox.Size = new System.Drawing.Size(181, 75);
             this.raceAttrBox.TabIndex = 4;
             this.raceAttrBox.SelectedIndexChanged += new System.EventHandler(this.raceAttrBox_SelectedIndexChanged);
             // 
@@ -668,7 +670,7 @@
             this.raceTableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.raceTableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.raceTableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.raceTableLayoutPanel7.Size = new System.Drawing.Size(191, 143);
+            this.raceTableLayoutPanel7.Size = new System.Drawing.Size(187, 143);
             this.raceTableLayoutPanel7.TabIndex = 4;
             // 
             // raceLanguageBox
@@ -678,7 +680,7 @@
             this.raceLanguageBox.ItemHeight = 16;
             this.raceLanguageBox.Location = new System.Drawing.Point(3, 90);
             this.raceLanguageBox.Name = "raceLanguageBox";
-            this.raceLanguageBox.Size = new System.Drawing.Size(185, 50);
+            this.raceLanguageBox.Size = new System.Drawing.Size(181, 50);
             this.raceLanguageBox.TabIndex = 6;
             this.raceLanguageBox.SelectedIndexChanged += new System.EventHandler(this.raceLanguageBox_SelectedIndexChanged);
             // 
@@ -689,7 +691,7 @@
             this.raceGearBox.ItemHeight = 16;
             this.raceGearBox.Location = new System.Drawing.Point(3, 3);
             this.raceGearBox.Name = "raceGearBox";
-            this.raceGearBox.Size = new System.Drawing.Size(185, 81);
+            this.raceGearBox.Size = new System.Drawing.Size(181, 81);
             this.raceGearBox.TabIndex = 5;
             this.raceGearBox.SelectedIndexChanged += new System.EventHandler(this.raceGearBox_SelectedIndexChanged);
             // 
@@ -701,7 +703,7 @@
             this.raceTableLayoutPanel5.Controls.Add(this.raceFeatsLabel, 0, 0);
             this.raceTableLayoutPanel5.Controls.Add(this.raceFeatsBox, 0, 1);
             this.raceTableLayoutPanel5.Controls.Add(this.raceProficienciesBox, 0, 3);
-            this.raceTableLayoutPanel5.Location = new System.Drawing.Point(354, 3);
+            this.raceTableLayoutPanel5.Location = new System.Drawing.Point(352, 3);
             this.raceTableLayoutPanel5.Name = "raceTableLayoutPanel5";
             this.raceTableLayoutPanel5.RowCount = 5;
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -709,7 +711,7 @@
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 124F));
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.raceTableLayoutPanel5.Size = new System.Drawing.Size(196, 336);
+            this.raceTableLayoutPanel5.Size = new System.Drawing.Size(194, 336);
             this.raceTableLayoutPanel5.TabIndex = 4;
             // 
             // raceProficienciesLabel
@@ -743,7 +745,7 @@
             this.raceFeatsBox.ItemHeight = 16;
             this.raceFeatsBox.Location = new System.Drawing.Point(3, 28);
             this.raceFeatsBox.Name = "raceFeatsBox";
-            this.raceFeatsBox.Size = new System.Drawing.Size(190, 98);
+            this.raceFeatsBox.Size = new System.Drawing.Size(188, 98);
             this.raceFeatsBox.TabIndex = 3;
             this.raceFeatsBox.SelectedIndexChanged += new System.EventHandler(this.raceFeatsBox_SelectedIndexChanged);
             // 
@@ -754,7 +756,7 @@
             this.raceProficienciesBox.ItemHeight = 16;
             this.raceProficienciesBox.Location = new System.Drawing.Point(3, 157);
             this.raceProficienciesBox.Name = "raceProficienciesBox";
-            this.raceProficienciesBox.Size = new System.Drawing.Size(190, 118);
+            this.raceProficienciesBox.Size = new System.Drawing.Size(188, 118);
             this.raceProficienciesBox.TabIndex = 6;
             this.raceProficienciesBox.SelectedIndexChanged += new System.EventHandler(this.raceProficienciesBox_SelectedIndexChanged);
             // 
@@ -763,7 +765,7 @@
             this.raceTableLayoutPanel1.ColumnCount = 3;
             this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.65688F));
             this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.34312F));
-            this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
+            this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174F));
             this.raceTableLayoutPanel1.Controls.Add(this.raceDescription, 1, 0);
             this.raceTableLayoutPanel1.Location = new System.Drawing.Point(3, 36);
             this.raceTableLayoutPanel1.Name = "raceTableLayoutPanel1";
@@ -776,7 +778,7 @@
             // 
             this.raceDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.raceDescription.AutoSize = true;
-            this.raceDescription.Location = new System.Drawing.Point(300, 11);
+            this.raceDescription.Location = new System.Drawing.Point(298, 11);
             this.raceDescription.Name = "raceDescription";
             this.raceDescription.Size = new System.Drawing.Size(145, 16);
             this.raceDescription.TabIndex = 4;
@@ -797,10 +799,10 @@
             // 
             this.raceListTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.raceListTitle.AutoSize = true;
-            this.raceListTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.raceListTitle.Location = new System.Drawing.Point(19, 3);
+            this.raceListTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.raceListTitle.Location = new System.Drawing.Point(43, 7);
             this.raceListTitle.Name = "raceListTitle";
-            this.raceListTitle.Size = new System.Drawing.Size(136, 24);
+            this.raceListTitle.Size = new System.Drawing.Size(111, 18);
             this.raceListTitle.TabIndex = 1;
             this.raceListTitle.Text = "Race Options";
             // 
@@ -809,10 +811,10 @@
             this.raceList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.raceList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.raceList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.raceList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.raceList.FormattingEnabled = true;
             this.raceList.HorizontalScrollbar = true;
-            this.raceList.ItemHeight = 20;
+            this.raceList.ItemHeight = 16;
             this.raceList.Location = new System.Drawing.Point(3, 30);
             this.raceList.Name = "raceList";
             this.raceList.Size = new System.Drawing.Size(186, 404);
@@ -843,6 +845,7 @@
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(1011, 484);
             this.tabControl.TabIndex = 3;
+            this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             // 
             // backgroundPage
             // 
@@ -980,6 +983,7 @@
             this.backgroundBackgroundComboBox.Name = "backgroundBackgroundComboBox";
             this.backgroundBackgroundComboBox.Size = new System.Drawing.Size(243, 24);
             this.backgroundBackgroundComboBox.TabIndex = 2;
+            this.backgroundBackgroundComboBox.SelectedIndexChanged += new System.EventHandler(this.backgroundBackgroundComboBox_SelectedIndexChanged);
             // 
             // backgroundFactionGroupBox
             // 
@@ -1034,6 +1038,7 @@
             this.backgroundFactionComboBox.Name = "backgroundFactionComboBox";
             this.backgroundFactionComboBox.Size = new System.Drawing.Size(243, 24);
             this.backgroundFactionComboBox.TabIndex = 3;
+            this.backgroundFactionComboBox.SelectedIndexChanged += new System.EventHandler(this.backgroundFactionComboBox_SelectedIndexChanged);
             // 
             // backgroundPersonalityGroupBox
             // 
@@ -1082,6 +1087,7 @@
             this.backgroundPersonalityTextBox.Size = new System.Drawing.Size(480, 64);
             this.backgroundPersonalityTextBox.TabIndex = 3;
             this.backgroundPersonalityTextBox.Text = "";
+            this.backgroundPersonalityTextBox.Leave += new System.EventHandler(this.backgroundPersonalityTextBox_Leave);
             // 
             // backgroundIdealsGroupBox
             // 
@@ -1118,6 +1124,7 @@
             this.backgroundIdealsTextBox.Size = new System.Drawing.Size(480, 66);
             this.backgroundIdealsTextBox.TabIndex = 4;
             this.backgroundIdealsTextBox.Text = "";
+            this.backgroundIdealsTextBox.Leave += new System.EventHandler(this.backgroundIdealsTextBox_Leave);
             // 
             // backgroundIdealsLabel
             // 
@@ -1166,6 +1173,7 @@
             this.backgroundBondsTextBox.Size = new System.Drawing.Size(480, 64);
             this.backgroundBondsTextBox.TabIndex = 4;
             this.backgroundBondsTextBox.Text = "";
+            this.backgroundBondsTextBox.Leave += new System.EventHandler(this.backgroundBondsTextBox_Leave);
             // 
             // backgroundBondsLabel
             // 
@@ -1214,6 +1222,7 @@
             this.backgroundFlawsTextBox.Size = new System.Drawing.Size(480, 64);
             this.backgroundFlawsTextBox.TabIndex = 7;
             this.backgroundFlawsTextBox.Text = "";
+            this.backgroundFlawsTextBox.Leave += new System.EventHandler(this.backgroundFlawsTextBox_Leave);
             // 
             // backgroundFlawsLabel
             // 
@@ -1339,6 +1348,7 @@
             this.descriptionAlignmentComboBox.Name = "descriptionAlignmentComboBox";
             this.descriptionAlignmentComboBox.Size = new System.Drawing.Size(114, 23);
             this.descriptionAlignmentComboBox.TabIndex = 4;
+            this.descriptionAlignmentComboBox.SelectedIndexChanged += new System.EventHandler(this.descriptionAlignmentComboBox_SelectedIndexChanged);
             // 
             // descriptionAgeNumericSelector
             // 
@@ -1363,6 +1373,7 @@
             0,
             0,
             0});
+            this.descriptionAgeNumericSelector.ValueChanged += new System.EventHandler(this.descriptionAgeNumericSelector_ValueChanged);
             // 
             // descriptionHeightTextBox
             // 
@@ -1375,6 +1386,7 @@
             this.descriptionHeightTextBox.TabIndex = 6;
             this.descriptionHeightTextBox.Text = "5\'0\"";
             this.descriptionHeightTextBox.WordWrap = false;
+            this.descriptionHeightTextBox.TextChanged += new System.EventHandler(this.descriptionHeightTextBox_TextChanged);
             // 
             // descriptionWeightNumericBox
             // 
@@ -1399,6 +1411,7 @@
             0,
             0,
             0});
+            this.descriptionWeightNumericBox.ValueChanged += new System.EventHandler(this.descriptionWeightNumericBox_ValueChanged);
             // 
             // descriptionLayoutPanel3
             // 
@@ -1463,6 +1476,7 @@
             this.descriptionEyesTextBox.Size = new System.Drawing.Size(114, 21);
             this.descriptionEyesTextBox.TabIndex = 3;
             this.descriptionEyesTextBox.Click += new System.EventHandler(this.eyesTextBox_Click);
+            this.descriptionEyesTextBox.TextChanged += new System.EventHandler(this.descriptionEyesTextBox_TextChanged);
             // 
             // descriptionSkinTextBox
             // 
@@ -1473,6 +1487,7 @@
             this.descriptionSkinTextBox.Size = new System.Drawing.Size(114, 21);
             this.descriptionSkinTextBox.TabIndex = 4;
             this.descriptionSkinTextBox.Click += new System.EventHandler(this.skinTextBox_Click);
+            this.descriptionSkinTextBox.TextChanged += new System.EventHandler(this.descriptionSkinTextBox_TextChanged);
             // 
             // descriptionHairTextBox
             // 
@@ -1483,6 +1498,7 @@
             this.descriptionHairTextBox.Size = new System.Drawing.Size(114, 21);
             this.descriptionHairTextBox.TabIndex = 5;
             this.descriptionHairTextBox.Click += new System.EventHandler(this.hairTextBox_Click);
+            this.descriptionHairTextBox.TextChanged += new System.EventHandler(this.descriptionHairTextBox_TextChanged);
             // 
             // NewCharacter
             // 

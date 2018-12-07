@@ -1,5 +1,6 @@
 ﻿using dnd_project.Core.Data;
-using Newtonsoft.Json;
+using dnd_project.Core;
+using dnd_project.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,14 +15,16 @@ namespace dnd_project
 {
     public partial class NewCharacter : Form
     {
+        private CharacterController controller;
         private JsonRaceData raceData;
         private JsonFeatData featData;
 
         public NewCharacter()
         {
             InitializeComponent();
-            raceData = JsonConvert.DeserializeObject<JsonRaceData>(Properties.Resources.RaceData);
-            featData = JsonConvert.DeserializeObject<JsonFeatData>(Properties.Resources.FeatData);
+            controller = new CharacterController();
+            raceData = controller.GetRaceData();
+            featData = controller.GetFeatData();
             SetRaceValues();
         }
 
@@ -91,6 +94,7 @@ namespace dnd_project
             string selectedItem = raceList.GetItemText(raceList.SelectedItem);
             raceHeader.Text = selectedItem;
             UpdateRaceDetails(selectedItem);
+            controller.SetCharacterProperty(CharacterValues.Race, selectedItem);
 
         }
 
@@ -98,7 +102,7 @@ namespace dnd_project
         {
             if (raceFeatsBox.SelectedIndex != -1) {
                 string selectedItem = raceFeatsBox.GetItemText(raceFeatsBox.SelectedItem);
-                updateRaceDescription(selectedItem, featData.Feats[selectedItem].Description);
+                updateRaceDescription(selectedItem, !featData.Feats.ContainsKey(selectedItem) ? selectedItem : featData.Feats[selectedItem].Description);
                 raceFeatsBox.SelectedIndex = -1;
             }
         }
@@ -178,6 +182,76 @@ namespace dnd_project
         private void dieRollerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new DieRoller().Show();
+        }
+
+        private void backgroundBackgroundComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Background, backgroundBackgroundComboBox.SelectedItem);
+        }
+
+        private void backgroundFactionComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Faction, backgroundFactionComboBox.SelectedItem);
+        }
+
+        private void backgroundPersonalityTextBox_Leave(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.PersonalityTraits, backgroundPersonalityTextBox.Text);
+        }
+
+        private void backgroundIdealsTextBox_Leave(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Ideals, backgroundIdealsTextBox.Text);
+        }
+
+        private void backgroundBondsTextBox_Leave(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Bonds, backgroundBondsTextBox.Text);
+        }
+
+        private void backgroundFlawsTextBox_Leave(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Flaws, backgroundFlawsTextBox.Text);
+        }
+
+        private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            controller.PrintCharacterToConsole();
+        }
+
+        private void descriptionAlignmentComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Alignment, descriptionAlignmentComboBox.Text);
+        }
+
+        private void descriptionAgeNumericSelector_ValueChanged(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Age, (int)descriptionAgeNumericSelector.Value);
+        }
+
+        private void descriptionHeightTextBox_TextChanged(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Height, descriptionHeightTextBox.Text);
+        }
+
+        private void descriptionWeightNumericBox_ValueChanged(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Weight, (int)descriptionWeightNumericBox.Value);
+        }
+
+        private void descriptionEyesTextBox_TextChanged(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Eyes, descriptionEyesTextBox.Text);
+        }
+
+        private void descriptionSkinTextBox_TextChanged(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Skin, descriptionSkinTextBox.Text);
+        }
+
+        private void descriptionHairTextBox_TextChanged(object sender, EventArgs e)
+        {
+            controller.SetCharacterProperty(CharacterValues.Hair, descriptionHairTextBox.Text);
         }
     }
 }

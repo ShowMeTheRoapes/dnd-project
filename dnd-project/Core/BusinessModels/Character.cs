@@ -1,42 +1,45 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 using dnd_project.Core.Data;
+using System.Reflection;
 
 namespace dnd_project.Core.BusinessModels
 {
     class Character
     {
         #region Instance Variables and Properties
-        private ClassModel characterClass;
-        private RaceModel characterRace;
         private AttributesListModel attributesList;
-        private SkillsListModel skillsList;
+        private ClassModel characterClass;
         private HashSet<FeatModel> featsList;
+        private RaceModel characterRace;
+        private SkillsListModel skillsList;
         private SortedSet<string> proficienciesList;
 
+        public string Alignment { get; set; }
+        public string Bonds { get; set; }
+        public string Background { get; set; }
+        public string Eyes { get; set; }
+        public string Faction { get; set; }
+        public string Flaws { get; set; }
+        public string Hair { get; set; }
+        public string Height { get; set; }
+        public string HitDie { get; set; }
+        public string Ideals { get; set; }
         public string Name { get; set; }
         public string PersonalityTraits { get; set; }
-        public string Ideals { get; set; }
-        public string Bonds { get; set; }
-        public string Flaws { get; set; }
-        public string Alignment { get; set; }
-        public string Height { get; set; }
-        public string Weight { get; set; }
-        public string Eyes { get; set; }
-        public string Skin { get; set; }
-        public string Hair { get; set; }
         public string Size { get; set; }
-        public string HitDie { get; set; }
-        public int Speed { get; set; }
-        public int Level { get; set; }
+        public string Skin { get; set; }
         public int Age { get; set; }
-        public int ExperiencePoints { get; set; }
         public int ArmorClass { get; set; }
+        public int CurrentHitPoints { get; set; }
+        public int ExperiencePoints { get; set; }
         public int Initiative { get; set; }
         public int Inspiration { get; set; }
-        public int ProficiencyBonus { get; set; }
+        public int Level { get; set; }
         public int MaxHitPoints { get; set; }
-        public int CurrentHitPoints { get; set; }
+        public int ProficiencyBonus { get; set; }
+        public int Speed { get; set; }
+        public int Weight { get; set; }
         #endregion
 
         #region Constructor(s)
@@ -54,7 +57,6 @@ namespace dnd_project.Core.BusinessModels
             Flaws = "";
             Alignment = "";
             Height = "";
-            Weight = "";
             Eyes = "";
             Skin = "";
             Hair = "";
@@ -70,6 +72,7 @@ namespace dnd_project.Core.BusinessModels
             ProficiencyBonus = 0;
             MaxHitPoints = 0;
             CurrentHitPoints = 0;
+            Weight = 0;
         }
         #endregion
 
@@ -95,7 +98,7 @@ namespace dnd_project.Core.BusinessModels
         /// Method to set the character's class info based on a provided name.
         /// </summary>
         /// <param name="className">The name of the class</param>
-        public void SetCharacterClass(string className)
+        public void SetClass(string className)
         {
             characterClass = new ClassModel(className);
 
@@ -108,7 +111,7 @@ namespace dnd_project.Core.BusinessModels
         /// Method to get the character's race info based on a provided name.
         /// </summary>
         /// <param name="raceName">The name of the race</param>
-        public void SetCharacterRace(string raceName)
+        public void SetRace(string raceName)
         {
             if (characterRace != null)
             {
@@ -125,6 +128,9 @@ namespace dnd_project.Core.BusinessModels
             {
                 attributesList.AddValue(attribute.Attribute, attribute.Change);
             }
+
+            Size = characterRace.Size;
+            Speed = characterRace.Speed;
 
             //Only aggregate feats when both class and race are initialized
             if (characterClass != null)
@@ -170,21 +176,58 @@ namespace dnd_project.Core.BusinessModels
         public override string ToString()
         {
             StringBuilder output = new StringBuilder();
-            output.Append("\n=====" + Name + "=====\n");
+            output.AppendLine("############################");
+            output.AppendLine("### Character Properties ###");
+            output.AppendLine("############################");
+            foreach (PropertyInfo pi in this.GetType().GetProperties())
+            {
+                if (pi.GetType().IsSubclassOf(typeof(System.Collections.ICollection)))
+                {
+                    output.Append(pi.GetType().ToString());
+                    if (pi.GetValue(this) != null)
+                    {
+                        dynamic prop = pi.GetValue(this);
 
-            output.Append(characterClass.ToString());
-            output.Append(characterRace.ToString());
-            output.Append(attributesList.ToString());
-            output.Append(skillsList.ToString());
+                        foreach (dynamic item in prop)
+                        {
+                            output.AppendLine(item.toString());
+                        }
+                    }
+                }
+                else
+                {
+                    output.Append(pi.Name + ": ");
+                    dynamic value = pi.GetValue(this);
+                    if (!object.Equals(value, null) && !object.Equals(value, ""))
+                    {
+                        output.AppendLine(value.ToString());
+                    }
+                    else
+                    {
+                        output.AppendLine();
+                    }
+                }
+            }
+
+            output.Append(characterClass == null ? "No Class" : characterClass.ToString());
+            output.Append(characterRace == null ? "No Race" : characterRace.ToString());
+            output.Append(attributesList == null ? "No Attributes" : attributesList.ToString());
+            output.Append(skillsList == null ? "No Skills" : skillsList.ToString());
 
             output.Append("\n-----FEATS-----\n");
-            foreach (FeatModel feat in featsList)
-                output.Append(feat.ToString());
 
+            if (!(featsList == null))
+            {
+                foreach (FeatModel feat in featsList)
+                    output.Append(feat.ToString());
+            }
             output.Append("\n-----PROFICIENCIES-----\n");
-            foreach (string prof in proficienciesList)
-                output.Append(prof + "\n");
 
+            if (!(proficienciesList == null))
+            {
+                foreach (string prof in proficienciesList)
+                    output.Append(prof + "\n");
+            }
             return output.ToString();
         }
         #endregion

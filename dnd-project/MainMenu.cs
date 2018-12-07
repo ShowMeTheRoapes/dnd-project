@@ -33,7 +33,7 @@ namespace dnd_project
             // 
             // NewCharacter
             // 
-            this.NewCharacter.Font = new System.Drawing.Font("Cardinal", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.NewCharacter.Location = new System.Drawing.Point(200, 117);
             this.NewCharacter.Name = "NewCharacter";
             this.NewCharacter.Size = new System.Drawing.Size(172, 54);
@@ -44,7 +44,7 @@ namespace dnd_project
             // 
             // LoadCharacter
             // 
-            this.LoadCharacter.Font = new System.Drawing.Font("Cardinal", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoadCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.LoadCharacter.Location = new System.Drawing.Point(200, 201);
             this.LoadCharacter.Name = "LoadCharacter";
             this.LoadCharacter.Size = new System.Drawing.Size(172, 54);
@@ -55,7 +55,7 @@ namespace dnd_project
             // 
             // Exit
             // 
-            this.Exit.Font = new System.Drawing.Font("Cardinal", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.Exit.Location = new System.Drawing.Point(200, 285);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(172, 54);

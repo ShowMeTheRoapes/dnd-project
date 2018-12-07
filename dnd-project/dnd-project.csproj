@@ -51,13 +51,16 @@
     <Compile Include="Core\BusinessModels\AttributeModel.cs" />
     <Compile Include="Core\BusinessModels\AttributesListModel.cs" />
     <Compile Include="Core\BusinessModels\Character.cs" />
+    <Compile Include="Core\ViewModels\CharacterValues.cs" />
     <Compile Include="Core\BusinessModels\ClassModel.cs" />
+    <Compile Include="Core\BusinessModels\ClassValues.cs" />
     <Compile Include="Core\BusinessModels\Dice\DiceRoller.cs" />
     <Compile Include="Core\BusinessModels\Dice\Die.cs" />
     <Compile Include="Core\BusinessModels\FeatModel.cs" />
     <Compile Include="Core\BusinessModels\RaceModel.cs" />
     <Compile Include="Core\BusinessModels\SkillModel.cs" />
     <Compile Include="Core\BusinessModels\SkillsListModel.cs" />
+    <Compile Include="Core\CharacterController.cs" />
     <Compile Include="Core\Data\JsonAttributeData.cs" />
     <Compile Include="Core\Data\JsonFeatData.cs" />
     <Compile Include="Core\Data\JsonRaceData.cs" />
@@ -132,7 +135,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Core\ViewModels\" />
     <Folder Include="Core\Views\" />
   </ItemGroup>
   <ItemGroup>
