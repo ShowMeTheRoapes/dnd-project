@@ -1,5 +1,4 @@
-﻿using System.Text;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace dnd_project.Core.Data
 {

@@ -1,39 +1,30 @@
-﻿using dnd_project.Core.Data;
+﻿using dnd_project.Core.BusinessModels;
+using dnd_project.Core.Data;
 using dnd_project.Core;
 using dnd_project.Core.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace dnd_project
 {
     public partial class NewCharacter : Form
     {
         private CharacterController controller;
-        private JsonRaceData raceData;
-        private JsonFeatData featData;
 
         public NewCharacter()
         {
             InitializeComponent();
             controller = new CharacterController();
-            raceData = controller.GetRaceData();
-            featData = controller.GetFeatData();
             SetRaceValues();
         }
 
         private void SetRaceValues()
         {
-            List<string> raceNames = raceData.Races.Keys.ToList();
-            foreach(string name in raceNames)
+            List<string> races = controller.GetAllRaces();
+            foreach(string race in races)
             {
-                raceList.Items.Add(name);
+                raceList.Items.Add(race);
             }
         }
 
@@ -42,29 +33,30 @@ namespace dnd_project
             raceInfoTable.Visible = true;
             raceDescriptionPanel.Visible = false;
             raceDescriptionLabel.Text = "";
-            JsonRaceInfo currentRace = raceData.Races[selectedItem];
+            Race currentRace = controller.GetRace(selectedItem);
             raceAgeBox.Text = currentRace.Ages[0] + " - " + currentRace.Ages[1] + " years old";
             raceSizeBox.Text = currentRace.Size;
-            raceAlignBox.Text = currentRace.CommonAlignment;
-            raceMoveBox.Text = currentRace.Movement.ToString() + " feet";
+            raceAlignBox.Text = currentRace.Alignment;
+            raceMoveBox.Text = currentRace.Speed.ToString() + " feet";
             raceAttrBox.Items.Clear();
             raceGearBox.Items.Clear();
             raceLanguageBox.Items.Clear();
             raceFeatsBox.Items.Clear();
             raceProficienciesBox.Items.Clear();
-            foreach (RaceAttribute att in currentRace.AttributeScores)
+            foreach (RaceAttribute att in currentRace.AttributeMods)
             {
                 raceAttrBox.Items.Add(att.ToString());
             }
-            foreach(string gear in currentRace.GearChoices)
+
+            foreach (string gear in currentRace.GearChoices)
             {
                 raceGearBox.Items.Add(gear);
             }
-            foreach(string lang in currentRace.Languages)
+            foreach (string lang in currentRace.Languages)
             {
                 raceLanguageBox.Items.Add(lang);
             }
-            foreach(string feat in currentRace.Feats)
+            foreach (string feat in currentRace.Feats)
             {
                 raceFeatsBox.Items.Add(feat);
             }
@@ -94,7 +86,7 @@ namespace dnd_project
             string selectedItem = raceList.GetItemText(raceList.SelectedItem);
             raceHeader.Text = selectedItem;
             UpdateRaceDetails(selectedItem);
-            controller.SetCharacterProperty(CharacterValues.Race, selectedItem);
+            controller.SetRace(selectedItem);
 
         }
 
@@ -102,7 +94,8 @@ namespace dnd_project
         {
             if (raceFeatsBox.SelectedIndex != -1) {
                 string selectedItem = raceFeatsBox.GetItemText(raceFeatsBox.SelectedItem);
-                updateRaceDescription(selectedItem, !featData.Feats.ContainsKey(selectedItem) ? selectedItem : featData.Feats[selectedItem].Description);
+                updateRaceDescription(selectedItem, controller.GetAllFeats().Contains(selectedItem) ?
+                    controller.GetFeat(selectedItem).Description : selectedItem);
                 raceFeatsBox.SelectedIndex = -1;
             }
         }

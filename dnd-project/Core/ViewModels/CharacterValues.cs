@@ -20,10 +20,7 @@ namespace dnd_project.Core.ViewModels
         public const string Ideals = "Ideals";
         public const string Name = "Name";
         public const string PersonalityTraits = "PersonalityTraits";
-        public const string Race = "metSetRace";
         public const string Skin = "Skin";
         public const string Weight = "Weight";
-
-        // public const string  = "";
     }
 }

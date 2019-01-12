@@ -2,6 +2,9 @@
 using System.Text;
 using dnd_project.Core.Data;
 using System.Reflection;
+using dnd_project.Core.BusinessModels.Builders;
+using System.Linq;
+using Newtonsoft.Json;
 
 namespace dnd_project.Core.BusinessModels
 {
@@ -9,9 +12,9 @@ namespace dnd_project.Core.BusinessModels
     {
         #region Instance Variables and Properties
         private AttributesListModel attributesList;
-        private ClassModel characterClass;
-        private HashSet<FeatModel> featsList;
-        private RaceModel characterRace;
+        private Class characterClass;
+        private HashSet<Feat> featsList;
+        private Race characterRace;
         private SkillsListModel skillsList;
         private SortedSet<string> proficienciesList;
 
@@ -47,7 +50,7 @@ namespace dnd_project.Core.BusinessModels
         {
             attributesList = new AttributesListModel();
             skillsList = new SkillsListModel();
-            featsList = new HashSet<FeatModel>();
+            featsList = new HashSet<Feat>();
             proficienciesList = new SortedSet<string>();
 
             Name = "";
@@ -98,9 +101,9 @@ namespace dnd_project.Core.BusinessModels
         /// Method to set the character's class info based on a provided name.
         /// </summary>
         /// <param name="className">The name of the class</param>
-        public void SetClass(string className)
+        public void SetClass(Class aClass)
         {
-            characterClass = new ClassModel(className);
+            characterClass = aClass;
 
             //Only aggregate feats when both class and race are initialized
             if (characterRace != null)
@@ -111,7 +114,7 @@ namespace dnd_project.Core.BusinessModels
         /// Method to get the character's race info based on a provided name.
         /// </summary>
         /// <param name="raceName">The name of the race</param>
-        public void SetRace(string raceName)
+        public void SetRace(Race race)
         {
             if (characterRace != null)
             {
@@ -121,7 +124,7 @@ namespace dnd_project.Core.BusinessModels
                 }
             }
 
-            characterRace = new RaceModel(raceName);
+            characterRace = race;
 
             //Updating Ability List Values from RaceModel
             foreach (RaceAttribute attribute in characterRace.AttributeMods)
@@ -146,16 +149,14 @@ namespace dnd_project.Core.BusinessModels
             proficienciesList.Clear();
             skillsList.ClearSkillRanks();
 
-            //Pull the proficiency information
-            foreach (string featName in characterClass.StartingFeats)
-                featsList.Add(new FeatModel(featName));
+            //Pull the feat information
+            List<string> newFeats = characterClass.StartingFeats.ToList<string>();
+            newFeats.AddRange(characterRace.Feats.ToList<string>());
+            AddFeats(newFeats.Distinct().ToList());
 
+            //Pull the proficiency information
             foreach (string prof in characterClass.Proficiencies)
                 proficienciesList.Add(prof);
-
-            //Pull the feat information
-            foreach (string featName in characterRace.Feats)
-                featsList.Add(new FeatModel(featName));
 
             foreach (string prof in characterRace.Proficiencies)
                 proficienciesList.Add(prof);
@@ -169,6 +170,25 @@ namespace dnd_project.Core.BusinessModels
             skillsList.CalculateSkillMods(attributesList.GetAttributeMods(), ProficiencyBonus);
 
         }
+
+        /// <summary>
+        /// Adds a list of feats to the character's set of feats. Only adds them if the feats can be found in FeatsData.json
+        /// </summary>
+        /// <param name="possibleFeats">A list of possible feats to add</param>
+        private void AddFeats(List<string> possibleFeats)
+        {
+            FeatBuilder builder = new FeatBuilder();
+            JsonFeatData featData = JsonConvert.DeserializeObject<JsonFeatData>(Properties.Resources.FeatData);
+            foreach(string feat in possibleFeats)
+            {
+                if (featData.Feats.Keys.Contains(feat))
+                {
+                    builder.SetName(feat).SetDescription(featData.Feats[feat].Description);
+                    featsList.Add(builder.Build());
+                }
+            }
+        }
+
         /// <summary>
         /// Overridden ToString for debugging
         /// </summary>
@@ -218,7 +238,7 @@ namespace dnd_project.Core.BusinessModels
 
             if (!(featsList == null))
             {
-                foreach (FeatModel feat in featsList)
+                foreach (Feat feat in featsList)
                     output.Append(feat.ToString());
             }
             output.Append("\n-----PROFICIENCIES-----\n");

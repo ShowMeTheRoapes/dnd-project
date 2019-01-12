@@ -1,10 +1,8 @@
 ﻿using System.Text;
-using Newtonsoft.Json;
-using dnd_project.Core.Data;
 
 namespace dnd_project.Core.BusinessModels
 {
-    public class FeatModel
+    public class Feat
     {
         #region Instance Variables and Properties
         const int DESCRIPTION_ELEMENT = 1;
@@ -13,15 +11,10 @@ namespace dnd_project.Core.BusinessModels
         #endregion
 
         #region Constructor(s)
-        public FeatModel(string name)
+        public Feat(string name, string description)
         {
-            JsonFeatData featData = JsonConvert.DeserializeObject<JsonFeatData>(Properties.Resources.FeatData);
-            if(featData.Feats[name] != null)
-            {
-                Name = name;
-                Description = featData.Feats[name].Description;
-            }
-            
+            Name = name;
+            Description = description;
         }
         #endregion
 

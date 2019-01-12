@@ -1,4 +1,6 @@
-﻿using System;
+﻿using dnd_project.Core;
+using dnd_project.Core.BusinessModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,15 +19,13 @@ namespace dnd_project
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             new MainMenu().Show();
-            //new DieRoller().Show();
             Application.Run();
 
-            //Character character = new Character();
-            //character.Name = "Byrd";
-            //character.SetCharacterClass("Ranger");
-            //character.SetCharacterRace("Wood Elf");
+            //CharacterController controller = new CharacterController();
+            //controller.SetRace("Wood Elf");
+            //controller.SetClass("Wizard");
             //Console.WriteLine("\n*********FIRST WRITE********\n\n");
-            //Console.Write(character);
+            //controller.PrintCharacterToConsole();
 
             //int[] randomRoll = new DiceRoller().RollAttributes(6, 6, 5, 3);
             //Console.Write("New attribute values: ");
