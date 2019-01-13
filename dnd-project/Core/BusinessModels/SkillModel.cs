@@ -1,4 +1,7 @@
-﻿public class SkillModel
+﻿using System;
+
+[Serializable]
+public class SkillModel
 {
     #region Instance Variables and Properties
     public string Name { get; set; }

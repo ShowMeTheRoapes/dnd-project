@@ -2,9 +2,11 @@
 using System.Text;
 using Newtonsoft.Json;
 using dnd_project.Core.Data;
+using System;
 
 namespace dnd_project.Core.BusinessModels
 {
+    [Serializable]
     public class AttributesListModel
     {
         #region Instance Variables and Properties
