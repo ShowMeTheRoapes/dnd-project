@@ -1,4 +1,6 @@
-﻿
+﻿using System;
+
+[Serializable]
 public class AttributeModel
 {
     #region Instance Variables and Properties

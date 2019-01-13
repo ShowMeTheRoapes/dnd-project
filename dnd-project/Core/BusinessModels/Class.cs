@@ -1,7 +1,9 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 
 namespace dnd_project.Core.BusinessModels
 {
+    [Serializable]
     public class Class
     {
         #region Instance Variables and Properties

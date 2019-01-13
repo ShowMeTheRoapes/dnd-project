@@ -126,6 +126,15 @@ namespace dnd_project.Core
             Console.Out.Write(character.ToString());
         }
 
+        public void SaveCharacter(string saveDirectory)
+        {
+            SaverLoader.WriteToBinaryFile<Character>(saveDirectory, character.Name, character);
+        }
+
+        public void LoadCharacter(string filePath)
+        {
+            character = SaverLoader.ReadFromBinaryFile<Character>(filePath);
+        }
         #endregion
 
         #endregion

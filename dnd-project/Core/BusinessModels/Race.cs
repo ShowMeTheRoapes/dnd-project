@@ -1,8 +1,10 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using dnd_project.Core.Data;
 
 namespace dnd_project.Core.BusinessModels
 {
+    [Serializable]
     public class Race
     {
         

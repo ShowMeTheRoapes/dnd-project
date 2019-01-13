@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace dnd_project.Core.Data
 {
@@ -19,7 +20,7 @@ namespace dnd_project.Core.Data
         public string[] Languages { get; set; }
         public string[] GearChoices { get; set; }
     }
-
+    [Serializable]
     public class RaceAttribute
     {
         public string Attribute { get; set; }

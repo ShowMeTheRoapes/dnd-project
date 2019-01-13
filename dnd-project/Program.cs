@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dnd_project.Core.ViewModels;
 
 namespace dnd_project
 {
@@ -24,30 +25,13 @@ namespace dnd_project
             //CharacterController controller = new CharacterController();
             //controller.SetRace("Wood Elf");
             //controller.SetClass("Wizard");
+            //controller.SetCharacterProperty(CharacterValues.Name, "Steve The Wizard");
             //Console.WriteLine("\n*********FIRST WRITE********\n\n");
             //controller.PrintCharacterToConsole();
-
-            //int[] randomRoll = new DiceRoller().RollAttributes(6, 6, 5, 3);
-            //Console.Write("New attribute values: ");
-            //foreach (int val in randomRoll)
-            //{
-            //    Console.Write(val + ",");
-            //}
-            //Console.Write("\n");
-
-            //character.SetBaseAttributes(new string[] { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" }, randomRoll);
-
-            //Console.WriteLine("\n*********2ND WRITE********\n\n");
-            //Console.Write(character);
-
-
-            //character.SetCharacterClass("Monk");
-            //Console.WriteLine("\n*********SECOND WRITE********\n\n");
-            //Console.Write(character);
-
-            //character.SetCharacterRace("Dragonborn");
-            //Console.WriteLine("\n*********THIRD WRITE********\n\n");
-            //Console.Write(character);
+            //controller.SaveCharacter(Properties.Settings.Default.SaveDirectory);
+            //controller.LoadCharacter(Properties.Settings.Default.SaveDirectory + @"\" + "Steve The Wizard");
+            //Console.WriteLine("\n*********FIRST WRITE********\n\n");
+            //controller.PrintCharacterToConsole();
         }
     }
 }

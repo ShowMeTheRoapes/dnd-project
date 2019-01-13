@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,6 +55,7 @@
     <Compile Include="Core\BusinessModels\Builders\FeatBuilder.cs" />
     <Compile Include="Core\BusinessModels\Builders\RaceBuilder.cs" />
     <Compile Include="Core\BusinessModels\Character.cs" />
+    <Compile Include="Core\SaverLoader.cs" />
     <Compile Include="Core\ViewModels\CharacterValues.cs" />
     <Compile Include="Core\BusinessModels\Class.cs" />
     <Compile Include="Core\BusinessModels\Dice\DiceRoller.cs" />

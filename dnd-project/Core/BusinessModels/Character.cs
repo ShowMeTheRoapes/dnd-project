@@ -5,10 +5,13 @@ using System.Reflection;
 using dnd_project.Core.BusinessModels.Builders;
 using System.Linq;
 using Newtonsoft.Json;
+using System;
+using System.Runtime.Serialization;
 
 namespace dnd_project.Core.BusinessModels
 {
-    class Character
+    [Serializable]
+    public class Character : ISerializable
     {
         #region Instance Variables and Properties
         private AttributesListModel attributesList;
@@ -46,6 +49,10 @@ namespace dnd_project.Core.BusinessModels
         #endregion
 
         #region Constructor(s)
+        
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         public Character()
         {
             attributesList = new AttributesListModel();
@@ -77,6 +84,47 @@ namespace dnd_project.Core.BusinessModels
             CurrentHitPoints = 0;
             Weight = 0;
         }
+
+        /// <summary>
+        /// Constructor used for deserialization
+        /// </summary>
+        /// <param name="info">SerializationInfo object that you add objects to to get serialized</param>
+        /// <param name="context">Information about the serialization stream</param>
+        protected Character(SerializationInfo info, StreamingContext context)
+        {
+            attributesList = (AttributesListModel)info.GetValue("attrList", typeof(AttributesListModel));
+            characterClass = (Class)info.GetValue("class", typeof(Class));
+            featsList = (HashSet<Feat>)info.GetValue("feats", typeof(HashSet<Feat>));
+            featsList.OnDeserialization(this);
+            characterRace = (Race)info.GetValue("race", typeof(Race));
+            skillsList = (SkillsListModel)info.GetValue("skills", typeof(SkillsListModel));
+            proficienciesList = (SortedSet<string>)info.GetValue("profs", typeof(SortedSet<string>));
+            Alignment = (string)info.GetValue("Alignment", typeof(string));
+            Bonds = (string)info.GetValue("Bonds", typeof(string));
+            Background = (string)info.GetValue("Background", typeof(string));
+            Eyes = (string)info.GetValue("Eyes", typeof(string));
+            Faction = (string)info.GetValue("Faction", typeof(string));
+            Flaws = (string)info.GetValue("Flaws", typeof(string));
+            Hair = (string)info.GetValue("Hair", typeof(string));
+            Height = (string)info.GetValue("Height", typeof(string));
+            HitDie = (string)info.GetValue("HitDie", typeof(string));
+            Ideals = (string)info.GetValue("Ideals", typeof(string));
+            Name = (string)info.GetValue("Name", typeof(string));
+            PersonalityTraits = (string)info.GetValue("PersonalityTraits", typeof(string));
+            Size = (string)info.GetValue("Size", typeof(string));
+            Skin = (string)info.GetValue("Skin", typeof(string));
+            Age = (int)info.GetValue("Age", typeof(int));
+            ArmorClass = (int)info.GetValue("ArmorClass", typeof(int));
+            CurrentHitPoints = (int)info.GetValue("CurrentHitPoints", typeof(int));
+            ExperiencePoints = (int)info.GetValue("ExperiencePoints", typeof(int));
+            Initiative = (int)info.GetValue("Initiative", typeof(int));
+            Level = (int)info.GetValue("Level", typeof(int));
+            MaxHitPoints = (int)info.GetValue("MaxHitPoints", typeof(int));
+            ProficiencyBonus = (int)info.GetValue("ProficiencyBonus", typeof(int));
+            Speed = (int)info.GetValue("Speed", typeof(int));
+            Weight = (int)info.GetValue("Weight", typeof(int));
+        }
+        
         #endregion
 
         #region Class Methods
@@ -97,6 +145,7 @@ namespace dnd_project.Core.BusinessModels
                 attributesList.AddValue(item.Attribute, item.Change);
             }
         }
+        
         /// <summary>
         /// Method to set the character's class info based on a provided name.
         /// </summary>
@@ -250,6 +299,47 @@ namespace dnd_project.Core.BusinessModels
             }
             return output.ToString();
         }
+
+        /// <summary>
+        /// Implemetation of ISerializable's GetObjectData. Used when serializing a Character
+        /// </summary>
+        /// <param name="info">SerializationInfo object that you add objects to to get serialized</param>
+        /// <param name="context">Information about the serialization stream</param>
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("attrList", attributesList, typeof(AttributesListModel));
+            info.AddValue("class", characterClass, typeof(Class));
+            info.AddValue("feats", featsList, typeof(HashSet<Feat>));
+            info.AddValue("race", characterRace, typeof(Race));
+            info.AddValue("skills", skillsList, typeof(SkillsListModel));
+            info.AddValue("profs", proficienciesList, typeof(SortedSet<string>));
+            info.AddValue("Alignment", Alignment);
+            info.AddValue("Bonds", Bonds);
+            info.AddValue("Background", Background);
+            info.AddValue("Eyes", Eyes);
+            info.AddValue("Faction", Faction);
+            info.AddValue("Flaws", Flaws);
+            info.AddValue("Hair", Hair);
+            info.AddValue("Height", Height);
+            info.AddValue("HitDie", HitDie);
+            info.AddValue("Ideals", Ideals);
+            info.AddValue("Name", Name);
+            info.AddValue("PersonalityTraits", PersonalityTraits);
+            info.AddValue("Size", Size);
+            info.AddValue("Skin", Skin);
+            info.AddValue("Age", Age);
+            info.AddValue("ArmorClass", ArmorClass);
+            info.AddValue("CurrentHitPoints", CurrentHitPoints);
+            info.AddValue("ExperiencePoints", ExperiencePoints);
+            info.AddValue("Initiative", Initiative);
+            info.AddValue("Inspiration", Inspiration);
+            info.AddValue("Level", Level);
+            info.AddValue("MaxHitPoints", MaxHitPoints);
+            info.AddValue("ProficiencyBonus", ProficiencyBonus);
+            info.AddValue("Speed", Speed);
+            info.AddValue("Weight", Weight);
+        }
+
         #endregion
     }
 }
