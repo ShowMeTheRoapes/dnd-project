@@ -46,6 +46,8 @@ namespace dnd_project.Core.BusinessModels
         public int ProficiencyBonus { get; set; }
         public int Speed { get; set; }
         public int Weight { get; set; }
+        public int AdditionalAttributePoints { get; set; }
+        public int AdditionalLanguages { get; set; }
         #endregion
 
         #region Constructor(s)
@@ -83,6 +85,8 @@ namespace dnd_project.Core.BusinessModels
             MaxHitPoints = 0;
             CurrentHitPoints = 0;
             Weight = 0;
+            AdditionalAttributePoints = 0;
+            AdditionalLanguages = 0;
         }
 
         /// <summary>
@@ -123,6 +127,8 @@ namespace dnd_project.Core.BusinessModels
             ProficiencyBonus = (int)info.GetValue("ProficiencyBonus", typeof(int));
             Speed = (int)info.GetValue("Speed", typeof(int));
             Weight = (int)info.GetValue("Weight", typeof(int));
+            AdditionalAttributePoints = (int)info.GetValue("AdditionalAttributePoints", typeof(int));
+            AdditionalLanguages = (int)info.GetValue("AdditionalLanguages", typeof(int));
         }
         
         #endregion
@@ -142,7 +148,14 @@ namespace dnd_project.Core.BusinessModels
 
             foreach (var item in characterRace.AttributeMods)
             {
-                attributesList.AddValue(item.Attribute, item.Change);
+                try
+                {
+                    attributesList.AddValue(item.Attribute, item.Change);
+                }
+                catch (KeyNotFoundException e)
+                {
+                    AdditionalAttributePoints++;
+                }
             }
         }
         
@@ -169,7 +182,8 @@ namespace dnd_project.Core.BusinessModels
             {
                 foreach (RaceAttribute attribute in characterRace.AttributeMods)
                 {
-                    attributesList.Clear(attribute.Attribute, attribute.Change);
+                    if(attribute.Attribute != "Choose One")
+                        attributesList.Clear(attribute.Attribute, attribute.Change);
                 }
             }
 
@@ -178,7 +192,14 @@ namespace dnd_project.Core.BusinessModels
             //Updating Ability List Values from RaceModel
             foreach (RaceAttribute attribute in characterRace.AttributeMods)
             {
-                attributesList.AddValue(attribute.Attribute, attribute.Change);
+                try
+                {
+                    attributesList.AddValue(attribute.Attribute, attribute.Change);
+                }
+                catch (KeyNotFoundException e)
+                {
+                    AdditionalAttributePoints++;
+                }
             }
 
             Size = characterRace.Size;
@@ -217,7 +238,6 @@ namespace dnd_project.Core.BusinessModels
 
             //Calculates Skill Modifiers
             skillsList.CalculateSkillMods(attributesList.GetAttributeMods(), ProficiencyBonus);
-
         }
 
         /// <summary>
@@ -338,6 +358,8 @@ namespace dnd_project.Core.BusinessModels
             info.AddValue("ProficiencyBonus", ProficiencyBonus);
             info.AddValue("Speed", Speed);
             info.AddValue("Weight", Weight);
+            info.AddValue("AdditionalAttributePoints", AdditionalAttributePoints);
+            info.AddValue("AdditionalLanguages", AdditionalLanguages);
         }
 
         #endregion

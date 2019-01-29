@@ -58,7 +58,10 @@ namespace dnd_project.Core
         {
             return featData.Feats.ContainsKey(featName) ? GatherFeatData(featName).Build() : null;
         }
-
+        public string GetAdditionalAttributePoints()
+        {
+            return character.AdditionalAttributePoints == 0 ? null : character.AdditionalAttributePoints.ToString();
+        }
         #endregion
 
         #region Setters
