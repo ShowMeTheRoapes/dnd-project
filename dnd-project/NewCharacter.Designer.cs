@@ -133,6 +133,15 @@
             this.descriptionEyeColorPicker = new System.Windows.Forms.ColorDialog();
             this.descriptionSkinColorPicker = new System.Windows.Forms.ColorDialog();
             this.descriptionHairColorPicker = new System.Windows.Forms.ColorDialog();
+            this.characterSummaryNameValue = new System.Windows.Forms.Label();
+            this.characterSummaryRaceValue = new System.Windows.Forms.Label();
+            this.characterSummaryClassValue = new System.Windows.Forms.Label();
+            this.characterSummaryStrengthValue = new System.Windows.Forms.Label();
+            this.characterSummaryDexterityValue = new System.Windows.Forms.Label();
+            this.characterSummaryConstitutionValue = new System.Windows.Forms.Label();
+            this.characterSummaryIntelligenceValue = new System.Windows.Forms.Label();
+            this.characterSummaryWisdomValue = new System.Windows.Forms.Label();
+            this.characterSummaryCharismaValue = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.characterSummaryBox.SuspendLayout();
             this.racePage.SuspendLayout();
@@ -231,6 +240,15 @@
             // 
             // characterSummaryBox
             // 
+            this.characterSummaryBox.Controls.Add(this.characterSummaryCharismaValue);
+            this.characterSummaryBox.Controls.Add(this.characterSummaryWisdomValue);
+            this.characterSummaryBox.Controls.Add(this.characterSummaryIntelligenceValue);
+            this.characterSummaryBox.Controls.Add(this.characterSummaryConstitutionValue);
+            this.characterSummaryBox.Controls.Add(this.characterSummaryDexterityValue);
+            this.characterSummaryBox.Controls.Add(this.characterSummaryStrengthValue);
+            this.characterSummaryBox.Controls.Add(this.characterSummaryClassValue);
+            this.characterSummaryBox.Controls.Add(this.characterSummaryRaceValue);
+            this.characterSummaryBox.Controls.Add(this.characterSummaryNameValue);
             this.characterSummaryBox.Controls.Add(this.characterSummaryCharismaLabel);
             this.characterSummaryBox.Controls.Add(this.characterSummaryWisdomLabel);
             this.characterSummaryBox.Controls.Add(this.characterSummaryIntelligenceLabel);
@@ -252,7 +270,7 @@
             // characterSummaryCharismaLabel
             // 
             this.characterSummaryCharismaLabel.AutoSize = true;
-            this.characterSummaryCharismaLabel.Location = new System.Drawing.Point(26, 317);
+            this.characterSummaryCharismaLabel.Location = new System.Drawing.Point(15, 309);
             this.characterSummaryCharismaLabel.Name = "characterSummaryCharismaLabel";
             this.characterSummaryCharismaLabel.Size = new System.Drawing.Size(53, 13);
             this.characterSummaryCharismaLabel.TabIndex = 9;
@@ -261,7 +279,7 @@
             // characterSummaryWisdomLabel
             // 
             this.characterSummaryWisdomLabel.AutoSize = true;
-            this.characterSummaryWisdomLabel.Location = new System.Drawing.Point(26, 295);
+            this.characterSummaryWisdomLabel.Location = new System.Drawing.Point(15, 287);
             this.characterSummaryWisdomLabel.Name = "characterSummaryWisdomLabel";
             this.characterSummaryWisdomLabel.Size = new System.Drawing.Size(48, 13);
             this.characterSummaryWisdomLabel.TabIndex = 8;
@@ -270,7 +288,7 @@
             // characterSummaryIntelligenceLabel
             // 
             this.characterSummaryIntelligenceLabel.AutoSize = true;
-            this.characterSummaryIntelligenceLabel.Location = new System.Drawing.Point(26, 271);
+            this.characterSummaryIntelligenceLabel.Location = new System.Drawing.Point(15, 263);
             this.characterSummaryIntelligenceLabel.Name = "characterSummaryIntelligenceLabel";
             this.characterSummaryIntelligenceLabel.Size = new System.Drawing.Size(64, 13);
             this.characterSummaryIntelligenceLabel.TabIndex = 7;
@@ -279,7 +297,7 @@
             // characterSummaryConstitutionLabel
             // 
             this.characterSummaryConstitutionLabel.AutoSize = true;
-            this.characterSummaryConstitutionLabel.Location = new System.Drawing.Point(26, 248);
+            this.characterSummaryConstitutionLabel.Location = new System.Drawing.Point(15, 240);
             this.characterSummaryConstitutionLabel.Name = "characterSummaryConstitutionLabel";
             this.characterSummaryConstitutionLabel.Size = new System.Drawing.Size(65, 13);
             this.characterSummaryConstitutionLabel.TabIndex = 6;
@@ -288,7 +306,7 @@
             // characterSummaryDexterityLabel
             // 
             this.characterSummaryDexterityLabel.AutoSize = true;
-            this.characterSummaryDexterityLabel.Location = new System.Drawing.Point(26, 225);
+            this.characterSummaryDexterityLabel.Location = new System.Drawing.Point(15, 217);
             this.characterSummaryDexterityLabel.Name = "characterSummaryDexterityLabel";
             this.characterSummaryDexterityLabel.Size = new System.Drawing.Size(51, 13);
             this.characterSummaryDexterityLabel.TabIndex = 5;
@@ -297,7 +315,7 @@
             // characterSummaryStrengthLabel
             // 
             this.characterSummaryStrengthLabel.AutoSize = true;
-            this.characterSummaryStrengthLabel.Location = new System.Drawing.Point(26, 202);
+            this.characterSummaryStrengthLabel.Location = new System.Drawing.Point(15, 194);
             this.characterSummaryStrengthLabel.Name = "characterSummaryStrengthLabel";
             this.characterSummaryStrengthLabel.Size = new System.Drawing.Size(50, 13);
             this.characterSummaryStrengthLabel.TabIndex = 4;
@@ -335,9 +353,9 @@
             this.characterSummaryNameLabel.AutoSize = true;
             this.characterSummaryNameLabel.Location = new System.Drawing.Point(6, 36);
             this.characterSummaryNameLabel.Name = "characterSummaryNameLabel";
-            this.characterSummaryNameLabel.Size = new System.Drawing.Size(110, 13);
+            this.characterSummaryNameLabel.Size = new System.Drawing.Size(87, 13);
             this.characterSummaryNameLabel.TabIndex = 0;
-            this.characterSummaryNameLabel.Text = "Character Name Here";
+            this.characterSummaryNameLabel.Text = "Character Name:";
             // 
             // racePage
             // 
@@ -398,7 +416,7 @@
             this.raceTable1.ColumnCount = 3;
             this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.51852F));
             this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.48148F));
-            this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 214F));
+            this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 216F));
             this.raceTable1.Controls.Add(this.raceDescriptionPanel, 2, 0);
             this.raceTable1.Controls.Add(this.raceDataItems, 0, 0);
             this.raceTable1.Controls.Add(this.raceTableLayoutPanel5, 1, 0);
@@ -417,13 +435,13 @@
             this.raceDescriptionPanel.Controls.Add(this.raceDescriptionLabel, 0, 0);
             this.raceDescriptionPanel.Controls.Add(this.raceDescriptionBox, 0, 1);
             this.raceDescriptionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.raceDescriptionPanel.Location = new System.Drawing.Point(552, 3);
+            this.raceDescriptionPanel.Location = new System.Drawing.Point(550, 3);
             this.raceDescriptionPanel.Name = "raceDescriptionPanel";
             this.raceDescriptionPanel.RowCount = 2;
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.738095F));
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.2619F));
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.raceDescriptionPanel.Size = new System.Drawing.Size(209, 336);
+            this.raceDescriptionPanel.Size = new System.Drawing.Size(211, 336);
             this.raceDescriptionPanel.TabIndex = 2;
             this.raceDescriptionPanel.Visible = false;
             // 
@@ -436,7 +454,7 @@
             this.raceDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.raceDescriptionLabel.Location = new System.Drawing.Point(3, 3);
             this.raceDescriptionLabel.Name = "raceDescriptionLabel";
-            this.raceDescriptionLabel.Size = new System.Drawing.Size(203, 17);
+            this.raceDescriptionLabel.Size = new System.Drawing.Size(205, 17);
             this.raceDescriptionLabel.TabIndex = 2;
             this.raceDescriptionLabel.Text = "Description";
             this.raceDescriptionLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -467,7 +485,7 @@
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 187F));
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 152F));
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.raceDataItems.Size = new System.Drawing.Size(343, 336);
+            this.raceDataItems.Size = new System.Drawing.Size(342, 336);
             this.raceDataItems.TabIndex = 3;
             // 
             // raceTableLayoutPanel3
@@ -703,7 +721,7 @@
             this.raceTableLayoutPanel5.Controls.Add(this.raceFeatsLabel, 0, 0);
             this.raceTableLayoutPanel5.Controls.Add(this.raceFeatsBox, 0, 1);
             this.raceTableLayoutPanel5.Controls.Add(this.raceProficienciesBox, 0, 3);
-            this.raceTableLayoutPanel5.Location = new System.Drawing.Point(352, 3);
+            this.raceTableLayoutPanel5.Location = new System.Drawing.Point(351, 3);
             this.raceTableLayoutPanel5.Name = "raceTableLayoutPanel5";
             this.raceTableLayoutPanel5.RowCount = 5;
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -711,7 +729,7 @@
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 124F));
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.raceTableLayoutPanel5.Size = new System.Drawing.Size(194, 336);
+            this.raceTableLayoutPanel5.Size = new System.Drawing.Size(193, 336);
             this.raceTableLayoutPanel5.TabIndex = 4;
             // 
             // raceProficienciesLabel
@@ -745,7 +763,7 @@
             this.raceFeatsBox.ItemHeight = 16;
             this.raceFeatsBox.Location = new System.Drawing.Point(3, 28);
             this.raceFeatsBox.Name = "raceFeatsBox";
-            this.raceFeatsBox.Size = new System.Drawing.Size(188, 98);
+            this.raceFeatsBox.Size = new System.Drawing.Size(187, 98);
             this.raceFeatsBox.TabIndex = 3;
             this.raceFeatsBox.SelectedIndexChanged += new System.EventHandler(this.raceFeatsBox_SelectedIndexChanged);
             // 
@@ -756,7 +774,7 @@
             this.raceProficienciesBox.ItemHeight = 16;
             this.raceProficienciesBox.Location = new System.Drawing.Point(3, 157);
             this.raceProficienciesBox.Name = "raceProficienciesBox";
-            this.raceProficienciesBox.Size = new System.Drawing.Size(188, 118);
+            this.raceProficienciesBox.Size = new System.Drawing.Size(187, 118);
             this.raceProficienciesBox.TabIndex = 6;
             this.raceProficienciesBox.SelectedIndexChanged += new System.EventHandler(this.raceProficienciesBox_SelectedIndexChanged);
             // 
@@ -765,7 +783,7 @@
             this.raceTableLayoutPanel1.ColumnCount = 3;
             this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.65688F));
             this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.34312F));
-            this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174F));
+            this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
             this.raceTableLayoutPanel1.Controls.Add(this.raceDescription, 1, 0);
             this.raceTableLayoutPanel1.Location = new System.Drawing.Point(3, 36);
             this.raceTableLayoutPanel1.Name = "raceTableLayoutPanel1";
@@ -778,7 +796,7 @@
             // 
             this.raceDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.raceDescription.AutoSize = true;
-            this.raceDescription.Location = new System.Drawing.Point(298, 11);
+            this.raceDescription.Location = new System.Drawing.Point(297, 11);
             this.raceDescription.Name = "raceDescription";
             this.raceDescription.Size = new System.Drawing.Size(145, 16);
             this.raceDescription.TabIndex = 4;
@@ -1500,6 +1518,87 @@
             this.descriptionHairTextBox.Click += new System.EventHandler(this.hairTextBox_Click);
             this.descriptionHairTextBox.TextChanged += new System.EventHandler(this.descriptionHairTextBox_TextChanged);
             // 
+            // characterSummaryNameValue
+            // 
+            this.characterSummaryNameValue.AutoSize = true;
+            this.characterSummaryNameValue.Location = new System.Drawing.Point(15, 58);
+            this.characterSummaryNameValue.Name = "characterSummaryNameValue";
+            this.characterSummaryNameValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryNameValue.TabIndex = 10;
+            this.characterSummaryNameValue.Text = " ";
+            // 
+            // characterSummaryRaceValue
+            // 
+            this.characterSummaryRaceValue.AutoSize = true;
+            this.characterSummaryRaceValue.Location = new System.Drawing.Point(15, 105);
+            this.characterSummaryRaceValue.Name = "characterSummaryRaceValue";
+            this.characterSummaryRaceValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryRaceValue.TabIndex = 11;
+            this.characterSummaryRaceValue.Text = " ";
+            // 
+            // characterSummaryClassValue
+            // 
+            this.characterSummaryClassValue.AutoSize = true;
+            this.characterSummaryClassValue.Location = new System.Drawing.Point(15, 150);
+            this.characterSummaryClassValue.Name = "characterSummaryClassValue";
+            this.characterSummaryClassValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryClassValue.TabIndex = 12;
+            this.characterSummaryClassValue.Text = " ";
+            // 
+            // characterSummaryStrengthValue
+            // 
+            this.characterSummaryStrengthValue.AutoSize = true;
+            this.characterSummaryStrengthValue.Location = new System.Drawing.Point(92, 194);
+            this.characterSummaryStrengthValue.Name = "characterSummaryStrengthValue";
+            this.characterSummaryStrengthValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryStrengthValue.TabIndex = 13;
+            this.characterSummaryStrengthValue.Text = " ";
+            // 
+            // characterSummaryDexterityValue
+            // 
+            this.characterSummaryDexterityValue.AutoSize = true;
+            this.characterSummaryDexterityValue.Location = new System.Drawing.Point(92, 217);
+            this.characterSummaryDexterityValue.Name = "characterSummaryDexterityValue";
+            this.characterSummaryDexterityValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryDexterityValue.TabIndex = 14;
+            this.characterSummaryDexterityValue.Text = " ";
+            // 
+            // characterSummaryConstitutionValue
+            // 
+            this.characterSummaryConstitutionValue.AutoSize = true;
+            this.characterSummaryConstitutionValue.Location = new System.Drawing.Point(92, 240);
+            this.characterSummaryConstitutionValue.Name = "characterSummaryConstitutionValue";
+            this.characterSummaryConstitutionValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryConstitutionValue.TabIndex = 15;
+            this.characterSummaryConstitutionValue.Text = " ";
+            // 
+            // characterSummaryIntelligenceValue
+            // 
+            this.characterSummaryIntelligenceValue.AutoSize = true;
+            this.characterSummaryIntelligenceValue.Location = new System.Drawing.Point(92, 263);
+            this.characterSummaryIntelligenceValue.Name = "characterSummaryIntelligenceValue";
+            this.characterSummaryIntelligenceValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryIntelligenceValue.TabIndex = 16;
+            this.characterSummaryIntelligenceValue.Text = " ";
+            // 
+            // characterSummaryWisdomValue
+            // 
+            this.characterSummaryWisdomValue.AutoSize = true;
+            this.characterSummaryWisdomValue.Location = new System.Drawing.Point(92, 287);
+            this.characterSummaryWisdomValue.Name = "characterSummaryWisdomValue";
+            this.characterSummaryWisdomValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryWisdomValue.TabIndex = 17;
+            this.characterSummaryWisdomValue.Text = " ";
+            // 
+            // characterSummaryCharismaValue
+            // 
+            this.characterSummaryCharismaValue.AutoSize = true;
+            this.characterSummaryCharismaValue.Location = new System.Drawing.Point(92, 309);
+            this.characterSummaryCharismaValue.Name = "characterSummaryCharismaValue";
+            this.characterSummaryCharismaValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryCharismaValue.TabIndex = 18;
+            this.characterSummaryCharismaValue.Text = " ";
+            // 
             // NewCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1683,5 +1782,14 @@
         private System.Windows.Forms.ColorDialog descriptionHairColorPicker;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dieRollerToolStripMenuItem;
+        private System.Windows.Forms.Label characterSummaryCharismaValue;
+        private System.Windows.Forms.Label characterSummaryWisdomValue;
+        private System.Windows.Forms.Label characterSummaryIntelligenceValue;
+        private System.Windows.Forms.Label characterSummaryConstitutionValue;
+        private System.Windows.Forms.Label characterSummaryDexterityValue;
+        private System.Windows.Forms.Label characterSummaryStrengthValue;
+        private System.Windows.Forms.Label characterSummaryClassValue;
+        private System.Windows.Forms.Label characterSummaryRaceValue;
+        private System.Windows.Forms.Label characterSummaryNameValue;
     }
 }

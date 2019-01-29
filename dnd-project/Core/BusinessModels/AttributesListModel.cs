@@ -11,8 +11,6 @@ namespace dnd_project.Core.BusinessModels
     {
         #region Instance Variables and Properties
         private const int DEF_VALUE = 10;
-        private const int NAME_POS = 0;
-        private const int DESC_POS = 1;
 
         public Dictionary<string, AttributeModel> Attributes { get; set; }
         #endregion
@@ -55,9 +53,9 @@ namespace dnd_project.Core.BusinessModels
             Attributes[attribute].Value = value;
         }
         /// <summary>
-        /// Returns a dictionary of the attribute/value pairs
+        /// Returns a dictionary of the attribute/mod value pairs
         /// </summary>
-        /// <returns></returns>
+        /// <returns>attribute/mod value pairs</returns>
         public Dictionary<string, int> GetAttributeMods()
         {
             Dictionary<string, int> attributeMods = new Dictionary<string, int>();
@@ -69,7 +67,21 @@ namespace dnd_project.Core.BusinessModels
 
             return attributeMods;
         }
+        /// <summary>
+        /// Returns a dictionary of attrribute/value pairs
+        /// </summary>
+        /// <returns>attrribute/value pairs</returns>
+        public Dictionary<string, int> GetAttributeValues()
+        {
+            Dictionary<string, int> attributeValues = new Dictionary<string, int>();
 
+            foreach(string attr in Attributes.Keys)
+            {
+                attributeValues[attr] = Attributes[attr].Value;
+            }
+
+            return attributeValues;
+        }
         /// <summary>
         /// Overriden ToString method to print for debugging purposes
         /// </summary>
