@@ -18,7 +18,11 @@ namespace dnd_project
             controller = new CharacterController();
             SetRaceValues();
         }
+        #region Helper Methods
 
+        /// <summary>
+        /// Adds all of the races to the race list
+        /// </summary>
         private void SetRaceValues()
         {
             List<string> races = controller.GetAllRaces();
@@ -27,7 +31,10 @@ namespace dnd_project
                 raceList.Items.Add(race);
             }
         }
-
+        /// <summary>
+        /// Populates the details on the Race selection page
+        /// </summary>
+        /// <param name="selectedItem"></param>
         private void UpdateRaceDetails(string selectedItem)
         {
             raceInfoTable.Visible = true;
@@ -65,7 +72,62 @@ namespace dnd_project
                 raceProficienciesBox.Items.Add(prof);
             }
         }
+        /// <summary>
+        /// Updates the desciption box on the race page
+        /// </summary>
+        /// <param name="selectedItem">The currently selected item on the page</param>
+        /// <param name="description">The description of the item</param>
+        private void UpdateRaceDescription(string selectedItem, string description)
+        {
+            if (raceDescriptionLabel.Text != selectedItem)
+            {
+                raceDescriptionPanel.Visible = true;
+                raceDescriptionLabel.Text = selectedItem;
+                raceDescriptionBox.Text = description;
+            }
+            else
+            {
+                raceDescriptionPanel.Visible = false;
+                raceDescriptionLabel.Text = "";
+            }
+        }
 
+        /// <summary>
+        /// Updates the CharacterSummary side panel to show overall current stats
+        /// </summary>
+        private void UpdateCharacterSummary()
+        {
+            Dictionary<string, Dictionary<string, int>> values = controller.GetAttributeValuesAndMods();
+
+            characterSummaryNameValue.Text = controller.GetBasicCharacterProperty(CharacterValues.Name);
+            characterSummaryRaceValue.Text = controller.GetRaceCurrent();
+            characterSummaryClassValue.Text = controller.GetClassCurrent();
+            characterSummaryStrengthValue.Text 
+                = GenerateAttrModString(values[CharacterAttributes.Strength]["Value"], values[CharacterAttributes.Strength]["Mod"]);
+            characterSummaryDexterityValue.Text 
+                = GenerateAttrModString(values[CharacterAttributes.Dexterity]["Value"], values[CharacterAttributes.Dexterity]["Mod"]);
+            characterSummaryConstitutionValue.Text 
+                = GenerateAttrModString(values[CharacterAttributes.Constitution]["Value"], values[CharacterAttributes.Constitution]["Mod"]);
+            characterSummaryIntelligenceValue.Text 
+                = GenerateAttrModString(values[CharacterAttributes.Intelligence]["Value"], values[CharacterAttributes.Intelligence]["Mod"]); 
+            characterSummaryWisdomValue.Text 
+                = GenerateAttrModString(values[CharacterAttributes.Wisdom]["Value"], values[CharacterAttributes.Wisdom]["Mod"]);
+            characterSummaryCharismaValue.Text 
+                = GenerateAttrModString(values[CharacterAttributes.Charisma]["Value"], values[CharacterAttributes.Charisma]["Mod"]);
+        }
+
+        /// <summary>
+        /// Generates a string with the format like "xx (+y)" where xx is the attribute value and y is the calulated modifier
+        /// </summary>
+        /// <param name="attr">Int value of the attribute</param>
+        /// <param name="mod">Int value of the modifier</param>
+        /// <returns>String with attribute and modifier values</returns>
+        private string GenerateAttrModString(int attr, int mod)
+        {
+            return String.Format("{0} ({1}{2})", attr, mod >= 0 ? "+" : "", mod);
+        }
+        #endregion
+        #region Event Handler Methods
         private void main_button_Click(object sender, EventArgs e)
         {
             new MainMenu().Show();
@@ -94,21 +156,9 @@ namespace dnd_project
         {
             if (raceFeatsBox.SelectedIndex != -1) {
                 string selectedItem = raceFeatsBox.GetItemText(raceFeatsBox.SelectedItem);
-                updateRaceDescription(selectedItem, controller.GetAllFeats().Contains(selectedItem) ?
+                UpdateRaceDescription(selectedItem, controller.GetAllFeats().Contains(selectedItem) ?
                     controller.GetFeat(selectedItem).Description : selectedItem);
                 raceFeatsBox.SelectedIndex = -1;
-            }
-        }
-
-        private void updateRaceDescription(string selectedItem, string description)
-        {
-            if(raceDescriptionLabel.Text != selectedItem) {
-                raceDescriptionPanel.Visible = true;
-                raceDescriptionLabel.Text = selectedItem;
-                raceDescriptionBox.Text = description;
-            } else {
-                raceDescriptionPanel.Visible = false;
-                raceDescriptionLabel.Text = "";
             }
         }
 
@@ -119,7 +169,7 @@ namespace dnd_project
                 string selectedItem = raceAttrBox.GetItemText(raceAttrBox.SelectedItem);
                 string selectedAttr = selectedItem.Substring(0,selectedItem.Length - 1);
                 string selectedVal = selectedItem.Substring(selectedItem.Length - 1, 1);
-                updateRaceDescription(selectedItem, "Your character starts with the " + selectedAttr + " attribute increased by " + selectedVal);
+                UpdateRaceDescription(selectedItem, "Your character starts with the " + selectedAttr + " attribute increased by " + selectedVal);
                 raceAttrBox.SelectedIndex = -1;
             }
         }
@@ -129,7 +179,7 @@ namespace dnd_project
             if (raceGearBox.SelectedIndex != -1)
             {
                 string selectedItem = raceGearBox.GetItemText(raceGearBox.SelectedItem);
-                updateRaceDescription(selectedItem, "You have the option of selecting " + selectedItem + " as a starting gear collection.");
+                UpdateRaceDescription(selectedItem, "You have the option of selecting " + selectedItem + " as a starting gear collection.");
                 raceGearBox.SelectedIndex = -1;
             }
         }
@@ -139,7 +189,7 @@ namespace dnd_project
             if (raceLanguageBox.SelectedIndex != -1)
             {
                 string selectedItem = raceLanguageBox.GetItemText(raceLanguageBox.SelectedItem);
-                updateRaceDescription(selectedItem, "You can speak in the " + selectedItem + " tongue.");
+                UpdateRaceDescription(selectedItem, "You can speak in the " + selectedItem + " tongue.");
                 raceLanguageBox.SelectedIndex = -1;
             }
         }
@@ -149,7 +199,7 @@ namespace dnd_project
             if (raceProficienciesBox.SelectedIndex != -1)
             {
                 string selectedItem = raceProficienciesBox.GetItemText(raceProficienciesBox.SelectedItem);
-                updateRaceDescription(selectedItem, "You have trained with " + selectedItem + " and can now properly use it in combat situations.");
+                UpdateRaceDescription(selectedItem, "You have trained with " + selectedItem + " and can now properly use it in combat situations.");
                 raceProficienciesBox.SelectedIndex = -1;
             }
         }
@@ -210,6 +260,7 @@ namespace dnd_project
         private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
             controller.PrintCharacterToConsole();
+            UpdateCharacterSummary();
         }
 
         private void descriptionAlignmentComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -246,5 +297,6 @@ namespace dnd_project
         {
             controller.SetCharacterProperty(CharacterValues.Hair, descriptionHairTextBox.Text);
         }
+        #endregion
     }
 }

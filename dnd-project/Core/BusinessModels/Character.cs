@@ -362,6 +362,32 @@ namespace dnd_project.Core.BusinessModels
             info.AddValue("AdditionalLanguages", AdditionalLanguages);
         }
 
+        /// <summary>
+        /// Gets the attributes list of the character
+        /// </summary>
+        /// <returns>AttributesListModel containing attribute info</returns>
+        public AttributesListModel GetAttributesList()
+        {
+            return attributesList;
+        }
+        
+        /// <summary>
+        /// Gets name of the current race
+        /// </summary>
+        /// <returns>Name of the race or "None" if race is null</returns>
+        public string GetRace()
+        {
+            return characterRace == null ? "None" : characterRace.Name;
+        }
+
+        /// <summary>
+        /// Gets the name of the Class
+        /// </summary>
+        /// <returns>Name of the class or "None" if race is null</returns>
+        public string GetClass()
+        {
+            return characterClass == null ? "None" : characterClass.Name;
+        }
         #endregion
     }
 }
