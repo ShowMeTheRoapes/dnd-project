@@ -66,6 +66,12 @@ namespace dnd_project.Core
         {
             return featData.Feats.ContainsKey(featName) ? GatherFeatData(featName).Build() : null;
         }
+
+        public string GetAdditionalAttributePoints()
+        {
+            return character.AdditionalAttributePoints == 0 ? null : character.AdditionalAttributePoints.ToString();
+        }
+       
         /// <summary>
         /// Dictionary where the first index is the attribute name and the second index is "Value" (attribute value)
         /// or "Mod" (modifier value) 
@@ -86,6 +92,7 @@ namespace dnd_project.Core
 
             return attrsAndMods;
         }
+        
         /// <summary>
         /// Use the CharacterValues enum to see the possible values
         /// </summary>

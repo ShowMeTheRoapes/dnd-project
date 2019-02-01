@@ -11,7 +11,7 @@ namespace dnd_project
     public partial class NewCharacter : Form
     {
         private CharacterController controller;
-
+        //TODO: Add summary panel place for additional attribute points
         public NewCharacter()
         {
             InitializeComponent();
