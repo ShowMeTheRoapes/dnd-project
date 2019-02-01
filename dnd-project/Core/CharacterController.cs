@@ -50,13 +50,50 @@ namespace dnd_project.Core
         {
             return raceData.Races.ContainsKey(raceName) ? GatherRaceData(raceName).Build() : null;
         }
+        public string GetRaceCurrent()
+        {
+            return character.GetRace();
+        }
         public Class GetClass(string className)
         {
             return classData.Classes.ContainsKey(className) ? GatherClassData(className).Build() : null;
         }
+        public string GetClassCurrent()
+        {
+            return character.GetClass();
+        }
         public Feat GetFeat(string featName)
         {
             return featData.Feats.ContainsKey(featName) ? GatherFeatData(featName).Build() : null;
+        }
+        /// <summary>
+        /// Dictionary where the first index is the attribute name and the second index is "Value" (attribute value)
+        /// or "Mod" (modifier value) 
+        /// </summary>
+        /// <returns>Get values and mods for attributes</returns>
+        public Dictionary<string, Dictionary<string, int>> GetAttributeValuesAndMods()
+        {
+            AttributesListModel attributesList = character.GetAttributesList();
+            Dictionary<string, Dictionary<string, int>> attrsAndMods = new Dictionary<string, Dictionary<string, int>>();
+            Dictionary<string, int> modValues = attributesList.GetAttributeMods();
+            Dictionary<string, int> attrValues = attributesList.GetAttributeValues();
+            foreach (string att in attrValues.Keys)
+            {
+                attrsAndMods[att] = new Dictionary<string, int>();
+                attrsAndMods[att]["Value"] = attrValues[att];
+                attrsAndMods[att]["Mod"] = modValues[att];
+            }
+
+            return attrsAndMods;
+        }
+        /// <summary>
+        /// Use the CharacterValues enum to see the possible values
+        /// </summary>
+        /// <param name="property">Character property name from CharacterValues</param>
+        /// <returns>Stringified value of the property</returns>
+        public string GetBasicCharacterProperty(string property)
+        {
+            return (string) character.GetType().GetProperty(property).GetValue(character);
         }
 
         #endregion
@@ -108,6 +145,9 @@ namespace dnd_project.Core
                 .SetGearChoices(aRace.GearChoices);
             return builder;
         }
+
+
+
         private FeatBuilder GatherFeatData(string featName)
         {
             JsonFeatInfo aFeat = featData.Feats[featName];

@@ -56,6 +56,7 @@
     <Compile Include="Core\BusinessModels\Builders\RaceBuilder.cs" />
     <Compile Include="Core\BusinessModels\Character.cs" />
     <Compile Include="Core\SaverLoader.cs" />
+    <Compile Include="Core\ViewModels\CharacterAttributes.cs" />
     <Compile Include="Core\ViewModels\CharacterValues.cs" />
     <Compile Include="Core\BusinessModels\Class.cs" />
     <Compile Include="Core\BusinessModels\Dice\DiceRoller.cs" />
