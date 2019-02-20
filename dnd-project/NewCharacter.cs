@@ -18,6 +18,7 @@ namespace dnd_project
             controller = new CharacterController();
             SetRaceValues();
         }
+
         #region Helper Methods
 
         /// <summary>
@@ -127,6 +128,7 @@ namespace dnd_project
             return String.Format("{0} ({1}{2})", attr, mod >= 0 ? "+" : "", mod);
         }
         #endregion
+
         #region Event Handler Methods
         private void main_button_Click(object sender, EventArgs e)
         {
@@ -164,13 +166,21 @@ namespace dnd_project
 
         private void raceAttrBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             if (raceAttrBox.SelectedIndex != -1)
             {
                 string selectedItem = raceAttrBox.GetItemText(raceAttrBox.SelectedItem);
-                string selectedAttr = selectedItem.Substring(0,selectedItem.Length - 1);
+                string selectedAttr = selectedItem.Substring(0, selectedItem.Length - 2);
                 string selectedVal = selectedItem.Substring(selectedItem.Length - 1, 1);
-                UpdateRaceDescription(selectedItem, "Your character starts with the " + selectedAttr + " attribute increased by " + selectedVal);
-                raceAttrBox.SelectedIndex = -1;
+                if (!selectedAttr.Contains("Choose One"))
+                {
+                    UpdateRaceDescription(selectedItem, "Your character starts with the " + selectedAttr + " attribute increased by " + selectedVal);
+                }
+                else
+                {
+                    UpdateRaceDescription(selectedItem, "Your character starts with your choice of attribute increased by " + selectedVal);
+                }
+                    raceAttrBox.SelectedIndex = -1;
             }
         }
 
@@ -199,7 +209,8 @@ namespace dnd_project
             if (raceProficienciesBox.SelectedIndex != -1)
             {
                 string selectedItem = raceProficienciesBox.GetItemText(raceProficienciesBox.SelectedItem);
-                UpdateRaceDescription(selectedItem, "You have trained with " + selectedItem + " and can now properly use it in combat situations.");
+                string itThem = selectedItem.EndsWith("s") ? "them" : "it";
+                UpdateRaceDescription(selectedItem, "You have trained with " + selectedItem + " and can now properly use " + itThem + " in combat situations.");
                 raceProficienciesBox.SelectedIndex = -1;
             }
         }

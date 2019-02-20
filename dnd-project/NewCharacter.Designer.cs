@@ -37,6 +37,15 @@
             this.dieRollerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainButton = new System.Windows.Forms.Button();
             this.characterSummaryBox = new System.Windows.Forms.GroupBox();
+            this.characterSummaryCharismaValue = new System.Windows.Forms.Label();
+            this.characterSummaryWisdomValue = new System.Windows.Forms.Label();
+            this.characterSummaryIntelligenceValue = new System.Windows.Forms.Label();
+            this.characterSummaryConstitutionValue = new System.Windows.Forms.Label();
+            this.characterSummaryDexterityValue = new System.Windows.Forms.Label();
+            this.characterSummaryStrengthValue = new System.Windows.Forms.Label();
+            this.characterSummaryClassValue = new System.Windows.Forms.Label();
+            this.characterSummaryRaceValue = new System.Windows.Forms.Label();
+            this.characterSummaryNameValue = new System.Windows.Forms.Label();
             this.characterSummaryCharismaLabel = new System.Windows.Forms.Label();
             this.characterSummaryWisdomLabel = new System.Windows.Forms.Label();
             this.characterSummaryIntelligenceLabel = new System.Windows.Forms.Label();
@@ -90,7 +99,6 @@
             this.backgroundTableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.backgroundBackgroundGroupBox = new System.Windows.Forms.GroupBox();
             this.backgroundTableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.backgroundBackgroundLabel = new System.Windows.Forms.Label();
             this.backgroundBackgroundComboBox = new System.Windows.Forms.ComboBox();
             this.backgroundFactionGroupBox = new System.Windows.Forms.GroupBox();
             this.backgroundTableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -133,15 +141,7 @@
             this.descriptionEyeColorPicker = new System.Windows.Forms.ColorDialog();
             this.descriptionSkinColorPicker = new System.Windows.Forms.ColorDialog();
             this.descriptionHairColorPicker = new System.Windows.Forms.ColorDialog();
-            this.characterSummaryNameValue = new System.Windows.Forms.Label();
-            this.characterSummaryRaceValue = new System.Windows.Forms.Label();
-            this.characterSummaryClassValue = new System.Windows.Forms.Label();
-            this.characterSummaryStrengthValue = new System.Windows.Forms.Label();
-            this.characterSummaryDexterityValue = new System.Windows.Forms.Label();
-            this.characterSummaryConstitutionValue = new System.Windows.Forms.Label();
-            this.characterSummaryIntelligenceValue = new System.Windows.Forms.Label();
-            this.characterSummaryWisdomValue = new System.Windows.Forms.Label();
-            this.characterSummaryCharismaValue = new System.Windows.Forms.Label();
+            this.backgroundBackgroundLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.characterSummaryBox.SuspendLayout();
             this.racePage.SuspendLayout();
@@ -266,6 +266,87 @@
             this.characterSummaryBox.TabIndex = 2;
             this.characterSummaryBox.TabStop = false;
             this.characterSummaryBox.Text = "Character Summary";
+            // 
+            // characterSummaryCharismaValue
+            // 
+            this.characterSummaryCharismaValue.AutoSize = true;
+            this.characterSummaryCharismaValue.Location = new System.Drawing.Point(92, 309);
+            this.characterSummaryCharismaValue.Name = "characterSummaryCharismaValue";
+            this.characterSummaryCharismaValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryCharismaValue.TabIndex = 18;
+            this.characterSummaryCharismaValue.Text = " ";
+            // 
+            // characterSummaryWisdomValue
+            // 
+            this.characterSummaryWisdomValue.AutoSize = true;
+            this.characterSummaryWisdomValue.Location = new System.Drawing.Point(92, 287);
+            this.characterSummaryWisdomValue.Name = "characterSummaryWisdomValue";
+            this.characterSummaryWisdomValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryWisdomValue.TabIndex = 17;
+            this.characterSummaryWisdomValue.Text = " ";
+            // 
+            // characterSummaryIntelligenceValue
+            // 
+            this.characterSummaryIntelligenceValue.AutoSize = true;
+            this.characterSummaryIntelligenceValue.Location = new System.Drawing.Point(92, 263);
+            this.characterSummaryIntelligenceValue.Name = "characterSummaryIntelligenceValue";
+            this.characterSummaryIntelligenceValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryIntelligenceValue.TabIndex = 16;
+            this.characterSummaryIntelligenceValue.Text = " ";
+            // 
+            // characterSummaryConstitutionValue
+            // 
+            this.characterSummaryConstitutionValue.AutoSize = true;
+            this.characterSummaryConstitutionValue.Location = new System.Drawing.Point(92, 240);
+            this.characterSummaryConstitutionValue.Name = "characterSummaryConstitutionValue";
+            this.characterSummaryConstitutionValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryConstitutionValue.TabIndex = 15;
+            this.characterSummaryConstitutionValue.Text = " ";
+            // 
+            // characterSummaryDexterityValue
+            // 
+            this.characterSummaryDexterityValue.AutoSize = true;
+            this.characterSummaryDexterityValue.Location = new System.Drawing.Point(92, 217);
+            this.characterSummaryDexterityValue.Name = "characterSummaryDexterityValue";
+            this.characterSummaryDexterityValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryDexterityValue.TabIndex = 14;
+            this.characterSummaryDexterityValue.Text = " ";
+            // 
+            // characterSummaryStrengthValue
+            // 
+            this.characterSummaryStrengthValue.AutoSize = true;
+            this.characterSummaryStrengthValue.Location = new System.Drawing.Point(92, 194);
+            this.characterSummaryStrengthValue.Name = "characterSummaryStrengthValue";
+            this.characterSummaryStrengthValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryStrengthValue.TabIndex = 13;
+            this.characterSummaryStrengthValue.Text = " ";
+            // 
+            // characterSummaryClassValue
+            // 
+            this.characterSummaryClassValue.AutoSize = true;
+            this.characterSummaryClassValue.Location = new System.Drawing.Point(15, 150);
+            this.characterSummaryClassValue.Name = "characterSummaryClassValue";
+            this.characterSummaryClassValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryClassValue.TabIndex = 12;
+            this.characterSummaryClassValue.Text = " ";
+            // 
+            // characterSummaryRaceValue
+            // 
+            this.characterSummaryRaceValue.AutoSize = true;
+            this.characterSummaryRaceValue.Location = new System.Drawing.Point(15, 105);
+            this.characterSummaryRaceValue.Name = "characterSummaryRaceValue";
+            this.characterSummaryRaceValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryRaceValue.TabIndex = 11;
+            this.characterSummaryRaceValue.Text = " ";
+            // 
+            // characterSummaryNameValue
+            // 
+            this.characterSummaryNameValue.AutoSize = true;
+            this.characterSummaryNameValue.Location = new System.Drawing.Point(15, 58);
+            this.characterSummaryNameValue.Name = "characterSummaryNameValue";
+            this.characterSummaryNameValue.Size = new System.Drawing.Size(10, 13);
+            this.characterSummaryNameValue.TabIndex = 10;
+            this.characterSummaryNameValue.Text = " ";
             // 
             // characterSummaryCharismaLabel
             // 
@@ -416,7 +497,7 @@
             this.raceTable1.ColumnCount = 3;
             this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.51852F));
             this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.48148F));
-            this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 216F));
+            this.raceTable1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 217F));
             this.raceTable1.Controls.Add(this.raceDescriptionPanel, 2, 0);
             this.raceTable1.Controls.Add(this.raceDataItems, 0, 0);
             this.raceTable1.Controls.Add(this.raceTableLayoutPanel5, 1, 0);
@@ -435,13 +516,13 @@
             this.raceDescriptionPanel.Controls.Add(this.raceDescriptionLabel, 0, 0);
             this.raceDescriptionPanel.Controls.Add(this.raceDescriptionBox, 0, 1);
             this.raceDescriptionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.raceDescriptionPanel.Location = new System.Drawing.Point(550, 3);
+            this.raceDescriptionPanel.Location = new System.Drawing.Point(549, 3);
             this.raceDescriptionPanel.Name = "raceDescriptionPanel";
             this.raceDescriptionPanel.RowCount = 2;
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.738095F));
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.2619F));
             this.raceDescriptionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.raceDescriptionPanel.Size = new System.Drawing.Size(211, 336);
+            this.raceDescriptionPanel.Size = new System.Drawing.Size(212, 336);
             this.raceDescriptionPanel.TabIndex = 2;
             this.raceDescriptionPanel.Visible = false;
             // 
@@ -454,7 +535,7 @@
             this.raceDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.raceDescriptionLabel.Location = new System.Drawing.Point(3, 3);
             this.raceDescriptionLabel.Name = "raceDescriptionLabel";
-            this.raceDescriptionLabel.Size = new System.Drawing.Size(205, 17);
+            this.raceDescriptionLabel.Size = new System.Drawing.Size(206, 17);
             this.raceDescriptionLabel.TabIndex = 2;
             this.raceDescriptionLabel.Text = "Description";
             this.raceDescriptionLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -485,7 +566,7 @@
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 187F));
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 152F));
             this.raceDataItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.raceDataItems.Size = new System.Drawing.Size(342, 336);
+            this.raceDataItems.Size = new System.Drawing.Size(341, 336);
             this.raceDataItems.TabIndex = 3;
             // 
             // raceTableLayoutPanel3
@@ -721,7 +802,7 @@
             this.raceTableLayoutPanel5.Controls.Add(this.raceFeatsLabel, 0, 0);
             this.raceTableLayoutPanel5.Controls.Add(this.raceFeatsBox, 0, 1);
             this.raceTableLayoutPanel5.Controls.Add(this.raceProficienciesBox, 0, 3);
-            this.raceTableLayoutPanel5.Location = new System.Drawing.Point(351, 3);
+            this.raceTableLayoutPanel5.Location = new System.Drawing.Point(350, 3);
             this.raceTableLayoutPanel5.Name = "raceTableLayoutPanel5";
             this.raceTableLayoutPanel5.RowCount = 5;
             this.raceTableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -783,7 +864,7 @@
             this.raceTableLayoutPanel1.ColumnCount = 3;
             this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.65688F));
             this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.34312F));
-            this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
+            this.raceTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
             this.raceTableLayoutPanel1.Controls.Add(this.raceDescription, 1, 0);
             this.raceTableLayoutPanel1.Location = new System.Drawing.Point(3, 36);
             this.raceTableLayoutPanel1.Name = "raceTableLayoutPanel1";
@@ -796,7 +877,7 @@
             // 
             this.raceDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.raceDescription.AutoSize = true;
-            this.raceDescription.Location = new System.Drawing.Point(297, 11);
+            this.raceDescription.Location = new System.Drawing.Point(296, 11);
             this.raceDescription.Name = "raceDescription";
             this.raceDescription.Size = new System.Drawing.Size(145, 16);
             this.raceDescription.TabIndex = 4;
@@ -921,17 +1002,6 @@
             this.backgroundTableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.30709F));
             this.backgroundTableLayoutPanel2.Size = new System.Drawing.Size(490, 138);
             this.backgroundTableLayoutPanel2.TabIndex = 0;
-            // 
-            // backgroundBackgroundLabel
-            // 
-            this.backgroundBackgroundLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.backgroundBackgroundLabel.AutoSize = true;
-            this.backgroundBackgroundLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backgroundBackgroundLabel.Location = new System.Drawing.Point(4, 16);
-            this.backgroundBackgroundLabel.Name = "backgroundBackgroundLabel";
-            this.backgroundBackgroundLabel.Size = new System.Drawing.Size(482, 45);
-            this.backgroundBackgroundLabel.TabIndex = 1;
-            this.backgroundBackgroundLabel.Text = resources.GetString("backgroundBackgroundLabel.Text");
             // 
             // backgroundBackgroundComboBox
             // 
@@ -1518,86 +1588,16 @@
             this.descriptionHairTextBox.Click += new System.EventHandler(this.hairTextBox_Click);
             this.descriptionHairTextBox.TextChanged += new System.EventHandler(this.descriptionHairTextBox_TextChanged);
             // 
-            // characterSummaryNameValue
+            // backgroundBackgroundLabel
             // 
-            this.characterSummaryNameValue.AutoSize = true;
-            this.characterSummaryNameValue.Location = new System.Drawing.Point(15, 58);
-            this.characterSummaryNameValue.Name = "characterSummaryNameValue";
-            this.characterSummaryNameValue.Size = new System.Drawing.Size(10, 13);
-            this.characterSummaryNameValue.TabIndex = 10;
-            this.characterSummaryNameValue.Text = " ";
-            // 
-            // characterSummaryRaceValue
-            // 
-            this.characterSummaryRaceValue.AutoSize = true;
-            this.characterSummaryRaceValue.Location = new System.Drawing.Point(15, 105);
-            this.characterSummaryRaceValue.Name = "characterSummaryRaceValue";
-            this.characterSummaryRaceValue.Size = new System.Drawing.Size(10, 13);
-            this.characterSummaryRaceValue.TabIndex = 11;
-            this.characterSummaryRaceValue.Text = " ";
-            // 
-            // characterSummaryClassValue
-            // 
-            this.characterSummaryClassValue.AutoSize = true;
-            this.characterSummaryClassValue.Location = new System.Drawing.Point(15, 150);
-            this.characterSummaryClassValue.Name = "characterSummaryClassValue";
-            this.characterSummaryClassValue.Size = new System.Drawing.Size(10, 13);
-            this.characterSummaryClassValue.TabIndex = 12;
-            this.characterSummaryClassValue.Text = " ";
-            // 
-            // characterSummaryStrengthValue
-            // 
-            this.characterSummaryStrengthValue.AutoSize = true;
-            this.characterSummaryStrengthValue.Location = new System.Drawing.Point(92, 194);
-            this.characterSummaryStrengthValue.Name = "characterSummaryStrengthValue";
-            this.characterSummaryStrengthValue.Size = new System.Drawing.Size(10, 13);
-            this.characterSummaryStrengthValue.TabIndex = 13;
-            this.characterSummaryStrengthValue.Text = " ";
-            // 
-            // characterSummaryDexterityValue
-            // 
-            this.characterSummaryDexterityValue.AutoSize = true;
-            this.characterSummaryDexterityValue.Location = new System.Drawing.Point(92, 217);
-            this.characterSummaryDexterityValue.Name = "characterSummaryDexterityValue";
-            this.characterSummaryDexterityValue.Size = new System.Drawing.Size(10, 13);
-            this.characterSummaryDexterityValue.TabIndex = 14;
-            this.characterSummaryDexterityValue.Text = " ";
-            // 
-            // characterSummaryConstitutionValue
-            // 
-            this.characterSummaryConstitutionValue.AutoSize = true;
-            this.characterSummaryConstitutionValue.Location = new System.Drawing.Point(92, 240);
-            this.characterSummaryConstitutionValue.Name = "characterSummaryConstitutionValue";
-            this.characterSummaryConstitutionValue.Size = new System.Drawing.Size(10, 13);
-            this.characterSummaryConstitutionValue.TabIndex = 15;
-            this.characterSummaryConstitutionValue.Text = " ";
-            // 
-            // characterSummaryIntelligenceValue
-            // 
-            this.characterSummaryIntelligenceValue.AutoSize = true;
-            this.characterSummaryIntelligenceValue.Location = new System.Drawing.Point(92, 263);
-            this.characterSummaryIntelligenceValue.Name = "characterSummaryIntelligenceValue";
-            this.characterSummaryIntelligenceValue.Size = new System.Drawing.Size(10, 13);
-            this.characterSummaryIntelligenceValue.TabIndex = 16;
-            this.characterSummaryIntelligenceValue.Text = " ";
-            // 
-            // characterSummaryWisdomValue
-            // 
-            this.characterSummaryWisdomValue.AutoSize = true;
-            this.characterSummaryWisdomValue.Location = new System.Drawing.Point(92, 287);
-            this.characterSummaryWisdomValue.Name = "characterSummaryWisdomValue";
-            this.characterSummaryWisdomValue.Size = new System.Drawing.Size(10, 13);
-            this.characterSummaryWisdomValue.TabIndex = 17;
-            this.characterSummaryWisdomValue.Text = " ";
-            // 
-            // characterSummaryCharismaValue
-            // 
-            this.characterSummaryCharismaValue.AutoSize = true;
-            this.characterSummaryCharismaValue.Location = new System.Drawing.Point(92, 309);
-            this.characterSummaryCharismaValue.Name = "characterSummaryCharismaValue";
-            this.characterSummaryCharismaValue.Size = new System.Drawing.Size(10, 13);
-            this.characterSummaryCharismaValue.TabIndex = 18;
-            this.characterSummaryCharismaValue.Text = " ";
+            this.backgroundBackgroundLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backgroundBackgroundLabel.AutoSize = true;
+            this.backgroundBackgroundLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backgroundBackgroundLabel.Location = new System.Drawing.Point(4, 16);
+            this.backgroundBackgroundLabel.Name = "backgroundBackgroundLabel";
+            this.backgroundBackgroundLabel.Size = new System.Drawing.Size(482, 45);
+            this.backgroundBackgroundLabel.TabIndex = 1;
+            this.backgroundBackgroundLabel.Text = resources.GetString("backgroundBackgroundLabel.Text");
             // 
             // NewCharacter
             // 
@@ -1741,7 +1741,6 @@
         private System.Windows.Forms.GroupBox backgroundBondsGroupBox;
         private System.Windows.Forms.GroupBox backgroundFlawsGroupBox;
         private System.Windows.Forms.TableLayoutPanel backgroundTableLayoutPanel2;
-        private System.Windows.Forms.Label backgroundBackgroundLabel;
         private System.Windows.Forms.ComboBox backgroundBackgroundComboBox;
         private System.Windows.Forms.TableLayoutPanel backgroundTableLayoutPanel3;
         private System.Windows.Forms.Label backgroundFactionLabel;
@@ -1791,5 +1790,6 @@
         private System.Windows.Forms.Label characterSummaryClassValue;
         private System.Windows.Forms.Label characterSummaryRaceValue;
         private System.Windows.Forms.Label characterSummaryNameValue;
+        private System.Windows.Forms.Label backgroundBackgroundLabel;
     }
 }

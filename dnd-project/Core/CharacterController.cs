@@ -32,13 +32,13 @@ namespace dnd_project.Core
         public List<string> GetAllClasses()
         {
             List<string> classes = new List<string>();
-            raceData.Races.Keys.ToArray().ToList();
+            classes = classData.Classes.Keys.ToArray().ToList();
             return classes;
         }
         public List<string> GetAllFeats()
         {
             List<string> feats = new List<string>();
-            raceData.Races.Keys.ToArray().ToList();
+            feats = featData.Feats.Keys.ToArray().ToList();
             return feats;
         }
 
